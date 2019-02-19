@@ -9,13 +9,12 @@ import { withStyles } from '@material-ui/core/styles'
 const styles = theme => ({
   card: {
     maxWidth: 400,
-    margin: 10
+    margin: 10,
   },
 })
 
 const videoOnReady = event => {
   event.target.stopVideo()
-  console.log(event.target)
 }
 
 const opts = {

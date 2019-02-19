@@ -4,7 +4,6 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import YoutubeCard from '../components/YouTube'
 export const MediaPageTemplate = ({ content: { youtubeVideos } }) => {
-  console.log(youtubeVideos) //TEST CODE
   return (
     <section className="section section--gradient">
       {youtubeVideos.map(({ title, description, youtubeURL }) => {
