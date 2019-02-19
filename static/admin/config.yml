@@ -16,7 +16,26 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Cover Image", name: "coverImage", widget: "image"}
       - {label: "Description", name: "description", widget: "text"}
+      - {
+          label: "Reviews", 
+          name: "reviews", 
+          widget: list,
+          fields: [
+            {label: "Reviewer Name", name: "reviewerName", widget: "string"},
+            {label: "Message", name: "message", widget: "string"}
+          ]
+          }
       - {label: "Body", name: "body", widget: "markdown"}
+      - { 
+          label: "Links To Buy", 
+          name: "linksToBuy", 
+          widget: "list",
+          fields: [
+            {label: "Label", name: "label", widget: "string"},
+            {label: "Image", name: "image", widget: "image"},
+            {label: "LinkURL", name: "linkURL", widget: "string"}
+          ]
+          }
 
   - name: "blog"
     label: "Blog"

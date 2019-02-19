@@ -21,6 +21,19 @@ export const AboutPageTemplate = ({ content, html, bodyIsMarkdown }) => {
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
+              <h3>
+                MAIN IMAGE: image={image} AND imageAlt={imageAlt}
+              </h3>
+              {awards.map(
+                ({ awardTitle, awardImage: { image, imageAlt, name } }) => {
+                  return (
+                    <p>
+                      awardTitle={awardTitle} image={image} imageAlt={imageAlt}{' '}
+                      name={name}{' '}
+                    </p>
+                  )
+                }
+              )}
               <section>
                 {bodyIsMarkdown ? (
                   <ReactMarkdown source={html} />

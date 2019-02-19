@@ -1,10 +1,21 @@
 ---
 templateKey: 'book-page'
 title: 'First Book'
+coverImage: "some-image-url" 
 description: >-
   This is some desccription for the first book
-coverImage: "some-image-url"  
-
+reviews:
+  - reviewerName: "Common Man"
+    message: "This is an excellent work or writing."
+  - reviewerName: "Big Publication"
+    message: "Seldom do we come across such great peices of literature."
+linksToBuy:
+  - label: "Link A"
+    image: "some_image.png"
+    linkURL: "some_external_url.com"
+  - label: "Link B"
+    image: "some_image.png"
+    linkURL: "some_external_url.com"   
 ---
 
 We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.

@@ -6,13 +6,27 @@ import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 
 export const BookPageTemplate = ({ content, html, bodyIsMarkdown }) => {
-  const { title, coverImage, description } = content
+  const { title, coverImage, description, reviews, linksToBuy } = content
   console.log(content) //TEST CODE
   return (
     <section className="section section--gradient">
       <h1>{title}</h1>
       <h3>{coverImage}</h3>
       <h4>{description}</h4>
+      {reviews.map(({ reviewerName, message }) => {
+        return (
+          <h3>
+            {reviewerName} said: "{message}"
+          </h3>
+        )
+      })}
+      {linksToBuy.map(({ label, image, linkURL }) => {
+        return (
+          <h3>
+            Buy from {label} @ "{linkURL}". Image - {image}
+          </h3>
+        )
+      })}
       <section>
         {bodyIsMarkdown ? (
           <ReactMarkdown source={html} />
@@ -53,6 +67,15 @@ export const bookPageQuery = graphql`
         title
         coverImage
         description
+        reviews {
+          reviewerName
+          message
+        }
+        linksToBuy {
+          label
+          image
+          linkURL
+        }
       }
     }
   }
