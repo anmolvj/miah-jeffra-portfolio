@@ -85,3 +85,13 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+
+exports.onCreateWebpackConfig = ({ stage, actions }) => {
+  actions.setWebpackConfig({
+    node: {
+      fs: 'empty',
+      net: 'empty',
+      tls: 'empty',
+    },
+  })
+}
