@@ -6,6 +6,18 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "book"
+    label: "Book"
+    folder: "src/pages/book"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "book-page"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Cover Image", name: "coverImage", widget: "image"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
