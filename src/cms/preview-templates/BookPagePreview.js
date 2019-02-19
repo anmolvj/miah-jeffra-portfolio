@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { BlogPageTemplate } from '../../templates/blog-post'
+import { BookPageTemplate } from '../../templates/book-page'
 
 const BookPagePreview = ({ entry, widgetFor }) => (
   <BookPageTemplate

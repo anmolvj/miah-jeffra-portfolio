@@ -117,6 +117,21 @@ collections:
                   }
                 ]
             }
-
+      - file: "src/pages/media/index.md"
+        label: "Media"
+        name: "media"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "media-page" }
+          - { 
+              label: "Youtube Videos", 
+              name: "youtubeVideos", 
+              widget: "list",
+              fields: [
+                {label: "Title", name: "title", widget: "string"},
+                {label: "Description", name: "description", widget: "string"},
+                {label: "Youtube URL", name: "youtubeURL", widget: "string"}
+                ]
+            }
+          
 
 
