@@ -127,8 +127,8 @@ collections:
               name: "youtubeVideos", 
               widget: "list",
               fields: [
-                {label: "Title", name: "title", widget: "string"},
-                {label: "Description", name: "description", widget: "string"},
+                {label: "Title", name: "title", widget: "string", , optional: true},
+                {label: "Description", name: "description", widget: "string", optional: true},
                 {label: "Youtube URL", name: "youtubeURL", widget: "string"}
                 ]
             }

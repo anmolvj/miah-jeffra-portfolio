@@ -9,6 +9,7 @@ import { withStyles } from '@material-ui/core/styles'
 const styles = theme => ({
   card: {
     maxWidth: 400,
+    margin: 10
   },
 })
 
@@ -26,16 +27,10 @@ const opts = {
   },
 }
 
-const YoutubePlayer = ({
-  classes,
-  videoId,
-  title,
-  description,
-  datePosted,
-}) => (
+const YoutubePlayer = ({ classes, videoID, title, description, date }) => (
   <Card className={classes.card}>
-    <YouTube videoId={videoId} opts={opts} onReady={videoOnReady} />
-    <CardHeader title={title} subheader={datePosted} />
+    <YouTube videoId={videoID} opts={opts} onReady={videoOnReady} />
+    <CardHeader title={title} subheader={date} />
     <CardContent>
       <Typography component="p">{description}</Typography>
     </CardContent>

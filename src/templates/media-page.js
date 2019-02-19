@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-
+import YoutubeCard from '../components/YouTube'
 export const MediaPageTemplate = ({ content: { youtubeVideos } }) => {
   console.log(youtubeVideos) //TEST CODE
   return (
@@ -10,9 +10,11 @@ export const MediaPageTemplate = ({ content: { youtubeVideos } }) => {
       {youtubeVideos.map(({ title, description, youtubeURL }) => {
         return (
           <div>
-            <h1>Title: {title}</h1>
-            <h1>Description: {description}</h1>
-            <h1>URL: {youtubeURL}</h1>
+            <YoutubeCard
+              url={youtubeURL}
+              title={title}
+              description={description}
+            />
           </div>
         )
       })}
