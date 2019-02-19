@@ -1,12 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import ReactMarkdown from 'react-markdown'
 import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
-
+export const AboutPageTemplate = ({ content, html, bodyIsMarkdown }) => {
+  const {
+    title,
+    mainImage: { image, imageAlt },
+    awards,
+  } = content
+  console.log(content) //TEST CODE
   return (
     <section className="section section--gradient">
       <div className="container">
@@ -16,7 +21,13 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
-              <PageContent className="content" content={content} />
+              <section>
+                {bodyIsMarkdown ? (
+                  <ReactMarkdown source={html} />
+                ) : (
+                  <HTMLContent content={html} />
+                )}
+              </section>
             </div>
           </div>
         </div>
@@ -25,21 +36,15 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   )
 }
 
-AboutPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
-}
-
 const AboutPage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: page } = data
 
   return (
     <Layout>
       <AboutPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        content={post.html}
+        content={page.frontmatter}
+        html={page.html}
+        bodyIsMarkdown={page.bodyIsMarkdown}
       />
     </Layout>
   )
@@ -57,6 +62,18 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        mainImage {
+          image
+          imageAlt
+        }
+        awards {
+          awardTitle
+          awardImage {
+            image
+            imageAlt
+            name
+          }
+        }
       }
     }
   }
