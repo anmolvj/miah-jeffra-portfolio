@@ -1,14 +1,14 @@
 import React from 'react'
-import YouTube from 'simple-youtube-api'
+//import YouTube from 'simple-youtube-api'
 import Player from './Player'
 import parseVideoID from './parseVideoID'
 
-const YOUTUBE_API_KEY = 'AIzaSyC6XNnCKFT7yTZzs4XL6VXKs7nwjK9WdE4'
+//const YOUTUBE_API_KEY = 'AIzaSyC6XNnCKFT7yTZzs4XL6VXKs7nwjK9WdE4'
 const datePublished = 'September 14, 1996'
 
 export default ({ title, description, url }) => {
   const videoID = parseVideoID(url)
-  const API = new YouTube(`${YOUTUBE_API_KEY}`)
+  //const API = new YouTube(`${YOUTUBE_API_KEY}`)
 
   //THE BUGGY CODE STARTS HERE
 
