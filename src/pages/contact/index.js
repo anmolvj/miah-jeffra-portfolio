@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
 import Typography from '@material-ui/core/Typography'
 import Layout from '../../components/Layout'
-import FormikForm from './FormikForm'
+import FormikForm from '../../components/FormikForm'
 
 const styles = {
   card: {

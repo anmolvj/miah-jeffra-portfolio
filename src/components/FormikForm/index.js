@@ -3,6 +3,7 @@ import { withFormik, Form, Field } from 'formik'
 import * as Yup from 'yup' //Yup has some bug due to which we need to import it like this
 import { TextField } from 'formik-material-ui'
 import Button from '@material-ui/core/Button'
+import encodeData from './encodeData'
 
 const App = ({ isSubmitting }) => (
   <Form
@@ -123,7 +124,7 @@ const FormikApp = withFormik({
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contactForm', ...values }),
+      body: encodeData({ 'form-name': 'contactForm', ...values }),
     }).catch(error => alert(error))
 
     setTimeout(() => {
