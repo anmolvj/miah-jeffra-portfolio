@@ -5,7 +5,13 @@ import { TextField } from 'formik-material-ui'
 import Button from '@material-ui/core/Button'
 
 const App = ({ isSubmitting }) => (
-  <Form>
+  <Form
+    name="contactFromV1"
+    method="POST"
+    data-netlify-recaptcha="true"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+  >
     <div>
       <Field
         type="text"
@@ -114,7 +120,12 @@ const FormikApp = withFormik({
       .required('Please your message to Miah Jeffra'),
   }),
   handleSubmit(values, { resetForm, setErrors, setSubmitting }) {
-    console.log('THESE ARE THE SUBMITTED VALUES: ', values)
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contactForm', ...values }),
+    }).catch(error => alert(error))
+
     setTimeout(() => {
       resetForm()
       setSubmitting(false)
