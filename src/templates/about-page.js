@@ -5,8 +5,8 @@ import ReactMarkdown from 'react-markdown'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ data }) => {
-  const { bodyIsMarkdown, html, title, mainImage, awards } = data
+export const AboutPageTemplate = ({ page }) => {
+  // console.log(content) //TEST CODE
   return (
     <section className="section section--gradient">
       <div className="container">
@@ -14,13 +14,13 @@ export const AboutPageTemplate = ({ data }) => {
           <div className="column is-10 is-offset-1">
             <div className="section">
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
+                {page.frontmatter.title}
               </h2>
               <h3>
-                MAIN IMAGE: image={mainImage.image} AND imageAlt=
-                {mainImage.imageAlt}
+                MAIN IMAGE: image={page.frontmatter.mainImage.image} AND
+                imageAlt={page.frontmatter.mainImage.imageAlt}
               </h3>
-              {awards.map(
+              {page.frontmatter.awards.map(
                 ({ awardTitle, awardImage: { image, imageAlt, name } }) => {
                   return (
                     <p>
@@ -31,10 +31,10 @@ export const AboutPageTemplate = ({ data }) => {
                 }
               )}
               <section>
-                {bodyIsMarkdown ? (
-                  <ReactMarkdown source={html} />
+                {page.bodyIsMarkdown ? (
+                  <ReactMarkdown source={page.html} />
                 ) : (
-                  <HTMLContent content={html} />
+                  <HTMLContent content={page.html} />
                 )}
               </section>
             </div>
@@ -47,13 +47,10 @@ export const AboutPageTemplate = ({ data }) => {
 
 const AboutPage = ({ data }) => {
   const { markdownRemark: page } = data
-  const { frontmatter, bodyIsMarkdown, html } = page
 
   return (
     <Layout>
-      <AboutPageTemplate
-        data={{ ...frontmatter, bodyIsMarkdown: false, html }}
-      />
+      <AboutPageTemplate page={{ ...page, bodyIsMarkdown: false }} />
     </Layout>
   )
 }
