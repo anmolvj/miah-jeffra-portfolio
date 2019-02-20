@@ -3,20 +3,22 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import YoutubeCard from '../components/YouTube'
-export const MediaPageTemplate = ({ content: { youtubeVideos } }) => {
+export const MediaPageTemplate = ({ page }) => {
   return (
     <section className="section section--gradient">
-      {youtubeVideos.map(({ title, description, youtubeURL }) => {
-        return (
-          <div>
-            <YoutubeCard
-              url={youtubeURL}
-              title={title}
-              description={description}
-            />
-          </div>
-        )
-      })}
+      {page.frontmatter.youtubeVideos.map(
+        ({ title, description, youtubeURL }) => {
+          return (
+            <div>
+              <YoutubeCard
+                url={youtubeURL}
+                title={title}
+                description={description}
+              />
+            </div>
+          )
+        }
+      )}
     </section>
   )
 }
@@ -26,7 +28,7 @@ const MediaPage = ({ data }) => {
 
   return (
     <Layout>
-      <MediaPageTemplate content={page.frontmatter} />
+      <MediaPageTemplate page={{ ...page, bodyIsMarkdown: false }} />
     </Layout>
   )
 }

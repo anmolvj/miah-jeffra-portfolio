@@ -5,22 +5,20 @@ import ReactMarkdown from 'react-markdown'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 
-export const BookPageTemplate = ({ content, html, bodyIsMarkdown }) => {
-  const { title, coverImage, description, reviews, linksToBuy } = content
-  console.log(content) //TEST CODE
+export const BookPageTemplate = ({ page }) => {
   return (
     <section className="section section--gradient">
-      <h1>{title}</h1>
-      <h3>{coverImage}</h3>
-      <h4>{description}</h4>
-      {reviews.map(({ reviewerName, message }) => {
+      <h1>{page.frontmatter.title}</h1>
+      <h3>{page.frontmatter.coverImage}</h3>
+      <h4>{page.frontmatter.description}</h4>
+      {page.frontmatter.reviews.map(({ reviewerName, message }) => {
         return (
           <h3>
             {reviewerName} said: "{message}"
           </h3>
         )
       })}
-      {linksToBuy.map(({ label, image, linkURL }) => {
+      {page.frontmatter.linksToBuy.map(({ label, image, linkURL }) => {
         return (
           <h3>
             Buy from {label} @ "{linkURL}". Image - {image}
@@ -28,10 +26,10 @@ export const BookPageTemplate = ({ content, html, bodyIsMarkdown }) => {
         )
       })}
       <section>
-        {bodyIsMarkdown ? (
-          <ReactMarkdown source={html} />
+        {page.bodyIsMarkdown ? (
+          <ReactMarkdown source={page.html} />
         ) : (
-          <HTMLContent content={html} />
+          <HTMLContent content={page.html} />
         )}
       </section>
     </section>
@@ -43,11 +41,7 @@ const BookPage = ({ data }) => {
 
   return (
     <Layout>
-      <BookPageTemplate
-        content={page.frontmatter}
-        html={page.html}
-        bodyIsMarkdown={page.bodyIsMarkdown}
-      />
+      <BookPageTemplate page={{ ...page, bodyIsMarkdown: false }} />
     </Layout>
   )
 }

@@ -5,7 +5,7 @@ import { BookPageTemplate } from '../../templates/book-page'
 const BookPagePreview = ({ entry, widgetFor }) => (
   <BookPageTemplate
     page={{
-      page: entry.getIn(['data']).toJS(),
+      frontmatter: entry.getIn(['data']).toJS(),
       html: entry.getIn(['data', 'body']),
       bodyIsMarkdown: true,
     }}
