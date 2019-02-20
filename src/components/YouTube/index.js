@@ -7,6 +7,7 @@ import parseVideoID from './parseVideoID'
 const datePublished = 'September 14, 1996'
 
 export default ({ title, description, url }) => {
+  console.log(url)
   const videoID = parseVideoID(url)
   //const API = new YouTube(`${YOUTUBE_API_KEY}`)
 

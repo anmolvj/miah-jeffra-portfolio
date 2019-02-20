@@ -1,24 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import ReactMarkdown from 'react-markdown'
 import Layout from '../components/Layout'
-import YoutubeCard from '../components/YouTube'
+import { HTMLContent } from '../components/Content'
+import YoutubePlayer from '../components/YouTube'
 export const MediaPageTemplate = ({ page }) => {
+  // console.log(content) //TEST CODE
   return (
     <section className="section section--gradient">
-      {page.frontmatter.youtubeVideos.map(
-        ({ title, description, youtubeURL }) => {
-          return (
-            <div>
-              <YoutubeCard
-                url={youtubeURL}
-                title={title}
-                description={description}
-              />
-            </div>
-          )
-        }
-      )}
+      {page.frontmatter.youtubeVideos.map(({ title, description, url }) => (
+        <YoutubePlayer title={title} description={description} url={url} />
+      ))}
     </section>
   )
 }
@@ -47,7 +40,7 @@ export const mediaPageQuery = graphql`
         youtubeVideos {
           title
           description
-          youtubeURL
+          url
         }
       }
     }

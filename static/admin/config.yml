@@ -127,11 +127,33 @@ collections:
               name: "youtubeVideos", 
               widget: "list",
               fields: [
-                {label: "Title", name: "title", widget: "string", , optional: true},
+                {label: "Title", name: "title", widget: "string", optional: true},
                 {label: "Description", name: "description", widget: "string", optional: true},
-                {label: "Youtube URL", name: "youtubeURL", widget: "string"}
+                {label: "Youtube URL", name: "url", widget: "string"}
                 ]
             }
+      - file: "src/pages/publication/index.md"
+        label: "Publication"
+        name: "publication"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "publication-page" }
+          - { 
+              label: "All Publications",
+              name: "publicationList",
+              widget: "list",
+              fields: [
+                {label: "Title", name: "title", widget: "string"},
+                {
+                  label: "Publication Image", 
+                  name: "publicationImage", 
+                  widget: "object",
+                  fields: [
+                    {label: "Image", name: "image", widget: "image"},
+                    {label: "Description", name: "imageAlt", widget: "string"}
+                  ]
+                  }
+              ]
+              }   
           
 
 
