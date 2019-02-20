@@ -14,6 +14,7 @@ export const PublicationPageTemplate = ({ page }) => {
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="section">
+              <Books />
               {page.frontmatter.publicationList.map(
                 ({ title, publicationImage: { image, imageAlt } }) => {
                   return (
@@ -30,7 +31,6 @@ export const PublicationPageTemplate = ({ page }) => {
                   <HTMLContent content={page.html} />
                 )}
               </section>
-              <Books />
             </div>
           </div>
         </div>
