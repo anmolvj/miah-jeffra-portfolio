@@ -15,6 +15,8 @@ const App = ({ isSubmitting }) => (
     data-netlify="true"
     data-netlify-honeypot="bot-field"
   >
+    {/* We need this input field so netlify forms can work with our react generated form */}
+    <input type="hidden" name={FormNameForNetlify} value="contact" />
     <div>
       <Field
         type="text"
