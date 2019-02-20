@@ -3,20 +3,19 @@ import { withFormik, Form, Field } from 'formik'
 import * as Yup from 'yup' //Yup has some bug due to which we need to import it like this
 import { TextField } from 'formik-material-ui'
 import Button from '@material-ui/core/Button'
-import encodeData from './encodeData'
-
-const FormNameForNetlify = 'FormikContactForm'
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
+}
 
 const App = ({ isSubmitting }) => (
   <Form
-    name={FormNameForNetlify}
-    method="POST"
-    data-netlify-recaptcha="true"
+    name="contactForm"
+    method="post"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
   >
-    {/* We need this input field so netlify forms can work with our react generated form */}
-    <input type="hidden" name={FormNameForNetlify} value="contact" />
     <div>
       <Field
         type="text"
@@ -128,7 +127,7 @@ const FormikApp = withFormik({
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encodeData({ 'form-name': `${FormNameForNetlify}`, ...values }),
+      body: encode({ 'form-name': 'contactForm', ...values }),
     }).catch(error => alert(error))
 
     setTimeout(() => {
