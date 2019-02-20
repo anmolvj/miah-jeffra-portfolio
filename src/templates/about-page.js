@@ -5,8 +5,8 @@ import ReactMarkdown from 'react-markdown'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ content, html, bodyIsMarkdown }) => {
-  console.log(content) //TEST CODE
+export const AboutPageTemplate = ({ title, html, bodyIsMarkdown }) => {
+  // console.log(content) //TEST CODE
   return (
     <section className="section section--gradient">
       <div className="container">
@@ -14,9 +14,9 @@ export const AboutPageTemplate = ({ content, html, bodyIsMarkdown }) => {
           <div className="column is-10 is-offset-1">
             <div className="section">
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {content.title}
+                {title}
               </h2>
-              <h3>
+              {/* <h3>
                 MAIN IMAGE: image={content.mainImage.image} AND imageAlt=
                 {content.mainImage.imageAlt}
               </h3>
@@ -29,7 +29,7 @@ export const AboutPageTemplate = ({ content, html, bodyIsMarkdown }) => {
                     </p>
                   )
                 }
-              )}
+              )} */}
               <section>
                 {bodyIsMarkdown ? (
                   <ReactMarkdown source={html} />
@@ -46,23 +46,25 @@ export const AboutPageTemplate = ({ content, html, bodyIsMarkdown }) => {
 }
 
 const AboutPage = ({ data }) => {
-  const { markdownRemark: page } = data
+  const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
       <AboutPageTemplate
-        content={page.frontmatter}
-        html={page.html}
-        bodyIsMarkdown={page.bodyIsMarkdown}
+        title={frontmatter.title}
       />
     </Layout>
   )
 }
 
-AboutPage.propTypes = {
-  data: PropTypes.object.isRequired,
-}
 
+AboutPage.propTypes = {
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.object,
+    }),
+  }),
+}
 export default AboutPage
 
 export const aboutPageQuery = graphql`

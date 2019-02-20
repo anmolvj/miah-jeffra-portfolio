@@ -4,11 +4,12 @@ import { AboutPageTemplate } from '../../templates/about-page'
 
 const AboutPagePreview = ({ entry }) => (
   <AboutPageTemplate
-    page={{
-      page: entry.getIn(['data']).toJS(),
-      html: entry.getIn(['data', 'body']),
-      bodyIsMarkdown: true,
-    }}
+   title={entry.getIn(['data', 'title'])}
+    // page={{
+    //   page: entry.getIn(['data']).toJS(),
+    //   html: entry.getIn(['data', 'body']),
+    //   bodyIsMarkdown: true,
+    // }}
   />
 )
 
