@@ -6,11 +6,6 @@ import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 
 export const AboutPageTemplate = ({ content, html, bodyIsMarkdown }) => {
-  const {
-    title,
-    mainImage: { image, imageAlt },
-    awards,
-  } = content
   console.log(content) //TEST CODE
   return (
     <section className="section section--gradient">
@@ -19,12 +14,13 @@ export const AboutPageTemplate = ({ content, html, bodyIsMarkdown }) => {
           <div className="column is-10 is-offset-1">
             <div className="section">
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
+                {content.title}
               </h2>
               <h3>
-                MAIN IMAGE: image={image} AND imageAlt={imageAlt}
+                MAIN IMAGE: image={content.mainImage.image} AND imageAlt=
+                {content.mainImage.imageAlt}
               </h3>
-              {awards.map(
+              {content.awards.map(
                 ({ awardTitle, awardImage: { image, imageAlt, name } }) => {
                   return (
                     <p>
