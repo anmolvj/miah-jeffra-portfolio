@@ -5,9 +5,11 @@ import { TextField } from 'formik-material-ui'
 import Button from '@material-ui/core/Button'
 import encodeData from './encodeData'
 
+const FormNameForNetlify = 'FormikContactForm'
+
 const App = ({ isSubmitting }) => (
   <Form
-    name="contactFromV1"
+    name={FormNameForNetlify}
     method="POST"
     data-netlify-recaptcha="true"
     data-netlify="true"
@@ -124,7 +126,7 @@ const FormikApp = withFormik({
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encodeData({ 'form-name': 'contactForm', ...values }),
+      body: encodeData({ 'form-name': `${FormNameForNetlify}`, ...values }),
     }).catch(error => alert(error))
 
     setTimeout(() => {
