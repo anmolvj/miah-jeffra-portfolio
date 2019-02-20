@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import ReactMarkdown from 'react-markdown'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
+import Books from '../components/Books'
 
 export const PublicationPageTemplate = ({ page }) => {
   // console.log(content) //TEST CODE
@@ -29,6 +30,7 @@ export const PublicationPageTemplate = ({ page }) => {
                   <HTMLContent content={page.html} />
                 )}
               </section>
+              <Books />
             </div>
           </div>
         </div>
