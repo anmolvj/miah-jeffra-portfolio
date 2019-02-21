@@ -2,17 +2,17 @@
 templateKey: about-page
 title: Miah Jeffra
 mainImage:
-  image: /img/miahjeffra.png
+  image: /img/sample-book.jpg
   imageAlt: Miah Jeffra.
 awards:
   - awardTitle: First Award
     awardImage: 
-      image: /img/award1.jpg
+      image: /img/sample-book.jpg
       imageAlt: Award 1
       name: First Award Image
   - awardTitle: Second Award
     awardImage: 
-      image: /img/award2.jpg
+      image: /img/sample-book.jpg
       imageAlt: Award 2
       name: Second Award Image    
 seo:

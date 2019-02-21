@@ -2,20 +2,20 @@
 templateKey: 'book-page'
 title: 'First Book'
 date: 2016-12-17T15:04:10.000Z
-coverImage: "some-image-url" 
+coverImage: /img/sample-book.jpg
 description: >-
   This is some desccription for the first book
 reviews:
-  - reviewerName: "Common Man"
-    message: "This is an excellent work or writing."
-  - reviewerName: "Big Publication"
-    message: "Seldom do we come across such great peices of literature."
+  - reviewerName: Common Man
+    message: This is an excellent work or writing.
+  - reviewerName: Big Publication
+    message: Seldom do we come across such great peices of literature.
 linksToBuy:
-  - label: "Link A"
-    image: "some_image.png"
-    linkURL: "some_external_url.com"
+  - label: Link A
+    image: /img/sample-book.jpg
+    linkURL: some_external_url.com"
   - label: "Link B"
-    image: "some_image.png"
+    image: /img/sample-book.jpg
     linkURL: "some_external_url.com"   
 ---
 

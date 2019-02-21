@@ -38,7 +38,13 @@ export default props => (
                 title
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
-                coverImage
+                coverImage {
+                  childImageSharp {
+                    fluid(maxWidth: 2048, quality: 100) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
                 description
                 reviews {
                   reviewerName
@@ -46,7 +52,13 @@ export default props => (
                 }
                 linksToBuy {
                   label
-                  image
+                  image {
+                    childImageSharp {
+                      fluid(maxWidth: 2048, quality: 100) {
+                        ...GatsbyImageSharpFluid
+                      }
+                    }
+                  }
                   linkURL
                 }
               }

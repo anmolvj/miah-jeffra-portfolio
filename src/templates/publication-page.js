@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 import Books from '../components/Books'
+import Img from 'gatsby-image'
 
 export const PublicationPageTemplate = ({ page }) => {
   // console.log(content) //TEST CODE
@@ -14,12 +15,14 @@ export const PublicationPageTemplate = ({ page }) => {
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="section">
-              <Books />
+              {/* <Books /> */}
               {page.frontmatter.publicationList.map(
                 ({ title, publicationImage: { image, imageAlt } }) => {
                   return (
                     <p>
-                      publicationName={title} image={image} imageAlt={imageAlt}{' '}
+                      publicationName={title}{' '}
+                      <Img fluid={image.childImageSharp.fluid} alt={imageAlt} />{' '}
+                      imageAlt={imageAlt}{' '}
                     </p>
                   )
                 }
@@ -63,7 +66,13 @@ export const publicationPageQuery = graphql`
         publicationList {
           title
           publicationImage {
-            image
+            image {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             imageAlt
           }
         }

@@ -4,12 +4,14 @@ import { graphql } from 'gatsby'
 import ReactMarkdown from 'react-markdown'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
+import Img from 'gatsby-image'
 
 export const BookPageTemplate = ({ page }) => {
   return (
     <section className="section section--gradient">
       <h1>{page.frontmatter.title}</h1>
-      <h3>{page.frontmatter.coverImage}</h3>
+      <Img fluid={page.frontmatter.coverImage.childImageSharp.fluid} />
+      {/* <h3>{page.frontmatter.coverImage}</h3> */}
       <h4>{page.frontmatter.description}</h4>
       {page.frontmatter.reviews.map(({ reviewerName, message }) => {
         return (
@@ -20,9 +22,10 @@ export const BookPageTemplate = ({ page }) => {
       })}
       {page.frontmatter.linksToBuy.map(({ label, image, linkURL }) => {
         return (
-          <h3>
-            Buy from {label} @ "{linkURL}". Image - {image}
-          </h3>
+          <div>
+            Buy from {label} @ "{linkURL}".{' '}
+            <Img fluid={image.childImageSharp.fluid} />
+          </div>
         )
       })}
       <section>
@@ -59,7 +62,13 @@ export const bookPageQuery = graphql`
       html
       frontmatter {
         title
-        coverImage
+        coverImage {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         description
         reviews {
           reviewerName
@@ -67,7 +76,13 @@ export const bookPageQuery = graphql`
         }
         linksToBuy {
           label
-          image
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           linkURL
         }
       }

@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import Paper from '@material-ui/core/Paper'
+import Img from 'gatsby-image'
 
 const Container = styled(Paper)`
   border: 1px solid lightgrey;
@@ -60,7 +61,9 @@ const BuyLinkLabelContainer = styled.div`
 
 const LinkToBuy = ({ label, image, linkURL }) => (
   <LinkToBuyContainer>
-    <BuyLinkImageContainer>Image: {image}</BuyLinkImageContainer>
+    <BuyLinkImageContainer>
+      <Img fluid={image.childImageSharp.fluid} />
+    </BuyLinkImageContainer>
     <BuyLinkLabelContainer>
       {' '}
       <h3>Label: {label}</h3>
@@ -105,22 +108,3 @@ export default ({
     )}
   </Container>
 )
-
-{
-  /* <div className="is-parent column is-6" key={id}>
-    <article className="tile is-child box notification">
-      <p>
-        <Link className="title has-text-primary is-size-4" to={bookPageLink}>
-          {title} {coverImage} {description}
-        </Link>
-        <span> &bull; </span>
-        <span className="subtitle is-size-5 is-block">{date}</span>
-      </p>
-      <p>
-        <Link className="button" to={bookPageLink}>
-          Keep Reading →
-        </Link>
-      </p>
-    </article>
-  </div> */
-}

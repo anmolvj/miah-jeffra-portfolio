@@ -1,12 +1,12 @@
 ---
 templateKey: publication-page
 publicationList:
-    - title: "Publication A"
+    - title: Publication A
       publicationImage:
-        image: "image.png"
-        imageAlt: "publication-A-image"
-    - title: "Publication B"
+        image: /img/sample-book.jpg
+        imageAlt: sample book
+    - title: Publication B
       publicationImage:
-        image: "image.png"
-        imageAlt: "publication-B-image"
+        image: /img/sample-book.jpg
+        imageAlt: sample book
 ---

@@ -4,44 +4,36 @@ import { graphql } from 'gatsby'
 import ReactMarkdown from 'react-markdown'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
+import Img from 'gatsby-image'
 
 export const AboutPageTemplate = ({ page }) => {
   // console.log(content) //TEST CODE
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {page.frontmatter.title}
-              </h2>
-              <h3>
-                MAIN IMAGE: image={page.frontmatter.mainImage.image} AND
-                imageAlt={page.frontmatter.mainImage.imageAlt}
-              </h3>
-              {page.frontmatter.awards.map(
-                ({ awardTitle, awardImage: { image, imageAlt, name } }) => {
-                  return (
-                    <p>
-                      awardTitle={awardTitle} image={image} imageAlt={imageAlt}{' '}
-                      name={name}{' '}
-                    </p>
-                  )
-                }
-              )}
-              <section>
-                {page.bodyIsMarkdown ? (
-                  <ReactMarkdown source={page.html} />
-                ) : (
-                  <HTMLContent content={page.html} />
-                )}
-              </section>
+    <div>
+      <Img
+        fluid={page.frontmatter.mainImage.image.childImageSharp.fluid}
+        alt={page.frontmatter.mainImage.imageAlt}
+      />
+
+      {page.frontmatter.awards.map(
+        ({ awardTitle, awardImage: { image, imageAlt, name } }) => {
+          return (
+            <div>
+              awardTitle={awardTitle}{' '}
+              <Img fluid={image.childImageSharp.fluid} alt={imageAlt} />{' '}
+              imageAlt={imageAlt} name={name}{' '}
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          )
+        }
+      )}
+      <section>
+        {page.bodyIsMarkdown ? (
+          <ReactMarkdown source={page.html} />
+        ) : (
+          <HTMLContent content={page.html} />
+        )}
+      </section>
+    </div>
   )
 }
 
@@ -68,13 +60,25 @@ export const aboutPageQuery = graphql`
       frontmatter {
         title
         mainImage {
-          image
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           imageAlt
         }
         awards {
           awardTitle
           awardImage {
-            image
+            image {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             imageAlt
             name
           }
