@@ -5,17 +5,18 @@ import styled from 'styled-components'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 
-import './all.sass'
-
 const SiteContainer = styled.div`
   margin: 0;
   padding: 0%;
+  background-color: #fffaf0;
 `
 
 const Body = styled.div`
-  width: 80%;
+  width: 70%;
+  overflow: hidden;
   margin: auto;
-  background-color: #fffaf0;
+  font-family: 'Karla', sans-serif;
+  color: #333333;
 `
 
 const TemplateWrapper = ({ children }) => (
@@ -69,6 +70,10 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
+          <link
+            href="https://fonts.googleapis.com/css?family=Karla"
+            rel="stylesheet"
+          />
         </Helmet>
         <Body>
           <Header title={data.site.siteMetadata.title} />

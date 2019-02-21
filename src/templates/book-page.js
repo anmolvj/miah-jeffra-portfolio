@@ -9,7 +9,7 @@ export const BookPageTemplate = ({ page }) => {
   return (
     <section className="section section--gradient">
       <h1>{page.frontmatter.title}</h1>
-      <h3>{page.frontmatter.coverImage}</h3>
+      {/* <h3>{page.frontmatter.coverImage}</h3> */}
       <h4>{page.frontmatter.description}</h4>
       {page.frontmatter.reviews.map(({ reviewerName, message }) => {
         return (
@@ -18,13 +18,13 @@ export const BookPageTemplate = ({ page }) => {
           </h3>
         )
       })}
-      {page.frontmatter.linksToBuy.map(({ label, image, linkURL }) => {
+      {/* {page.frontmatter.linksToBuy.map(({ label, image, linkURL }) => {
         return (
           <h3>
             Buy from {label} @ "{linkURL}". Image - {image}
           </h3>
         )
-      })}
+      })} */}
       <section>
         {page.bodyIsMarkdown ? (
           <ReactMarkdown source={page.html} />
@@ -59,17 +59,35 @@ export const bookPageQuery = graphql`
       html
       frontmatter {
         title
-        coverImage
+        coverImage {
+          alt
+          image {
+            childImageSharp {
+              fluid(maxWidth: 526, quality: 92) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
         description
         reviews {
           reviewerName
           message
         }
-        linksToBuy {
-          label
-          image
-          linkURL
-        }
+        # linksToBuy {
+        #   label
+        #   linkImage {
+        #     alt
+        #     image {
+        #       childImageSharp {
+        #         fluid(maxWidth: 526, quality: 92) {
+        #           ...GatsbyImageSharpFluid
+        #         }
+        #       }
+        #     }
+        #   }
+        #   linkURL
+        # }
       }
     }
   }

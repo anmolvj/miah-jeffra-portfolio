@@ -18,7 +18,10 @@ const Container = styled.div`
   margin: auto;
 `
 const Divider = styled.hr`
-  width: 80%;
+  width: 60%;
+  height: 2px;
+  background-color: black;
+  margin: auto;
 `
 const Content = styled.div`
   text-align: center;

@@ -15,7 +15,16 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "book-page"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Cover Image", name: "coverImage", widget: "image"}
+      - {
+          label: "Cover Image", 
+          name: "coverImage", 
+          widget: "object", 
+          fields: 
+          [
+            {label: Image, name: image, widget: image}, 
+            {label: Alt, name: alt, widget: string}
+            ]
+            }
       - {label: "Description", name: "description", widget: "text"}
       - {
           label: "Reviews", 
@@ -33,9 +42,18 @@ collections:
           widget: "list",
           fields: [
             {label: "Label", name: "label", widget: "string"},
-            {label: "Image", name: "image", widget: "image"},
-            {label: "LinkURL", name: "linkURL", widget: "string"}
-          ]
+            {
+                label: "Link Image", 
+                name: "linkImage", 
+                widget: "object", 
+                fields: 
+                [
+                  {label: Image, name: image, widget: image}, 
+                  {label: Alt, name: alt, widget: string}
+                  ]
+              },
+              {label: "LinkURL", name: "linkURL", widget: "string"}
+            ]
           }
 
   - name: "blog"
