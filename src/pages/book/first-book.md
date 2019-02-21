@@ -1,6 +1,7 @@
 ---
 templateKey: 'book-page'
 title: 'First Book'
+date: 2016-12-17T15:04:10.000Z
 coverImage: "some-image-url" 
 description: >-
   This is some desccription for the first book
