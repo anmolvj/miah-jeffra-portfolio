@@ -1,6 +1,5 @@
 import React from 'react'
 import { StaticQuery, graphql, Link } from 'gatsby'
-import PropTypes from 'prop-types'
 import Book from './Book'
 
 const BookWithReview = props => {
@@ -38,7 +37,16 @@ export default props => (
                 title
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
-                coverImage
+                coverImage {
+                  alt
+                  image {
+                    childImageSharp {
+                      fluid(maxWidth: 526, quality: 92) {
+                        ...GatsbyImageSharpFluid
+                      }
+                    }
+                  }
+                }
                 description
                 reviews {
                   reviewerName
@@ -46,7 +54,16 @@ export default props => (
                 }
                 linksToBuy {
                   label
-                  image
+                  linkImage {
+                    alt
+                    image {
+                      childImageSharp {
+                        fluid(maxWidth: 526, quality: 92) {
+                          ...GatsbyImageSharpFluid
+                        }
+                      }
+                    }
+                  }
                   linkURL
                 }
               }
