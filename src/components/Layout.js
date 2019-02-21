@@ -10,12 +10,12 @@ import './all.sass'
 const SiteContainer = styled.div`
   margin: 0;
   padding: 0%;
+  background-color: #fffaf0;
 `
 
 const Body = styled.div`
   width: 80%;
   margin: auto;
-  background-color: #fffaf0;
 `
 
 const TemplateWrapper = ({ children }) => (
