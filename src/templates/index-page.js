@@ -1,21 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import { Link, graphql } from 'gatsby'
-
+import Books from '../components/Books'
 import Layout from '../components/Layout'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
 
-export const IndexPageTemplate = ({
-  image,
-  title,
-  heading,
-  subheading,
-  mainpitch,
-  description,
-  intro,
-  main,
-}) => <div>LANDING PAGE</div>
+const Container = styled.div``
+
+export const IndexPageTemplate = () => (
+  <Container>
+    <Books />
+  </Container>
+)
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
