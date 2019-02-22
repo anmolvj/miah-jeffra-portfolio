@@ -17,6 +17,9 @@ const Body = styled.div`
   margin: 0 auto;
   font-family: 'Karla', sans-serif;
   color: #333333;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 `
 
 const TemplateWrapper = ({ children }) => (
