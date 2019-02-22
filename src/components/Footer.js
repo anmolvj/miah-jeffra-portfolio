@@ -2,17 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import BuildIcon from '@material-ui/icons/Build'
 import BrushIcon from '@material-ui/icons/Brush'
-import { withStyles } from '@material-ui/core/styles'
-import red from '@material-ui/core/colors/red'
-import { relative } from 'path'
-
-const styles = theme => ({
-  icon: {
-    color: red[800],
-    position: relative,
-    bottom: '-30px',
-  },
-})
 
 const Container = styled.div`
   margin: auto;
@@ -37,7 +26,8 @@ const LinkedInLink = styled.a`
   }
 `
 
-const Footer = ({ classes }) => (
+// const Footer = ({ classes }) => (
+const Footer = () => (
   <Container>
     <Divider />
     <Content>
@@ -45,16 +35,16 @@ const Footer = ({ classes }) => (
         href="https://www.linkedin.com/in/anmolvijayvargiya"
         target="_blank"
       >
-        Anmol Vijayvargiya <BuildIcon className={classes.icon} />
+        Anmol Vijayvargiya <BuildIcon />
       </LinkedInLink>
       <LinkedInLink
         href="https://www.linkedin.com/in/asha-latha-amara"
         target="_blank"
       >
-        Asha Latha Amara <BrushIcon className={classes.icon} />
+        Asha Latha Amara <BrushIcon />
       </LinkedInLink>
     </Content>
   </Container>
 )
 
-export default withStyles(styles)(Footer)
+export default Footer
