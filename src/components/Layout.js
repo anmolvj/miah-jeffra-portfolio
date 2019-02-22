@@ -14,7 +14,7 @@ const SiteContainer = styled.div`
 const Body = styled.div`
   width: 70%;
   overflow: hidden;
-  margin: auto;
+  margin: 0 auto;
   font-family: 'Karla', sans-serif;
   color: #333333;
 `
