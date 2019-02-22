@@ -7,8 +7,7 @@ import ReviewBox from './Review'
 import PurchaseLink from './PurchaseLink'
 import Cover from './Cover'
 
-const Container = styled(Paper)`
-  border: 1px solid lightgrey;
+const Container = styled.div`
   margin: 10px;
   padding: 20px;
 `

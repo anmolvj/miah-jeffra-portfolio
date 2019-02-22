@@ -1,41 +1,42 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import ReactMarkdown from 'react-markdown'
+import styled from 'styled-components'
 import Layout from '../components/Layout'
-import { HTMLContent } from '../components/Content'
 import Books from '../components/Books'
+import Publication from '../components/Publication'
+const Container = styled.div``
+
+const PublicationContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &:after {
+    content: '';
+    flex: auto;
+  }
+`
 
 export const PublicationPageTemplate = ({ page }) => {
-  // console.log(content) //TEST CODE
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <Books />
-              {page.frontmatter.publicationList.map(
-                ({ title, publicationImage: { image, imageAlt } }) => {
-                  return (
-                    <p>
-                      publicationName={title} image={image} imageAlt={imageAlt}{' '}
-                    </p>
-                  )
-                }
-              )}
-              <section>
-                {page.bodyIsMarkdown ? (
-                  <ReactMarkdown source={page.html} />
-                ) : (
-                  <HTMLContent content={page.html} />
-                )}
-              </section>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Container>
+      <h1>Books</h1>
+      <Books />
+      <h1>Publications</h1>
+      <PublicationContainer>
+        {page.frontmatter.publicationList.map(({ title, publicationImage }) => {
+          console.log(title)
+          return (
+            <Publication
+              title={title}
+              imageFluid={publicationImage.image.childImageSharp.fluid}
+              alt={publicationImage.alt}
+            />
+          )
+        })}
+      </PublicationContainer>
+    </Container>
   )
 }
 
@@ -63,8 +64,14 @@ export const publicationPageQuery = graphql`
         publicationList {
           title
           publicationImage {
-            image
-            imageAlt
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 526, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
