@@ -12,10 +12,7 @@ const PublicationContainer = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  &:after {
-    content: '';
-    flex: auto;
-  }
+  text-align: center;
 `
 
 const TitleContainer = styled.div`

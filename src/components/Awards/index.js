@@ -7,10 +7,6 @@ const Container = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  &:after {
-    content: '';
-    flex: auto;
-  }
 `
 
 export default ({ awards }) => (

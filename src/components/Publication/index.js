@@ -3,17 +3,16 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 
 const Container = styled.div`
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 150px;
   padding: 10px;
-  margin: 30px;
+  margin-bottom: 10px;
   position: relative;
-  border: 2px solid grey;
-  border-radius: 5px;
 `
 const ImageContainer = styled.div`
   width: 100px;
-  height: 150px;
   margin: auto;
   vertical-align: center;
 `

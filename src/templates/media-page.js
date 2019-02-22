@@ -1,20 +1,28 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import ReactMarkdown from 'react-markdown'
+import styled from 'styled-components'
 import Layout from '../components/Layout'
-import { HTMLContent } from '../components/Content'
 import YoutubePlayer from '../components/YouTube'
-export const MediaPageTemplate = ({ page }) => {
-  // console.log(content) //TEST CODE
-  return (
-    <section className="section section--gradient">
-      {page.frontmatter.youtubeVideos.map(({ title, description, url }) => (
-        <YoutubePlayer title={title} description={description} url={url} />
-      ))}
-    </section>
-  )
-}
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media (max-width: 1300px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+`
+
+export const MediaPageTemplate = ({ page }) => (
+  <Container className="section section--gradient">
+    {page.frontmatter.youtubeVideos.map(({ title, description, url }) => (
+      <YoutubePlayer title={title} description={description} url={url} />
+    ))}
+  </Container>
+)
 
 const MediaPage = ({ data }) => {
   const { markdownRemark: page } = data

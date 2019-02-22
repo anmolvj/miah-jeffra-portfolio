@@ -2,19 +2,21 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  padding: 10px;
+  margin-bottom: 10px;
+  padding: 0px;
 `
 
 const Review = styled.div`
-  font-size: 14px;
-  display: flex;
-  justify-content: flex-start;
+  font-size: 12px;
+  text-align: left;
+  @media (max-width: 700px) {
+    font-size: 10px;
+  }
 `
 
 const Reviewer = styled.div`
   font-size: 12px;
-  display: flex;
-  justify-content: flex-end;
+  text-align: right;
 `
 
 export default ({ reviewerName, message }) => (
