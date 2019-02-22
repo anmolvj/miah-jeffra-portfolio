@@ -8,8 +8,12 @@ import PurchaseLink from './PurchaseLink'
 import Cover from './Cover'
 
 const Container = styled.div`
-  margin: 10px;
+  margin: auto;
   padding: 20px;
+  width: 70%;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 `
 
 const CoverAndReviewContainer = styled.div`
@@ -23,9 +27,9 @@ const ReviewContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px;
-  padding: 20px;
-  font-size: 10px;
+  margin-bottom: 5px;
+  /* font-size: 8px; */
+  padding-left: 10px;
 `
 
 const DescriptionContainer = styled.div`

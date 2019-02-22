@@ -26,8 +26,11 @@ const Tiltle = styled.h2`
 `
 
 const Map = styled.img`
-  width: 50%;
+  width: 70%;
   margin: auto;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 `
 
 export default () => (
