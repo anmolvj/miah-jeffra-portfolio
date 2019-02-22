@@ -9,9 +9,14 @@ const FormContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 50%;
+  margin: auto;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 `
 
-const Tiltle = styled.h1`
+const Tiltle = styled.h2`
   text-align: center;
 `
 
