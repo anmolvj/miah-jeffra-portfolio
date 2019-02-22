@@ -12,6 +12,7 @@ const SiteContainer = styled.div`
 `
 
 const Body = styled.div`
+  min-height: 100vh;
   width: 70%;
   overflow: hidden;
   margin: 0 auto;

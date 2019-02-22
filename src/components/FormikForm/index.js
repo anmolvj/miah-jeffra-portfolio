@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  display: inline-block;
+  width: 100%;
 `
 
 const FieldContainer = styled.div`
@@ -14,6 +14,14 @@ const FieldContainer = styled.div`
   padding: 10px;
   text-align: center;
 `
+
+const FirstAndLastNameContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+`
+
+const StyledNameField = styled(TextField)``
 
 const encode = data => {
   return Object.keys(data)
@@ -29,32 +37,37 @@ const App = ({ isSubmitting }) => (
       data-netlify="true"
       data-netlify-honeypot="bot-field"
     >
-      <FieldContainer>
-        <Field
-          type="text"
-          name="fname"
-          label="First Name *"
-          component={TextField}
-          variant="outlined"
-          InputLabelProps={{
-            shrink: true,
-          }}
-          margin="normal"
-        />
-      </FieldContainer>
-      <FieldContainer>
-        <Field
-          type="text"
-          name="lname"
-          label="Last Name *"
-          component={TextField}
-          variant="outlined"
-          InputLabelProps={{
-            shrink: true,
-          }}
-          margin="normal"
-        />
-      </FieldContainer>
+      <FirstAndLastNameContainer>
+        <FieldContainer>
+          <Field
+            type="text"
+            name="fname"
+            label="First Name *"
+            component={StyledNameField}
+            variant="outlined"
+            InputLabelProps={{
+              shrink: true,
+            }}
+            fullWidth
+            margin="normal"
+          />
+        </FieldContainer>
+        <FieldContainer>
+          <Field
+            type="text"
+            name="lname"
+            label="Last Name *"
+            component={StyledNameField}
+            variant="outlined"
+            InputLabelProps={{
+              shrink: true,
+            }}
+            fullWidth
+            margin="normal"
+          />
+        </FieldContainer>
+      </FirstAndLastNameContainer>
+
       <FieldContainer>
         <Field
           type="email"
@@ -65,6 +78,7 @@ const App = ({ isSubmitting }) => (
           InputLabelProps={{
             shrink: true,
           }}
+          fullWidth
           margin="normal"
         />
       </FieldContainer>
@@ -78,6 +92,7 @@ const App = ({ isSubmitting }) => (
           InputLabelProps={{
             shrink: true,
           }}
+          fullWidth
           margin="normal"
         />
       </FieldContainer>
@@ -91,6 +106,7 @@ const App = ({ isSubmitting }) => (
           InputLabelProps={{
             shrink: true,
           }}
+          fullWidth
           margin="normal"
           multiline
         />

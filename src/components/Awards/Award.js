@@ -7,9 +7,9 @@ const Container = styled.div`
   width: 150px;
   padding: 10px;
   margin: 30px;
-  border-radius: 10px;
   position: relative;
   border: 2px solid grey;
+  border-radius: 5px;
 `
 
 const Title = styled.h1`

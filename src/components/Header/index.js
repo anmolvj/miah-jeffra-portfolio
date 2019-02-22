@@ -52,7 +52,7 @@ const TitleContainer = styled.div`
   width: 100%;
 `
 const Title = styled.h1`
-  font-size: 32px;
+  font-size: 48px;
 `
 
 const NavbarContainer = styled.div`

@@ -18,12 +18,26 @@ const PublicationContainer = styled.div`
   }
 `
 
+const TitleContainer = styled.div`
+  text-align: center;
+  padding: 30px;
+`
+const Title = styled.div`
+  display: inline-block;
+  border-bottom: 2px solid #333333;
+  font-size: 32px;
+`
+
 export const PublicationPageTemplate = ({ page }) => {
   return (
     <Container>
-      <h1>Books</h1>
+      <TitleContainer>
+        <Title>Books</Title>
+      </TitleContainer>
       <Books />
-      <h1>Publications</h1>
+      <TitleContainer>
+        <Title>Publications</Title>
+      </TitleContainer>
       <PublicationContainer>
         {page.frontmatter.publicationList.map(({ title, publicationImage }) => {
           console.log(title)
