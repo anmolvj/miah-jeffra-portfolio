@@ -26,7 +26,7 @@ export const PublicationPageTemplate = ({ page }) => {
       <h1>Publications</h1>
       <PublicationContainer>
         {page.frontmatter.publicationList.map(({ title, publicationImage }) => {
-          console.log(publicationImage)
+          console.log(title)
           return (
             <Publication
               title={title}
