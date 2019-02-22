@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import Paper from '@material-ui/core/Paper'
+import Img from 'gatsby-image'
 
-const LinkToBuyContainer = styled(Paper)`
-  border: 1px solid lightblue;
+const Container = styled.div`
   margin: 10px;
   padding: 5px;
   display: flex;
@@ -11,25 +11,33 @@ const LinkToBuyContainer = styled(Paper)`
   justify-content: space-between;
 `
 
-const BuyLinkImageContainer = styled.div`
-  border: 1px solid lightgrey;
-  margin: 10px;
-  padding: 20px;
+const ImageContainer = styled.div`
+  width: 100px;
+  margin: auto;
 `
 
-const BuyLinkLabelContainer = styled.div`
-  border: 1px solid lightgrey;
-  margin: 10px;
-  padding: 20px;
+const LabelContainer = styled.div`
+  padding: 5px;
+`
+const ExternalLink = styled.a`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
 `
 
 export default ({ label, linkImage, linkURL }) => (
-  <LinkToBuyContainer>
-    <BuyLinkImageContainer />
-    <BuyLinkLabelContainer>
-      {' '}
-      <h3>Label: {label}</h3>
-      <h4>LINK: {linkURL}</h4>
-    </BuyLinkLabelContainer>
-  </LinkToBuyContainer>
+  <Container>
+    <ExternalLink href={linkURL} target="_blank">
+      <ImageContainer>
+        <Img
+          fluid={linkImage.image.childImageSharp.fluid}
+          alt={linkImage.alt}
+        />
+      </ImageContainer>
+      <LabelContainer>{label}</LabelContainer>
+    </ExternalLink>
+  </Container>
 )

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import Paper from '@material-ui/core/Paper'
-import Img from 'gatsby-image'
+
 import ReviewBox from './Review'
 import PurchaseLink from './PurchaseLink'
 import Cover from './Cover'
@@ -35,7 +35,10 @@ const DescriptionContainer = styled.div`
   padding: 20px;
 `
 const BuyLinksContainer = styled.div`
-  border: 1px solid lightgrey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
   margin: 10px;
   padding: 20px;
 `
