@@ -58,7 +58,7 @@ export default props => (
                     alt
                     image {
                       childImageSharp {
-                        fluid(maxWidth: 526, quality: 92) {
+                        fluid(maxWidth: 300, quality: 92) {
                           ...GatsbyImageSharpFluid
                         }
                       }
