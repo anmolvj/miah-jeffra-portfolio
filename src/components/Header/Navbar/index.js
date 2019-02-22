@@ -13,7 +13,7 @@ const isActive = ({ isCurrent }) => {
   return isCurrent ? { className: 'is-active' } : { className: 'is-not-active' }
 }
 
-const Navbar = () => {
+export default () => {
   return (
     <Container>
       <Link className="navbar-item" getProps={isActive} to="/about">
@@ -31,5 +31,3 @@ const Navbar = () => {
     </Container>
   )
 }
-
-export default Navbar

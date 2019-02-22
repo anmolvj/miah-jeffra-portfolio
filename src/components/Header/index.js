@@ -1,8 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import Navbar from './Navbar'
 import Hamburger from 'react-hamburger-menu'
+import Navbar from './Navbar'
+import TopNavbar from './TopNavbar'
+
 import mutedposthorn from '../../img/muted-post-horn.png'
 import './styles.sass'
 
@@ -19,9 +21,18 @@ const LogoAndTitleContainer = styled.div`
 
 const HamburgerMenuContainer = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   width: 100%;
+`
+
+const HamburgerMenuInnerContainer = styled.div`
+  display: none;
+  width: 100%;
+  @media (max-width: 700px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 const LogoContainer = styled.div`
@@ -47,59 +58,69 @@ const Title = styled.h1`
 const NavbarContainer = styled.div`
   width: 80%;
   margin: auto;
+  @media (max-width: 700px) {
+    display: none;
+  }
 `
 
-class HamburgerMenu extends React.Component {
+const TopNavbarContainer = styled.div`
+  display: ${props => (props.show ? 'block' : 'none')};
+`
+
+class Header extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { isOpen: false }
-    this.handleClick = this.handleClick.bind(this)
+    this.state = { showTopNavbar: false }
+    this.setTopNavBar = this.setTopNavBar.bind(this)
   }
 
-  handleClick = () => {
+  setTopNavBar = () => {
     this.setState({
-      isOpen: !this.state.isOpen,
+      showTopNavbar: !this.state.showTopNavbar,
     })
   }
 
   render() {
     return (
-      <Hamburger
-        isOpen={this.state.isOpen}
-        menuClicked={this.handleClick}
-        width={18}
-        height={15}
-        strokeWidth={1.5}
-        rotate={0}
-        color="#333333"
-        borderRadius={0}
-        animationDuration={0.2}
-      />
+      <Container>
+        <TopNavbarContainer show={this.state.showTopNavbar}>
+          <TopNavbar />
+        </TopNavbarContainer>
+        <LogoAndTitleContainer>
+          <LogoContainer>
+            <Logo src={mutedposthorn} alt="Muted-Post-Horn" />
+          </LogoContainer>
+          <TitleContainer>
+            <Title>
+              <Link className="header" to="/">
+                {this.props.title}
+              </Link>
+            </Title>
+          </TitleContainer>
+
+          <HamburgerMenuContainer>
+            <HamburgerMenuInnerContainer>
+              <Hamburger
+                isOpen={this.state.showTopNavbar}
+                menuClicked={this.setTopNavBar}
+                width={18}
+                height={15}
+                strokeWidth={1.5}
+                rotate={0}
+                color="#333333"
+                borderRadius={0}
+                animationDuration={0.2}
+              />
+            </HamburgerMenuInnerContainer>
+          </HamburgerMenuContainer>
+        </LogoAndTitleContainer>
+
+        <NavbarContainer>
+          <Navbar />
+        </NavbarContainer>
+      </Container>
     )
   }
 }
 
-export default ({ title }) => (
-  <Container>
-    <LogoAndTitleContainer>
-      <LogoContainer>
-        <Logo src={mutedposthorn} alt="Muted-Post-Horn" />
-      </LogoContainer>
-      <TitleContainer>
-        <Title>
-          <Link className="header" to="/">
-            {title}
-          </Link>
-        </Title>
-      </TitleContainer>
-
-      <HamburgerMenuContainer>
-        <HamburgerMenu />
-      </HamburgerMenuContainer>
-    </LogoAndTitleContainer>
-
-    <NavbarContainer>
-      <Navbar />
-    </NavbarContainer>
-  </Container>
-)
+export default Header

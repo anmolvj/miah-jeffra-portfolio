@@ -7,7 +7,7 @@ import Header from '../components/Header'
 
 const SiteContainer = styled.div`
   margin: 0;
-  padding: 0%;
+  padding: 0;
   background-color: #fffaf0;
 `
 
