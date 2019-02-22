@@ -167,7 +167,7 @@ collections:
                   widget: "object",
                   fields: [
                     {label: "Image", name: "image", widget: "image"},
-                    {label: "Description", name: "imageAlt", widget: "string"}
+                    {label: "Description", name: "alt", widget: "string"}
                   ]
                   }
               ]

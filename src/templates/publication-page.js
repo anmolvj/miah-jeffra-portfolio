@@ -4,25 +4,37 @@ import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import Layout from '../components/Layout'
 import Books from '../components/Books'
-
+import Publication from '../components/Publication'
 const Container = styled.div``
-const PublicationContainer = styled.div``
+
+const PublicationContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &:after {
+    content: '';
+    flex: auto;
+  }
+`
 
 export const PublicationPageTemplate = ({ page }) => {
-  // console.log(content) //TEST CODE
   return (
     <Container>
+      <h1>Books</h1>
       <Books />
+      <h1>Publications</h1>
       <PublicationContainer>
-        {page.frontmatter.publicationList.map(
-          ({ title, publicationImage: { image, imageAlt } }) => {
-            return (
-              <p>
-                publicationName={title} image={image} imageAlt={imageAlt}{' '}
-              </p>
-            )
-          }
-        )}
+        {page.frontmatter.publicationList.map(({ title, publicationImage }) => {
+          console.log(publicationImage)
+          return (
+            <Publication
+              title={title}
+              imageFluid={publicationImage.image.childImageSharp.fluid}
+              alt={publicationImage.alt}
+            />
+          )
+        })}
       </PublicationContainer>
     </Container>
   )
@@ -52,8 +64,14 @@ export const publicationPageQuery = graphql`
         publicationList {
           title
           publicationImage {
-            image
-            imageAlt
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 526, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
