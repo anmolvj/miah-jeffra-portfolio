@@ -1,41 +1,30 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import ReactMarkdown from 'react-markdown'
+import styled from 'styled-components'
 import Layout from '../components/Layout'
-import { HTMLContent } from '../components/Content'
 import Books from '../components/Books'
+
+const Container = styled.div``
+const PublicationContainer = styled.div``
 
 export const PublicationPageTemplate = ({ page }) => {
   // console.log(content) //TEST CODE
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <Books />
-              {page.frontmatter.publicationList.map(
-                ({ title, publicationImage: { image, imageAlt } }) => {
-                  return (
-                    <p>
-                      publicationName={title} image={image} imageAlt={imageAlt}{' '}
-                    </p>
-                  )
-                }
-              )}
-              <section>
-                {page.bodyIsMarkdown ? (
-                  <ReactMarkdown source={page.html} />
-                ) : (
-                  <HTMLContent content={page.html} />
-                )}
-              </section>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Container>
+      <Books />
+      <PublicationContainer>
+        {page.frontmatter.publicationList.map(
+          ({ title, publicationImage: { image, imageAlt } }) => {
+            return (
+              <p>
+                publicationName={title} image={image} imageAlt={imageAlt}{' '}
+              </p>
+            )
+          }
+        )}
+      </PublicationContainer>
+    </Container>
   )
 }
 
