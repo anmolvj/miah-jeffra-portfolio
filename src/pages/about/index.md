@@ -95,12 +95,15 @@ seo:
 Miah Jeffra is a writer, artist, curator and educator, currently living in San Francisco.
 A military brat, Jeffra moved throughout their childhood, but most identifies the South as
 home.
+
 They spent their high school years in Baltimore, and then moved to Atlanta, where they
 studied English, Music and Theatre at Oglethorpe University.
+
 Miah later studied in the Master’s Writing Program in  Critical Studies  at the California
 Institute of the Arts and later at San Francisco State University. Jeffra teaches Writing,
 Drama, Media and Cultural Studies at Santa Clara University and The San Francisco
-Art Institute and is Founding Editor of queer literary collaborative,  Foglifter Press .
+Art Institute and is Founding Editor of queer literary collaborative,  Foglifter Press.
+
 Jeffra finds interest in community-centered arts and discourse and chooses to maintain
 a multi-disciplinary studio practice for its collaborative possibilities. The subjects of their
 work range from psychogeography, urban studies and class to gender structures and

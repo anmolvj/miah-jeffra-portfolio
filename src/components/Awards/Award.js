@@ -3,12 +3,13 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 
 const Container = styled.div`
-  flex: 1 0 21%;
-  margin: 5px;
-  height: 100px;
-  background-color: lightpink;
+  display: inline-block;
+  width: 150px;
   padding: 10px;
-  margin: 10px;
+  margin: 30px;
+  border-radius: 10px;
+  position: relative;
+  border: 2px solid grey;
 `
 
 const Title = styled.h1`

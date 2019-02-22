@@ -4,10 +4,13 @@ import Award from './Award'
 
 const Container = styled.div`
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  background-color: green;
-  padding: 10px;
-  margin: 10px;
+  justify-content: space-between;
+  &:after {
+    content: '';
+    flex: auto;
+  }
 `
 
 export default ({ awards }) => (
