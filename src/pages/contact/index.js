@@ -1,32 +1,27 @@
 import React from 'react'
-import { withStyles } from '@material-ui/core/styles'
-import Card from '@material-ui/core/Card'
-import Typography from '@material-ui/core/Typography'
+import styled from 'styled-components'
 import Layout from '../../components/Layout'
 import FormikForm from '../../components/FormikForm'
 
-const styles = {
-  card: {
-    maxWidth: 400,
-    textAlign: 'center',
-    padding: 10,
-  },
-  title: {
-    fontSize: 24,
-  },
-}
+const Container = styled.div``
 
-const SimpleCard = ({ classes }) => (
+const FormContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`
+
+const Tiltle = styled.h1`
+  text-align: center;
+`
+
+export default () => (
   <Layout>
-    <Card className={classes.card}>
-      <Typography className={classes.title} color="textSecondary" gutterBottom>
-        Get in Touch With me!
-      </Typography>
-      <FormikForm />
-    </Card>
+    <Container>
+      <Tiltle>Get in Touch With me!</Tiltle>
+      <FormContainer>
+        <FormikForm />
+      </FormContainer>
+    </Container>
   </Layout>
 )
-
-export default withStyles(styles)(SimpleCard)
-
-// export default () => <Card><FormikForm /></Card>;
