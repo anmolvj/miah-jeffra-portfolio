@@ -3,6 +3,18 @@ import { withFormik, Form, Field } from 'formik'
 import * as Yup from 'yup' //Yup has some bug due to which we need to import it like this
 import { TextField } from 'formik-material-ui'
 import Button from '@material-ui/core/Button'
+import styled from 'styled-components'
+
+const Container = styled.div`
+  display: inline-block;
+`
+
+const FieldContainer = styled.div`
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+`
+
 const encode = data => {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
@@ -10,88 +22,91 @@ const encode = data => {
 }
 
 const App = ({ isSubmitting }) => (
-  <Form
-    name="contactForm"
-    method="post"
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
-  >
-    <div>
-      <Field
-        type="text"
-        name="fname"
-        label="First Name *"
-        component={TextField}
-        variant="outlined"
-        InputLabelProps={{
-          shrink: true,
-        }}
-        margin="normal"
-      />
-    </div>
-    <div>
-      <Field
-        type="text"
-        name="lname"
-        label="Last Name *"
-        component={TextField}
-        variant="outlined"
-        InputLabelProps={{
-          shrink: true,
-        }}
-        margin="normal"
-      />
-    </div>
-    <div>
-      <Field
-        type="email"
-        name="email"
-        label="Email Address *"
-        component={TextField}
-        variant="outlined"
-        InputLabelProps={{
-          shrink: true,
-        }}
-        margin="normal"
-      />
-    </div>
-    <div>
-      <Field
-        type="text"
-        name="purpose"
-        label="Purpose of Enquiry *"
-        component={TextField}
-        variant="outlined"
-        InputLabelProps={{
-          shrink: true,
-        }}
-        margin="normal"
-      />
-    </div>
-    <div>
-      <Field
-        type="text"
-        name="message"
-        label="Message *"
-        component={TextField}
-        variant="outlined"
-        InputLabelProps={{
-          shrink: true,
-        }}
-        margin="normal"
-        multiline
-      />
-    </div>
-    <Button
-      type="submit"
-      variant="raised"
-      color="primary"
-      disabled={isSubmitting}
-      margin="normal"
+  <Container>
+    <Form
+      name="contactForm"
+      method="post"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
     >
-      Submit
-    </Button>
-  </Form>
+      <FieldContainer>
+        <Field
+          type="text"
+          name="fname"
+          label="First Name *"
+          component={TextField}
+          variant="outlined"
+          InputLabelProps={{
+            shrink: true,
+          }}
+          margin="normal"
+        />
+      </FieldContainer>
+      <FieldContainer>
+        <Field
+          type="text"
+          name="lname"
+          label="Last Name *"
+          component={TextField}
+          variant="outlined"
+          InputLabelProps={{
+            shrink: true,
+          }}
+          margin="normal"
+        />
+      </FieldContainer>
+      <FieldContainer>
+        <Field
+          type="email"
+          name="email"
+          label="Email Address *"
+          component={TextField}
+          variant="outlined"
+          InputLabelProps={{
+            shrink: true,
+          }}
+          margin="normal"
+        />
+      </FieldContainer>
+      <FieldContainer>
+        <Field
+          type="text"
+          name="purpose"
+          label="Purpose of Enquiry *"
+          component={TextField}
+          variant="outlined"
+          InputLabelProps={{
+            shrink: true,
+          }}
+          margin="normal"
+        />
+      </FieldContainer>
+      <FieldContainer>
+        <Field
+          type="text"
+          name="message"
+          label="Message *"
+          component={TextField}
+          variant="outlined"
+          InputLabelProps={{
+            shrink: true,
+          }}
+          margin="normal"
+          multiline
+        />
+      </FieldContainer>
+      <FieldContainer>
+        <Button
+          type="submit"
+          variant="outlined"
+          disabled={isSubmitting}
+          margin="normal"
+        >
+          Submit
+        </Button>
+      </FieldContainer>
+    </Form>
+  </Container>
 )
 
 const FormikApp = withFormik({
