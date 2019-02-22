@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
+import './styles.sass'
 
 const Container = styled.div`
   display: flex;
@@ -8,29 +9,25 @@ const Container = styled.div`
   justify-content: space-around;
 `
 
-const Navbar = () => {
+const isActive = ({ isCurrent }) => {
+  return isCurrent ? { className: 'is-active' } : { className: 'is-not-active' }
+}
+
+export default () => {
   return (
     <Container>
-      <Link className="navbar-item" to="/about">
+      <Link className="navbar-item" getProps={isActive} to="/about">
         About
       </Link>
-      <Link className="navbar-item" to="/publication">
+      <Link className="navbar-item" getProps={isActive} to="/publication">
         Publication
       </Link>
-      <Link className="navbar-item" to="/media">
+      <Link className="navbar-item" getProps={isActive} to="/media">
         Media
       </Link>
-      <Link className="navbar-item" to="/contact">
+      <Link className="navbar-item" getProps={isActive} to="/contact">
         Contact
       </Link>
-      {/* <Link className="navbar-item" to="/products">
-        Products
-      </Link>
-      <Link className="navbar-item" to="/blog">
-        Blog
-      </Link> */}
     </Container>
   )
 }
-
-export default Navbar
