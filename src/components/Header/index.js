@@ -69,11 +69,11 @@ class HamburgerMenu extends React.Component {
         menuClicked={this.handleClick}
         width={18}
         height={15}
-        strokeWidth={1}
+        strokeWidth={1.5}
         rotate={0}
-        color="black"
+        color="#333333"
         borderRadius={0}
-        animationDuration={0.5}
+        animationDuration={0.2}
       />
     )
   }
