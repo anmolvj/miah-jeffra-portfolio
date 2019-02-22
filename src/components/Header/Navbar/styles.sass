@@ -1,0 +1,23 @@
+
+.is-active
+  color: #A3C1FF
+  text-decoration: none
+  position: relative
+  border-bottom: 2px solid #A3C1FF 
+
+.is-not-active
+  color: inherit
+  text-decoration: none
+  
+.is-not-active:after 
+  content: ''
+  display: block
+  margin: auto
+  height: 3px
+  width: 0px
+  background: transparent
+  transition: width .5s ease, background-color .5s ease
+
+.is-not-active:hover:after 
+  width: 100%
+  background: #333333

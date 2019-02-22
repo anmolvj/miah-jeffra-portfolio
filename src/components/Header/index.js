@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Navbar from './Navbar'
 import Hamburger from 'react-hamburger-menu'
 import mutedposthorn from '../../img/muted-post-horn.png'
+import './styles.sass'
 
 const Container = styled.div`
   text-align: center;
@@ -86,7 +87,7 @@ export default ({ title }) => (
       </LogoContainer>
       <TitleContainer>
         <Title>
-          <Link className="navbar-item" to="/">
+          <Link className="header" to="/">
             {title}
           </Link>
         </Title>
