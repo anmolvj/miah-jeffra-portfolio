@@ -2,19 +2,17 @@
 templateKey: about-page
 title: Miah Jeffra
 mainImage:
-  image: /img/miahjeffra.png
-  imageAlt: Miah Jeffra.
+  image: /img/headshots/3.jpg
+  alt: Miah Jeffra.
 awards:
-  - awardTitle: First Award
+  - awardTitle: St. Lawrence Book Award
     awardImage: 
-      image: /img/award1.jpg
-      imageAlt: Award 1
-      name: First Award Image
-  - awardTitle: Second Award
+      image: /img/awards/st-lawrence-book-award.png
+      alt: St. Lawrence Book Award
+  - awardTitle: Wasafiri Life Writing Prize
     awardImage: 
-      image: /img/award2.jpg
-      imageAlt: Award 2
-      name: Second Award Image    
+      image: /img/awards/wasafiri-life-writing-prize.png
+      alt: Wasafiri Life Writing Prize  
 seo:
   browserTitle: About | Miah Jeffra
   description: >-

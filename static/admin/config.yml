@@ -112,7 +112,7 @@ collections:
               fields:
                 [
                   { label: "Image", name: "image", widget: "image" },
-                  { label: "Image Description", name: "imageAlt", widget: "string" }
+                  { label: "Image Alt", name: "alt", widget: "string" }
                 ]
             }
           - { label: "Body", name: "body", widget: "markdown" }
@@ -129,9 +129,8 @@ collections:
                     widget: "object",
                     fields:
                       [
-                        { label: "Name", name: "name", widget: "string" },
                         { label: "Image", name: "image", widget: "image" },
-                        { label: "Image Description", name: "imageAlt", widget: "string" }
+                        { label: "Image Alt", name: "alt", widget: "string" }
                       ]
                   }
                 ]
