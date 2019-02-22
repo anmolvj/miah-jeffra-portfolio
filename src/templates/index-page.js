@@ -15,7 +15,7 @@ export const IndexPageTemplate = ({
   description,
   intro,
   main,
-}) => (<div>LANDING PAGE</div>)
+}) => <div>LANDING PAGE</div>
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
