@@ -4,9 +4,11 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 
 const CoverContainer = styled.div`
+margin-left: 7vw;
   width: 300px;
   @media (max-width: 700px) {
     width: 200px;
+    margin-left: 5vw;
   }
 `
 

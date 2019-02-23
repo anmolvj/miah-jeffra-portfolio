@@ -2,7 +2,7 @@
 templateKey: 'media-page'
 youtubeVideos: 
   - title: Miah Jeffra @ Quiet Lightning + Radar Productions
-    description: Some Description
+    description: Miah Jeffra reading for Quiet Lightning and Radar Productions at Eureka Valley Rec Center on February 7th 2016
     url: https://www.youtube.com/watch?v=KAoaPzUEMsI
   - title: Miah Jeffra @ Quiet Lightning
     description: Miah Jeffra reading for Quiet Lightning at The Stud Bar on Monday, February 6, 2017.
