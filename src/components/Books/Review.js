@@ -4,6 +4,16 @@ import styled from 'styled-components'
 const Container = styled.div`
   margin-bottom: 10px;
   padding: 0px;
+  width: 400px;
+  @media (max-width: 650px) {
+    width: 300px;
+  }
+  @media (max-width: 550px) {
+    width: 200px;
+  }
+  @media (max-width: 450px) {
+    width: 150px;
+  }
 `
 
 const Review = styled.div`

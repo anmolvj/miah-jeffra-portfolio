@@ -6,7 +6,7 @@ import Img from 'gatsby-image'
 const CoverContainer = styled.div`
   width: 300px;
   @media (max-width: 700px) {
-    width: 70px;
+    width: 200px;
   }
 `
 
