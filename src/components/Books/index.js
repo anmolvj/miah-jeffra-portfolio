@@ -13,6 +13,8 @@ const BookWithReview = props => {
             id={post.id}
             bookPageLink={post.fields.slug}
             {...post.frontmatter}
+            hideDescription={props.hideDescription}
+            hideLinksToBuy={props.hideLinksToBuy}
           />
         ))}
     </div>

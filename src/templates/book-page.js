@@ -1,38 +1,32 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import { graphql } from 'gatsby'
 import ReactMarkdown from 'react-markdown'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
+import Book from '../components/Books'
+
+const Container = styled.div``
+const BookContainer = styled.div``
+
+const MarkdownContainer = styled.div``
 
 export const BookPageTemplate = ({ page }) => {
   return (
-    <section className="section section--gradient">
-      <h1>{page.frontmatter.title}</h1>
-      {/* <h3>{page.frontmatter.coverImage}</h3> */}
-      <h4>{page.frontmatter.description}</h4>
-      {page.frontmatter.reviews.map(({ reviewerName, message }) => {
-        return (
-          <h3>
-            {reviewerName} said: "{message}"
-          </h3>
-        )
-      })}
-      {/* {page.frontmatter.linksToBuy.map(({ label, image, linkURL }) => {
-        return (
-          <h3>
-            Buy from {label} @ "{linkURL}". Image - {image}
-          </h3>
-        )
-      })} */}
-      <section>
+    <Container>
+      {console.log('PAGE DATA -> ', page)}
+      <BookContainer>
+        <Book {...page.frontmatter} hideDescription={true} />
+      </BookContainer>
+      <MarkdownContainer>
         {page.bodyIsMarkdown ? (
           <ReactMarkdown source={page.html} />
         ) : (
           <HTMLContent content={page.html} />
         )}
-      </section>
-    </section>
+      </MarkdownContainer>
+    </Container>
   )
 }
 
@@ -74,20 +68,20 @@ export const bookPageQuery = graphql`
           reviewerName
           message
         }
-        # linksToBuy {
-        #   label
-        #   linkImage {
-        #     alt
-        #     image {
-        #       childImageSharp {
-        #         fluid(maxWidth: 526, quality: 92) {
-        #           ...GatsbyImageSharpFluid
-        #         }
-        #       }
-        #     }
-        #   }
-        #   linkURL
-        # }
+        linksToBuy {
+          label
+          linkImage {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 526, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          linkURL
+        }
       }
     }
   }

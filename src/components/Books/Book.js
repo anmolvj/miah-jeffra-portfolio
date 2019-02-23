@@ -7,14 +7,7 @@ import ReviewBox from './Review'
 import PurchaseLink from './PurchaseLink'
 import Cover from './Cover'
 
-const Container = styled.div`
-  margin: auto;
-  padding: 20px;
-  width: 70%;
-  @media (max-width: 700px) {
-    width: 100%;
-  }
-`
+const Container = styled.div``
 
 const CoverAndReviewContainer = styled.div`
   display: flex;

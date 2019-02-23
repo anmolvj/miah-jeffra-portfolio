@@ -25,13 +25,21 @@ const Title = styled.div`
   font-size: 32px;
 `
 
+const BooksContainer = styled.div`
+  margin: auto;
+  padding: 20px;
+`
+
 export const PublicationPageTemplate = ({ page }) => {
   return (
     <Container>
       <TitleContainer>
         <Title>Books</Title>
       </TitleContainer>
-      <Books />
+      <BooksContainer>
+        <Books hideDescription={true} hideLinksToBuy={true} />
+      </BooksContainer>
+
       <TitleContainer>
         <Title>Publications</Title>
       </TitleContainer>
