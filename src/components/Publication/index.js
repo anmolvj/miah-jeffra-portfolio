@@ -20,9 +20,11 @@ const ImageContainer = styled.div`
 const TitleContainer = styled.div`
   margin: 5px;
   padding: 5px;
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
   font-weight: bold;
+  text-transform: uppercase;
+  font-family: ${props => props.theme.font.family.secondary};
 `
 
 export default ({ title, imageFluid, alt }) => (

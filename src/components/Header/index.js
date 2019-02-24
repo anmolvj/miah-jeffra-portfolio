@@ -53,6 +53,8 @@ const TitleContainer = styled.div`
 `
 const Title = styled.h1`
   font-size: 48px;
+  color: ${props => props.theme.color.orange};
+  font-family: ${props => props.theme.font.family.primary};
 `
 
 const NavbarContainer = styled.div`

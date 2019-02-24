@@ -21,8 +21,10 @@ const TitleContainer = styled.div`
 `
 const Title = styled.div`
   display: inline-block;
-  border-bottom: 2px solid #333333;
-  font-size: 32px;
+  font-size: 24px;
+  font-family: ${props => props.theme.font.family.secondary};
+  text-transform: uppercase;
+  color: ${props => props.theme.color.grey};
 `
 
 const BooksContainer = styled.div`

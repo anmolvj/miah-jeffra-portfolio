@@ -11,7 +11,8 @@ const theme = {
   color: {
     grey: '#333333',
     red: '#8B0000',
-    cyan: '#01657C',
+    teal: '#0291b1',
+    orange: '#FC8A4A',
   },
 }
 
