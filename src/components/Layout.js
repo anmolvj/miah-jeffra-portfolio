@@ -32,7 +32,7 @@ const Body = styled.div`
 
   font-family: ${props => props.theme.font.family.primary};
   min-height: 100vh;
-  width: 70%;
+  width: 960px;
   overflow: hidden;
   margin: 0 auto;
   color: #333333;
