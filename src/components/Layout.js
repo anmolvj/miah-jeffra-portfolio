@@ -4,7 +4,8 @@ import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import CoverImage from "../img/cover.jpg";
+import CoverImage from '../img/cover.jpg'
+import './layout.sass'
 
 const SiteContainer = styled.div`
   margin: 0;
