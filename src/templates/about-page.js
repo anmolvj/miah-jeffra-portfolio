@@ -18,7 +18,6 @@ const AwardsContainer = styled.div`
 `
 
 const MainImageContainer = styled.div`
-  width: 80%;
   margin: auto;
 `
 
