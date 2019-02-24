@@ -20,11 +20,21 @@ const SiteContainer = styled.div`
 `
 
 const Body = styled.div`
+  @font-face {
+    font-family: Neoteric;
+    src: url('NEOTERICc - Regular.ttf');
+  }
+  @font-face {
+    font-family: Neoteric;
+    font-weight: bold;
+    src: url('NEOTERICc - Bold.ttf');
+  }
+
+  font-family: ${props => props.theme.font.family.primary};
   min-height: 100vh;
   width: 70%;
   overflow: hidden;
   margin: 0 auto;
-  font-family: 'Karla', sans-serif;
   color: #333333;
   @media (max-width: 900px) {
     width: 100%;
