@@ -4,11 +4,16 @@ import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
+import CoverImage from "../img/cover.jpg";
 
 const SiteContainer = styled.div`
   margin: 0;
   padding: 0;
-  background-color: #fffaf0;
+  background-image: url(${CoverImage});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 `
 
 const Body = styled.div`
