@@ -7,6 +7,7 @@ import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 import Awards from '../components/Awards'
 import Img from 'gatsby-image'
+import BodyContainer from '../components/BodyContainer'
 
 const Container = styled.div`
   margin: 10px;
@@ -20,7 +21,6 @@ const MainImageContainer = styled.div`
   width: 80%;
   margin: auto;
 `
-const BodyContainer = styled.div``
 
 const AuthorName = styled.h1`
   text-align: center;
