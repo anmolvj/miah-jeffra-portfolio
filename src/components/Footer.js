@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import BuildIcon from '@material-ui/icons/Build'
 import BrushIcon from '@material-ui/icons/Brush'
+import Paper from '@material-ui/core/Paper'
 
 const Container = styled.div`
   margin: auto;
@@ -12,10 +13,12 @@ const Divider = styled.hr`
   background-color: black;
   margin: auto;
 `
-const Content = styled.div`
+const Content = styled(Paper)`
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 50%;
+  margin: 10px auto;
 `
 
 const LinkedInLink = styled.a`
@@ -29,7 +32,7 @@ const LinkedInLink = styled.a`
 // const Footer = ({ classes }) => (
 const Footer = () => (
   <Container>
-    <Divider />
+    {/* <Divider /> */}
     <Content>
       <LinkedInLink
         href="https://www.linkedin.com/in/anmolvijayvargiya"

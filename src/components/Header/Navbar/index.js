@@ -7,6 +7,11 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  font-family: 'Neoteric', sans-serif;
+  font-weight: bold;
+  /* font-family: 'Hind', sans-serif; */
+
+  font-size: 20px;
 `
 
 const isActive = ({ isCurrent }) => {

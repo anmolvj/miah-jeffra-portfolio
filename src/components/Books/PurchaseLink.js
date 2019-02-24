@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Paper from '@material-ui/core/Paper'
 import Img from 'gatsby-image'
 
-const Container = styled.div`
+const Container = styled(Paper)`
   margin: 10px;
   padding: 5px;
   display: flex;

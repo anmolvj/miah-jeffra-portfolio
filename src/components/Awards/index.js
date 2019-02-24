@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import Award from './Award'
+import Paper from '@material-ui/core/Paper'
 
-const Container = styled.div`
+const Container = styled(Paper)`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

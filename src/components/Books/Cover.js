@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
+import Paper from '@material-ui/core/Paper'
 import Img from 'gatsby-image'
 
-const CoverContainer = styled.div`
+const CoverContainer = styled(Paper)`
   margin-left: 7vw;
   width: 300px;
   @media (max-width: 700px) {
