@@ -9,8 +9,9 @@ const theme = {
     },
   },
   color: {
-    primary: '#333333',
-    secondary: '#8B0000',
+    grey: '#333333',
+    red: '#8B0000',
+    cyan: '#01657C',
   },
 }
 
