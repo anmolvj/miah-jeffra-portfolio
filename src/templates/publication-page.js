@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import Books from '../components/Books'
 import Publication from '../components/Publication'
+
 const Container = styled.div``
 
 const PublicationContainer = styled.div`
@@ -22,7 +23,6 @@ const TitleContainer = styled.div`
 const Title = styled.div`
   display: inline-block;
   font-size: 24px;
-  font-family: ${props => props.theme.font.family.secondary};
   text-transform: uppercase;
   color: ${props => props.theme.color.grey};
 `

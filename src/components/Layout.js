@@ -30,7 +30,7 @@ const Body = styled.div`
     src: url('NEOTERICc - Bold.ttf');
   }
 
-  font-family: ${props => props.theme.font.family.primary};
+  font-family: ${props => props.theme.font.family.secondary};
   min-height: 100vh;
   width: 960px;
   overflow: hidden;

@@ -15,17 +15,17 @@ const Container = styled.div`
 `
 const AwardsContainer = styled.div`
   text-align: center;
+  margin-top: 70px;
 `
 
 const MainImageContainer = styled.div`
   margin: auto;
 `
-
-const Divider = styled.hr`
-  width: 60%;
-  height: 2px;
-  background-color: black;
-  margin: auto;
+const Title = styled.div`
+  display: inline-block;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: ${props => props.theme.color.grey};
 `
 
 export const AboutPageTemplate = ({ page }) => {
@@ -44,9 +44,8 @@ export const AboutPageTemplate = ({ page }) => {
           <HTMLContent content={page.html} />
         )}
       </BodyContainer>
-      <Divider />
       <AwardsContainer>
-        <h2>Awards</h2>
+        <Title>Awards</Title>
         <Awards awards={page.frontmatter.awards} />
       </AwardsContainer>
     </Container>
