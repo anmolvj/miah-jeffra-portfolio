@@ -22,9 +22,6 @@ const MainImageContainer = styled.div`
   margin: auto;
 `
 
-const AuthorName = styled.h1`
-  text-align: center;
-`
 const Divider = styled.hr`
   width: 60%;
   height: 2px;
@@ -41,9 +38,6 @@ export const AboutPageTemplate = ({ page }) => {
           alt={page.frontmatter.mainImage.alt}
         />
       </MainImageContainer>
-      <AuthorName className="title is-size-3 has-text-weight-bold is-bold-light">
-        {page.frontmatter.title}
-      </AuthorName>
       <BodyContainer>
         {page.bodyIsMarkdown ? (
           <ReactMarkdown source={page.html} />
@@ -81,7 +75,6 @@ export const aboutPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        title
         mainImage {
           image {
             childImageSharp {
