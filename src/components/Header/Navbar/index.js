@@ -7,6 +7,9 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  font-family: ${props => props.theme.font.family.secondary};
+  font-size: 20px;
+  text-transform: uppercase;
 `
 
 const isActive = ({ isCurrent }) => {

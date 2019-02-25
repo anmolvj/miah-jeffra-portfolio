@@ -21,7 +21,6 @@ const ReviewContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 5px;
-  /* font-size: 8px; */
   padding-left: 10px;
 `
 
@@ -34,7 +33,6 @@ const BuyLinksContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
   margin: 10px;
   padding: 20px;
 `

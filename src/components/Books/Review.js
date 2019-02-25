@@ -5,6 +5,7 @@ const Container = styled.div`
   margin-bottom: 10px;
   padding: 0px;
   width: 400px;
+  font-family: ${props => props.theme.font.family.secondary};
   @media (max-width: 650px) {
     width: 300px;
   }
@@ -27,6 +28,7 @@ const Review = styled.div`
 const Reviewer = styled.div`
   font-size: 12px;
   text-align: right;
+  color: ${props => props.theme.color.teal};
 `
 
 export default ({ reviewerName, message }) => (

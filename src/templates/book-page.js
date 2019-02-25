@@ -6,11 +6,10 @@ import ReactMarkdown from 'react-markdown'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 import Book from '../components/Books'
+import BodyContainer from '../components/BodyContainer'
 
 const Container = styled.div``
 const BookContainer = styled.div``
-
-const MarkdownContainer = styled.div``
 
 export const BookPageTemplate = ({ page }) => {
   return (
@@ -19,13 +18,13 @@ export const BookPageTemplate = ({ page }) => {
       <BookContainer>
         <Book {...page.frontmatter} hideDescription={true} />
       </BookContainer>
-      <MarkdownContainer>
+      <BodyContainer>
         {page.bodyIsMarkdown ? (
           <ReactMarkdown source={page.html} />
         ) : (
           <HTMLContent content={page.html} />
         )}
-      </MarkdownContainer>
+      </BodyContainer>
     </Container>
   )
 }

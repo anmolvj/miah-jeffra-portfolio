@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import Books from '../components/Books'
 import Publication from '../components/Publication'
+
 const Container = styled.div``
 
 const PublicationContainer = styled.div`
@@ -13,6 +14,7 @@ const PublicationContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
+  padding: 20px;
 `
 
 const TitleContainer = styled.div`
@@ -21,8 +23,9 @@ const TitleContainer = styled.div`
 `
 const Title = styled.div`
   display: inline-block;
-  border-bottom: 2px solid #333333;
-  font-size: 32px;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: ${props => props.theme.color.grey};
 `
 
 const BooksContainer = styled.div`

@@ -7,29 +7,25 @@ import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 import Awards from '../components/Awards'
 import Img from 'gatsby-image'
+import BodyContainer from '../components/BodyContainer'
 
 const Container = styled.div`
   margin: 10px;
-  padding: 20px;
 `
 const AwardsContainer = styled.div`
   text-align: center;
+  margin-top: 70px;
+  padding: 20px;
 `
 
 const MainImageContainer = styled.div`
-  width: 80%;
   margin: auto;
 `
-const BodyContainer = styled.div``
-
-const AuthorName = styled.h1`
-  text-align: center;
-`
-const Divider = styled.hr`
-  width: 60%;
-  height: 2px;
-  background-color: black;
-  margin: auto;
+const Title = styled.div`
+  display: inline-block;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: ${props => props.theme.color.grey};
 `
 
 export const AboutPageTemplate = ({ page }) => {
@@ -41,9 +37,6 @@ export const AboutPageTemplate = ({ page }) => {
           alt={page.frontmatter.mainImage.alt}
         />
       </MainImageContainer>
-      <AuthorName className="title is-size-3 has-text-weight-bold is-bold-light">
-        {page.frontmatter.title}
-      </AuthorName>
       <BodyContainer>
         {page.bodyIsMarkdown ? (
           <ReactMarkdown source={page.html} />
@@ -51,9 +44,8 @@ export const AboutPageTemplate = ({ page }) => {
           <HTMLContent content={page.html} />
         )}
       </BodyContainer>
-      <Divider />
       <AwardsContainer>
-        <h2>Awards</h2>
+        <Title>Awards</Title>
         <Awards awards={page.frontmatter.awards} />
       </AwardsContainer>
     </Container>
@@ -81,7 +73,6 @@ export const aboutPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        title
         mainImage {
           image {
             childImageSharp {
