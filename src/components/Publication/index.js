@@ -14,7 +14,6 @@ const Container = styled.div`
 const ImageContainer = styled.div`
   width: 100px;
   margin: auto;
-  vertical-align: center;
 `
 
 const TitleContainer = styled.div`

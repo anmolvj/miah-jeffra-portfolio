@@ -14,6 +14,7 @@ const PublicationContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
+  padding: 20px;
 `
 
 const TitleContainer = styled.div`

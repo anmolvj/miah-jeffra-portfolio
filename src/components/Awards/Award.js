@@ -12,7 +12,7 @@ const Container = styled.div`
 `
 
 const Title = styled.h1`
-  font-size: 14px;
+  font-size: 10px;
 `
 
 const ImageContainer = styled.div`

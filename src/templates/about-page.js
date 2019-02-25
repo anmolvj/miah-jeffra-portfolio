@@ -11,11 +11,11 @@ import BodyContainer from '../components/BodyContainer'
 
 const Container = styled.div`
   margin: 10px;
-  padding: 20px;
 `
 const AwardsContainer = styled.div`
   text-align: center;
   margin-top: 70px;
+  padding: 20px;
 `
 
 const MainImageContainer = styled.div`
