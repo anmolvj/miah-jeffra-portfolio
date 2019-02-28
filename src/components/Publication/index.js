@@ -33,11 +33,12 @@ const Link = styled.a`
 const Publication = ({ title, link, imageFluid, alt }) =>
   Boolean(link) ? (
     <Container>
-      <Link href={link} target="_blank">
-        <ImageContainer>
+      <ImageContainer>
+        <Link href={link} target="_blank">
           <Img fluid={imageFluid} alt={alt} />
-        </ImageContainer>
-      </Link>
+        </Link>
+      </ImageContainer>
+
       <TitleContainer>{title}</TitleContainer>
     </Container>
   ) : (
