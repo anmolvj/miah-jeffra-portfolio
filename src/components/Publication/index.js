@@ -30,20 +30,23 @@ const Link = styled.a`
   color: inherit;
 `
 
-const Publication = ({ title, imageFluid, alt }) => (
-  <Container>
-    <ImageContainer>
-      <Img fluid={imageFluid} alt={alt} />
-    </ImageContainer>
-    <TitleContainer>{title}</TitleContainer>
-  </Container>
-)
-
-export default ({ link }) =>
+const Publication = ({ title, link, imageFluid, alt }) =>
   Boolean(link) ? (
-    <Link href={link}>
-      <Publication {...props} />
-    </Link>
+    <Container>
+      <Link href={link} target="_blank">
+        <ImageContainer>
+          <Img fluid={imageFluid} alt={alt} />
+        </ImageContainer>
+      </Link>
+      <TitleContainer>{title}</TitleContainer>
+    </Container>
   ) : (
-    <Publication {...props} />
+    <Container>
+      <ImageContainer>
+        <Img fluid={imageFluid} alt={alt} />
+      </ImageContainer>
+      <TitleContainer>{title}</TitleContainer>
+    </Container>
   )
+
+export default Publication
