@@ -5,6 +5,7 @@ import BrushIcon from '@material-ui/icons/Brush'
 
 const Container = styled.div`
   margin: auto;
+  margin-top: auto;
 `
 const Divider = styled.hr`
   width: 60%;

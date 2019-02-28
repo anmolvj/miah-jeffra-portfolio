@@ -60,13 +60,12 @@ export class MediaPageTemplate extends React.Component {
           indicatorColor="primary"
           textColor="primary"
           onChange={this.handleChange}
-          classes={classes.root}
         >
           <Tab value="interview" label="Interview" />
           <Tab value="youtube" label="Youtube" />
         </Tabs>
         {this.state.value === 'interview' ? (
-          <div>This is Interviews</div>
+          <div style={{ padding: 100, fontWeight: 900 }}>INTERVIEWS</div>
         ) : (
           <VideoContainer>
             {this.props.page.frontmatter.youtubeVideos.map(

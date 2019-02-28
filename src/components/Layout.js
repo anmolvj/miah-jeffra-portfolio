@@ -41,6 +41,12 @@ const Body = styled.div`
   }
 `
 
+const ChildrenContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`
+
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -100,7 +106,7 @@ const TemplateWrapper = ({ children }) => (
           </Helmet>
           <Body>
             <Header title={data.site.siteMetadata.title} />
-            {children}
+            <ChildrenContainer>{children}</ChildrenContainer>
             <Footer />
           </Body>
         </SiteContainer>
