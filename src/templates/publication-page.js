@@ -47,16 +47,19 @@ export const PublicationPageTemplate = ({ page }) => {
         <Title>Publications</Title>
       </TitleContainer>
       <PublicationContainer>
-        {page.frontmatter.publicationList.map(({ title, publicationImage }) => {
-          console.log(title)
-          return (
-            <Publication
-              title={title}
-              imageFluid={publicationImage.image.childImageSharp.fluid}
-              alt={publicationImage.alt}
-            />
-          )
-        })}
+        {page.frontmatter.publicationList.map(
+          ({ title, publicationImage, link }) => {
+            console.log(title)
+            return (
+              <Publication
+                title={title}
+                link={link}
+                imageFluid={publicationImage.image.childImageSharp.fluid}
+                alt={publicationImage.alt}
+              />
+            )
+          }
+        )}
       </PublicationContainer>
     </Container>
   )
@@ -85,6 +88,7 @@ export const publicationPageQuery = graphql`
       frontmatter {
         publicationList {
           title
+          link
           publicationImage {
             alt
             image {

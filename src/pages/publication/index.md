@@ -10,6 +10,7 @@ publicationList:
         image: /img/publications/a-cappella-zoo.jpg
         alt: a-capella-zoo-logo
     - title: Atticus Review
+      link: https://atticusreview.org/denotation-connotation-or-the-relativity-of-shit/
       publicationImage:
         image: /img/publications/atticus-review.jpg
         alt: atticus-review-logo

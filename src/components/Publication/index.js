@@ -25,11 +25,28 @@ const TitleContainer = styled.div`
   text-transform: uppercase;
 `
 
-export default ({ title, imageFluid, alt }) => (
-  <Container>
-    <ImageContainer>
-      <Img fluid={imageFluid} alt={alt} />
-    </ImageContainer>
-    <TitleContainer>{title}</TitleContainer>
-  </Container>
-)
+const Link = styled.a`
+  text-decoration: none;
+  color: inherit;
+`
+
+const Publication = ({ title, link, imageFluid, alt }) =>
+  Boolean(link) ? (
+    <Container>
+      <Link href={link} target="_blank">
+        <ImageContainer>
+          <Img fluid={imageFluid} alt={alt} />
+        </ImageContainer>
+      </Link>
+      <TitleContainer>{title}</TitleContainer>
+    </Container>
+  ) : (
+    <Container>
+      <ImageContainer>
+        <Img fluid={imageFluid} alt={alt} />
+      </ImageContainer>
+      <TitleContainer>{title}</TitleContainer>
+    </Container>
+  )
+
+export default Publication
