@@ -160,6 +160,7 @@ collections:
               widget: "list",
               fields: [
                 {label: "Title", name: "title", widget: "string"},
+                {label: "Link", name: "link", widget: "string"},
                 {
                   label: "Publication Image", 
                   name: "publicationImage", 
