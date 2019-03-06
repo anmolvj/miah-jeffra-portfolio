@@ -10,7 +10,7 @@ import { StyleSheetManager } from 'styled-components'
 
 import './layout.sass'
 
-const iframe = document.querySelector('.nc-previewPane-frame')
+const iframe = document.getElementsByTagName('iframe')[0]
 const iframeHeadElem = iframe.contentDocument.head
 
 const SiteContainer = styled.div`
