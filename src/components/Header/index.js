@@ -90,11 +90,13 @@ class Header extends React.Component {
         </TopNavbarContainer>
         <LogoAndTitleContainer>
           <LogoContainer>
-            <Logo src={mutedposthorn} alt="Muted-Post-Horn" />
+            <Link className="" to="/about">
+              <Logo src={mutedposthorn} alt="Muted-Post-Horn" />
+            </Link>
           </LogoContainer>
           <TitleContainer>
             <Title>
-              <Link className="header" to="/">
+              <Link className="header" to="/about">
                 {this.props.title}
               </Link>
             </Title>
