@@ -20,16 +20,6 @@ const SiteContainer = styled.div`
 `
 
 const Body = styled.div`
-  @font-face {
-    font-family: Neoteric;
-    src: url('NEOTERICc - Regular.ttf');
-  }
-  @font-face {
-    font-family: Neoteric;
-    font-weight: bold;
-    src: url('NEOTERICc - Bold.ttf');
-  }
-
   font-family: ${props => props.theme.font.family.secondary};
   min-height: 100vh;
   width: 960px;
@@ -95,6 +85,10 @@ const TemplateWrapper = ({ children }) => (
             <meta property="og:image" content="/img/og-image.jpg" />
             <link
               href="https://fonts.googleapis.com/css?family=Nunito+Sans"
+              rel="stylesheet"
+            />
+            <link
+              href="https://fonts.googleapis.com/css?family=Josefin+Sans:300"
               rel="stylesheet"
             />
           </Helmet>

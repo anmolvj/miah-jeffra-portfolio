@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components'
 const theme = {
   font: {
     family: {
-      primary: "'Neoteric', sans-serif ",
+      primary: "'Josefin Sans', sans-serif",
       secondary: "'nunito', sans-serif ",
     },
   },
