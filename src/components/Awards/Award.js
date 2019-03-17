@@ -11,8 +11,13 @@ const Container = styled.div`
   margin: 30px;
 `
 
-const Title = styled.h1`
+const TitleContainer = styled.div`
+  margin: 5px;
+  padding: 5px;
   font-size: 10px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
 `
 
 const ImageContainer = styled.div`
@@ -25,6 +30,6 @@ export default ({ title, imageFluid, alt }) => (
     <ImageContainer>
       <Img fluid={imageFluid} alt={alt} />
     </ImageContainer>
-    <Title>{title}</Title>
+    <TitleContainer>{title}</TitleContainer>
   </Container>
 )
