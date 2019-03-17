@@ -37,36 +37,34 @@ const App = ({ isSubmitting }) => (
       data-netlify="true"
       data-netlify-honeypot="bot-field"
     >
-      <FirstAndLastNameContainer>
-        <FieldContainer>
-          <Field
-            type="text"
-            name="fname"
-            label="First Name *"
-            component={StyledNameField}
-            variant="outlined"
-            InputLabelProps={{
-              shrink: true,
-            }}
-            fullWidth
-            margin="normal"
-          />
-        </FieldContainer>
-        <FieldContainer>
-          <Field
-            type="text"
-            name="lname"
-            label="Last Name *"
-            component={StyledNameField}
-            variant="outlined"
-            InputLabelProps={{
-              shrink: true,
-            }}
-            fullWidth
-            margin="normal"
-          />
-        </FieldContainer>
-      </FirstAndLastNameContainer>
+      <FieldContainer>
+        <Field
+          type="text"
+          name="fname"
+          label="First Name *"
+          component={StyledNameField}
+          variant="outlined"
+          InputLabelProps={{
+            shrink: true,
+          }}
+          fullWidth
+          margin="normal"
+        />
+      </FieldContainer>
+      <FieldContainer>
+        <Field
+          type="text"
+          name="lname"
+          label="Last Name *"
+          component={StyledNameField}
+          variant="outlined"
+          InputLabelProps={{
+            shrink: true,
+          }}
+          fullWidth
+          margin="normal"
+        />
+      </FieldContainer>
 
       <FieldContainer>
         <Field

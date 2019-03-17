@@ -3,8 +3,9 @@ import styled from 'styled-components'
 import Layout from '../../components/Layout'
 import FormikForm from '../../components/FormikForm'
 import FancyMap from '../../img/contact-map.png'
+import Paper from '@material-ui/core/Paper'
 
-const Container = styled.div`
+const Container = styled(Paper)`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,7 +37,7 @@ const Map = styled.img`
 export default () => (
   <Layout>
     <Container>
-      <Map src={FancyMap} />
+      {/* <Map src={FancyMap} /> */}
       <Tiltle>Get in Touch With me!</Tiltle>
       <FormContainer>
         <FormikForm />
