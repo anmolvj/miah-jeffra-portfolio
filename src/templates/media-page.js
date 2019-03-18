@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import Layout from '../components/Layout'
 import YoutubePlayer from '../components/YouTube'
+import Interview from '../components/Interview'
 
 const Container = styled.div`
   display: flex;
@@ -20,6 +21,15 @@ export const MediaPageTemplate = ({ page }) => (
   <Container className="section section--gradient">
     {page.frontmatter.youtubeVideos.map(({ title, description, url }) => (
       <YoutubePlayer title={title} description={description} url={url} />
+    ))}
+    <br />
+    {page.frontmatter.interviews.map(({ title, url, interviewer, date }) => (
+      <Interview
+        title={title}
+        url={url}
+        interviewer={interviewer}
+        date={date}
+      />
     ))}
   </Container>
 )
@@ -49,6 +59,12 @@ export const mediaPageQuery = graphql`
           title
           description
           url
+        }
+        interviews {
+          title
+          url
+          interviewer
+          date
         }
       }
     }

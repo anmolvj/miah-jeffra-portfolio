@@ -10,4 +10,11 @@ const Container = styled(Paper)`
   margin-bottom: 20px;
 `
 
-export default () => <Container>Interview</Container>
+export default ({ title, url, interviewer, date }) => (
+  <Container>
+    <h3>Title: {title}</h3>
+    <h3>URL: {url}</h3>
+    <h3>Interviewer: {interviewer}</h3>
+    <h3>Date: {date}</h3>
+  </Container>
+)

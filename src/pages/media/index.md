@@ -10,4 +10,9 @@ youtubeVideos:
   - title: Miah Jeffra « The Write Stuff
     description: Miah Jeffra reads as part of The Write Stuff series of interview profiles conducted by Litseen, featuring a different San Francisco/Bay Area author each week. 
     url: https://www.youtube.com/watch?v=hi7BjxFZdrU
+interviews: 
+  - title: Lambda Literary Review
+    url: https://www.lambdaliterary.org/reviews/fiction/06/14/the-first-church-of-whats-happening-by-miah-jeffra/
+    interviewer:  Christina Tesoro
+    date: 2016-12-17T15:04:10.000Z   
 ---
