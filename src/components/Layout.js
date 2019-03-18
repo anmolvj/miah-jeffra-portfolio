@@ -20,6 +20,8 @@ const SiteContainer = styled.div`
 `
 
 const Body = styled.div`
+  display: flex;
+  flex-direction: column;
   font-family: ${props => props.theme.font.family.secondary};
   min-height: 100vh;
   width: 960px;
@@ -29,6 +31,10 @@ const Body = styled.div`
   @media (max-width: 900px) {
     width: 100%;
   }
+`
+
+const Content = styled.div`
+  flex: 1 0 auto;
 `
 
 const TemplateWrapper = ({ children }) => (
@@ -94,7 +100,7 @@ const TemplateWrapper = ({ children }) => (
           </Helmet>
           <Body>
             <Header title={data.site.siteMetadata.title} />
-            {children}
+            <Content>{children}</Content>
             <Footer />
           </Body>
         </SiteContainer>

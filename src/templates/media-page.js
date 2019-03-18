@@ -2,22 +2,30 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
+import { withStyles } from '@material-ui/core/styles'
 import Tabs from '@material-ui/core/Tabs'
 import Tab from '@material-ui/core/Tab'
 import Layout from '../components/Layout'
 import YoutubePlayer from '../components/YouTube'
 import Interview from '../components/Interview'
 
+const styles = {
+  root: {
+    padding: 0,
+  },
+  flexContainer: {
+    color: '#333333',
+  },
+  indicator: {
+    background: '#0291b1',
+  },
+}
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  @media (max-width: 1300px) {
-    flex-direction: row;
-    justify-content: center;
-  }
 `
 
 const InterviewContainer = styled.div`
@@ -46,41 +54,43 @@ class MediaPageTemplate extends React.Component {
   }
 
   render() {
+    const { classes, page } = this.props
+    const { interviews, youtubeVideos } = page.frontmatter
+
     return (
       <Container>
         <Tabs
           value={this.state.value}
-          indicatorColor="primary"
-          textColor="primary"
           onChange={this.handleTabClick}
+          classes={{
+            root: classes.root,
+            flexContainer: classes.flexContainer,
+            indicator: classes.indicator,
+          }}
         >
           <Tab value="interview" label="Interview" />
           <Tab value="youtube" label="Youtube" />
         </Tabs>
         {this.state.value === 'interview' ? (
           <InterviewContainer>
-            {this.props.page.frontmatter.interviews.map(
-              ({ title, url, interviewer, date }) => (
-                <Interview
-                  title={title}
-                  url={url}
-                  interviewer={interviewer}
-                  date={date}
-                />
-              )
-            )}
+            {interviews.map(({ title, url, interviewer, date }) => (
+              <Interview
+                title={title}
+                url={url}
+                interviewer={interviewer}
+                date={date}
+              />
+            ))}
           </InterviewContainer>
         ) : (
           <YoutubeContainer>
-            {this.props.page.frontmatter.youtubeVideos.map(
-              ({ title, description, url }) => (
-                <YoutubePlayer
-                  title={title}
-                  description={description}
-                  url={url}
-                />
-              )
-            )}
+            {youtubeVideos.map(({ title, description, url }) => (
+              <YoutubePlayer
+                title={title}
+                description={description}
+                url={url}
+              />
+            ))}
           </YoutubeContainer>
         )}
       </Container>
@@ -98,12 +108,15 @@ class MediaPageTemplate extends React.Component {
 //   </Container>
 // )
 
-const MediaPage = ({ data }) => {
+const MediaPage = ({ data, classes }) => {
   const { markdownRemark: page } = data
 
   return (
     <Layout>
-      <MediaPageTemplate page={{ ...page, bodyIsMarkdown: false }} />
+      <MediaPageTemplate
+        page={{ ...page, bodyIsMarkdown: false }}
+        classes={classes}
+      />
     </Layout>
   )
 }
@@ -112,8 +125,7 @@ MediaPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default MediaPage
-
+export default withStyles(styles)(MediaPage)
 export const mediaPageQuery = graphql`
   query MediaPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
