@@ -2,19 +2,44 @@ import React from 'react'
 import styled from 'styled-components'
 import Paper from '@material-ui/core/Paper'
 
-const Container = styled(Paper)`
+const Container = styled.div`
+  width: 80%;
   font-family: ${props => props.theme.font.family.secondary};
-  font-size: 14px;
   padding: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px auto;
+  text-align: left;
+  &:hover {
+    background-color: rgb(204, 204, 204, 0.3);
+    border-radius: 3px;
+  }
+`
+
+const Link = styled.a`
+  text-decoration: none;
+`
+
+const Title = styled.div`
+  color: ${props => props.theme.color.grey};
+  font-size: 25px;
+  font-weight: bold;
+`
+
+const Interviewer = styled.div`
+  color: ${props => props.theme.color.grey};
+  font-size: 14px;
+`
+
+const Date = styled.div`
+  color: ${props => props.theme.color.grey};
+  font-size: 10px;
 `
 
 export default ({ title, url, interviewer, date }) => (
   <Container>
-    <h3>Title: {title}</h3>
-    <h3>URL: {url}</h3>
-    <h3>Interviewer: {interviewer}</h3>
-    <h3>Date: {date}</h3>
+    <Link href={url} target="_blank">
+      <Title>{title}</Title>
+      <Interviewer>- {interviewer}</Interviewer>
+      <Date>{date}</Date>
+    </Link>
   </Container>
 )

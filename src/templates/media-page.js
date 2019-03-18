@@ -22,6 +22,7 @@ const Container = styled.div`
 
 const InterviewContainer = styled.div`
   text-align: center;
+  width: 100%;
 `
 
 const YoutubeContainer = styled.div`
