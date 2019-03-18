@@ -24,13 +24,16 @@ const Title = styled.div`
   font-weight: bold;
 `
 
-const Interviewer = styled.div`
+const InterviewerAndDateContainer = styled.div`
+  margin-left: 10px;
   color: ${props => props.theme.color.grey};
+`
+
+const Interviewer = styled.div`
   font-size: 14px;
 `
 
 const Date = styled.div`
-  color: ${props => props.theme.color.grey};
   font-size: 10px;
 `
 
@@ -38,8 +41,10 @@ export default ({ title, url, interviewer, date }) => (
   <Container>
     <Link href={url} target="_blank">
       <Title>{title}</Title>
-      <Interviewer>- {interviewer}</Interviewer>
-      <Date>{date}</Date>
+      <InterviewerAndDateContainer>
+        <Interviewer>{interviewer}</Interviewer>
+        <Date>{date}</Date>
+      </InterviewerAndDateContainer>
     </Link>
   </Container>
 )

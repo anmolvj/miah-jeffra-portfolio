@@ -14,5 +14,21 @@ interviews:
   - title: Lambda Literary Review
     url: https://www.lambdaliterary.org/reviews/fiction/06/14/the-first-church-of-whats-happening-by-miah-jeffra/
     interviewer:  Christina Tesoro
-    date: 2016-12-17T15:04:10.000Z   
+    date: June 14, 2018
+  - title: Litseen
+    url: http://litseen.com/miah-jeffra/
+    interviewer:  Rebecca Samuelson
+    date: March 9, 2017 
+  - title: The Nervous Breakdown
+    url: http://thenervousbreakdown.com/tag/miah-jeffra/
+    interviewer:  Self Interview
+    date: November 04, 2017 
+  - title: Hoodline
+    url: https://hoodline.com/2016/04/event-spotlight-sfai-s-write-of-way-literary-festival-features-students-small-press
+    interviewer:  Nathan Falstreau
+    date: April 20, 2016 
+  - title: Hub City Writers Project
+    url: https://www.spartanburg.com/news/2017/06/five-questions-summer-2017-writer-residence-miah-jeffra/
+    interviewer: Hub City
+    date: JUNE 9, 2017          
 ---
