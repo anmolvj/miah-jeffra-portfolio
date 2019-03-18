@@ -3,6 +3,12 @@ import styled from 'styled-components'
 import BuildIcon from '@material-ui/icons/Build'
 import BrushIcon from '@material-ui/icons/Brush'
 
+const IconContainer = styled.div`
+  display: inline-block;
+  position: relative;
+  top: 4px;
+`
+
 const Container = styled.div`
   margin: auto;
 `
@@ -19,11 +25,10 @@ const Content = styled.div`
 `
 
 const LinkedInLink = styled.a`
-  color: inherit;
+  text-decoration: none;
+  color: ${props => props.theme.color.grey};
   padding: 10px;
-  &:hover {
-    color: inherit;
-  }
+  margin: auto 20px;
 `
 const Footer = () => (
   <Container>
@@ -33,13 +38,19 @@ const Footer = () => (
         href="https://www.linkedin.com/in/anmolvijayvargiya"
         target="_blank"
       >
-        Anmol Vijayvargiya <BuildIcon />
+        Anmol Vijayvargiya{' '}
+        <IconContainer>
+          <BuildIcon style={{ fontSize: '20px' }} />
+        </IconContainer>
       </LinkedInLink>
       <LinkedInLink
         href="https://www.linkedin.com/in/asha-latha-amara"
         target="_blank"
       >
-        Asha Latha Amara <BrushIcon />
+        Asha Latha Amara{' '}
+        <IconContainer>
+          <BrushIcon />
+        </IconContainer>
       </LinkedInLink>
     </Content>
   </Container>
