@@ -25,8 +25,6 @@ const LinkedInLink = styled.a`
     color: inherit;
   }
 `
-
-// const Footer = ({ classes }) => (
 const Footer = () => (
   <Container>
     <Divider />

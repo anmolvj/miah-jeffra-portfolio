@@ -149,6 +149,17 @@ collections:
                 {label: "Youtube URL", name: "url", widget: "string"}
                 ]
             }
+          - { 
+              label: "Interviews", 
+              name: "interviews", 
+              widget: "list",
+              fields: [
+                {label: "Title", name: "title", widget: "string"},
+                {label: "URL", name: "url", widget: "string"},
+                {label: "Interviewer", name: "interviewer", widget: "string"},
+                {label: "Interview Date", name: "string", widget: "string"}
+                ]
+            }  
       - file: "src/pages/publication/index.md"
         label: "Publication"
         name: "publication"
