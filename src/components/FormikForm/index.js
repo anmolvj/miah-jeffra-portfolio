@@ -45,13 +45,7 @@ const App = ({ isSubmitting }) => (
           type="text"
           name="lname"
           label="Last Name *"
-          component={StyledNameField}
-          variant="outlined"
-          InputLabelProps={{
-            shrink: true,
-          }}
-          fullWidth
-          margin="normal"
+          component={CustomTextField}
         />
       </FieldContainer>
 
@@ -60,13 +54,7 @@ const App = ({ isSubmitting }) => (
           type="email"
           name="email"
           label="Email Address *"
-          component={TextField}
-          variant="outlined"
-          InputLabelProps={{
-            shrink: true,
-          }}
-          fullWidth
-          margin="normal"
+          component={CustomTextField}
         />
       </FieldContainer>
       <FieldContainer>
@@ -74,13 +62,7 @@ const App = ({ isSubmitting }) => (
           type="text"
           name="purpose"
           label="Purpose of Enquiry *"
-          component={TextField}
-          variant="outlined"
-          InputLabelProps={{
-            shrink: true,
-          }}
-          fullWidth
-          margin="normal"
+          component={CustomTextField}
         />
       </FieldContainer>
       <FieldContainer>
@@ -88,13 +70,7 @@ const App = ({ isSubmitting }) => (
           type="text"
           name="message"
           label="Message *"
-          component={TextField}
-          variant="outlined"
-          InputLabelProps={{
-            shrink: true,
-          }}
-          fullWidth
-          margin="normal"
+          component={CustomTextField}
           multiline
         />
       </FieldContainer>
