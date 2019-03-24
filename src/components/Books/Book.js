@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import Paper from '@material-ui/core/Paper'
-
+import BodyContainer from '../BodyContainer'
 import ReviewBox from './Review'
 import PurchaseLink from './PurchaseLink'
 import Cover from './Cover'
@@ -32,9 +32,9 @@ const DescriptionContainer = styled.div`
 const BuyLinksContainer = styled.div`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
-  margin: 10px;
-  padding: 20px;
+  text-align: center;
 `
 
 export default ({
@@ -63,9 +63,9 @@ export default ({
       </ReviewContainer>
     </CoverAndReviewContainer>
 
-    <DescriptionContainer>
-      {!Boolean(hideDescription) && <p>{description}</p>}
-    </DescriptionContainer>
+    <BodyContainer hidden={hideDescription}>
+      <p>{description}</p>
+    </BodyContainer>
 
     {!Boolean(hideLinksToBuy) && (
       <BuyLinksContainer>
