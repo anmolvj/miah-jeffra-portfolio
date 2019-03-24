@@ -43,7 +43,8 @@ const LogoContainer = styled.div`
 
 const Logo = styled.img`
   height: 70px;
-  width: 70px;
+  position: relative;
+  top: 20px;
 `
 
 const TitleContainer = styled.div`
