@@ -68,8 +68,8 @@ class MediaPageTemplate extends React.Component {
             indicator: classes.indicator,
           }}
         >
-          <Tab value="interview" label="Interviews" />
-          <Tab value="youtube" label="My Youtube" />
+          <Tab value="interview" label="Interviews / Reviews" />
+          <Tab value="youtube" label="Videos" />
         </Tabs>
         {this.state.value === 'interview' ? (
           <InterviewContainer>
