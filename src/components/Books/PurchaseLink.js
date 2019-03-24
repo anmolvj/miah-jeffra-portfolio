@@ -4,11 +4,13 @@ import Paper from '@material-ui/core/Paper'
 import Img from 'gatsby-image'
 
 const Container = styled.div`
-  margin: 10px;
-  padding: 5px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+  width: 150px;
+  padding: 10px;
+  margin: 30px;
+  position: relative;
 `
 
 const ImageContainer = styled.div`
@@ -17,20 +19,27 @@ const ImageContainer = styled.div`
 `
 
 const LabelContainer = styled.div`
+  margin: 5px;
   padding: 5px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
 `
 const ExternalLink = styled.a`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-decoration: none;
   color: inherit;
-  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 150px;
+  padding: 10px;
+  margin: 30px;
 `
 
 export default ({ label, linkImage, linkURL }) => (
-  <Container>
-    <ExternalLink href={linkURL} target="_blank">
+  <ExternalLink href={linkURL} target="_blank">
+    <Container>
       <ImageContainer>
         <Img
           fluid={linkImage.image.childImageSharp.fluid}
@@ -38,6 +47,6 @@ export default ({ label, linkImage, linkURL }) => (
         />
       </ImageContainer>
       <LabelContainer>{label}</LabelContainer>
-    </ExternalLink>
-  </Container>
+    </Container>
+  </ExternalLink>
 )
