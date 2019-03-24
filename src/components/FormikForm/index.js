@@ -4,6 +4,7 @@ import * as Yup from 'yup' //Yup has some bug due to which we need to import it 
 import { TextField } from 'formik-material-ui'
 import Button from '@material-ui/core/Button'
 import styled from 'styled-components'
+import CustomTextField from './CustomTextField'
 
 const Container = styled.div`
   width: 100%;
@@ -13,12 +14,6 @@ const FieldContainer = styled.div`
   margin: 10px;
   padding: 10px;
   text-align: center;
-`
-
-const FirstAndLastNameContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 `
 
 const StyledNameField = styled(TextField)``
@@ -42,13 +37,7 @@ const App = ({ isSubmitting }) => (
           type="text"
           name="fname"
           label="First Name *"
-          component={StyledNameField}
-          variant="outlined"
-          InputLabelProps={{
-            shrink: true,
-          }}
-          fullWidth
-          margin="normal"
+          component={CustomTextField}
         />
       </FieldContainer>
       <FieldContainer>
@@ -56,13 +45,7 @@ const App = ({ isSubmitting }) => (
           type="text"
           name="lname"
           label="Last Name *"
-          component={StyledNameField}
-          variant="outlined"
-          InputLabelProps={{
-            shrink: true,
-          }}
-          fullWidth
-          margin="normal"
+          component={CustomTextField}
         />
       </FieldContainer>
 
@@ -71,13 +54,7 @@ const App = ({ isSubmitting }) => (
           type="email"
           name="email"
           label="Email Address *"
-          component={TextField}
-          variant="outlined"
-          InputLabelProps={{
-            shrink: true,
-          }}
-          fullWidth
-          margin="normal"
+          component={CustomTextField}
         />
       </FieldContainer>
       <FieldContainer>
@@ -85,13 +62,7 @@ const App = ({ isSubmitting }) => (
           type="text"
           name="purpose"
           label="Purpose of Enquiry *"
-          component={TextField}
-          variant="outlined"
-          InputLabelProps={{
-            shrink: true,
-          }}
-          fullWidth
-          margin="normal"
+          component={CustomTextField}
         />
       </FieldContainer>
       <FieldContainer>
@@ -99,13 +70,7 @@ const App = ({ isSubmitting }) => (
           type="text"
           name="message"
           label="Message *"
-          component={TextField}
-          variant="outlined"
-          InputLabelProps={{
-            shrink: true,
-          }}
-          fullWidth
-          margin="normal"
+          component={CustomTextField}
           multiline
         />
       </FieldContainer>
