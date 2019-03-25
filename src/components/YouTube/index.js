@@ -1,40 +1,41 @@
 import React from 'react'
-//import YouTube from 'simple-youtube-api'
+import YouTube from 'simple-youtube-api'
+import { format } from 'date-fns'
 import Player from './Player'
 import parseVideoID from './parseVideoID'
 
-//const YOUTUBE_API_KEY = 'AIzaSyC6XNnCKFT7yTZzs4XL6VXKs7nwjK9WdE4'
-const datePublished = 'September 14, 1996'
+const YOUTUBE_API_KEY = 'AIzaSyC6XNnCKFT7yTZzs4XL6VXKs7nwjK9WdE4'
+const youtube = new YouTube(`${YOUTUBE_API_KEY}`)
 
-export default ({ title, description, url }) => {
-  console.log(url)
-  const videoID = parseVideoID(url)
-  //const API = new YouTube(`${YOUTUBE_API_KEY}`)
+class YoutubeVideoComponent extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      data: '',
+      error: '',
+    }
+  }
 
-  //THE BUGGY CODE STARTS HERE
+  componentDidMount() {
+    youtube.getVideo(this.props.url).then(data => this.setState({ data: data }))
+  }
 
-  return (
-    <Player
-      title={title}
-      description={description}
-      date={datePublished}
-      videoID={videoID}
-    />
-  )
+  render() {
+    const { title, description, url } = this.props
+    const videoID = parseVideoID(url)
+    const publishedAt = format(
+      new Date(this.state.data.publishedAt),
+      'MMM DD, YYYY'
+    )
+    return (
+      <Player
+        title={title ? title : this.state.data.title}
+        description={description ? description : this.state.data.description}
+        date={publishedAt}
+        videoID={videoID}
+      />
+    )
+  }
 }
 
-// if (!Boolean(title) || !Boolean(description)) {
-//   API.getVideoByID(videoID)
-//     .then(res => JSON.parse(res) )
-//     .then(results =>{
-//       console.log(results)
-//       let data = {
-//         title: title ? title : results[0].title,
-//         description: description ? description : results[0].description,
-//         videoID: videoID,
-//         date: datePublished,
-//       }
-//       return <Player {...data} />
-//     })
-//     .catch(console.error)
-// }
+export default YoutubeVideoComponent
