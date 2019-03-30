@@ -7,7 +7,6 @@ import FancyMap from '../../img/contact-map.png'
 const Container = styled.div`
   border-radius: 3px;
   overflow: hidden;
-  width: 50%;
   margin: auto;
 `
 
@@ -17,8 +16,9 @@ const FormContainer = styled.div`
   justify-content: center;
   background-color: rgb(204, 204, 204, 0.3);
   margin: auto;
-  @media (max-width: 700px) {
-    width: 100%;
+  width: 90%;
+  @media (min-width: 1200px) {
+    width: 70%;
   }
 `
 
@@ -27,6 +27,11 @@ const Tiltle = styled.div`
   padding: 10px;
   font-family: ${props => props.theme.font.family.secondary};
   font-weight: bold;
+  font-size: 16px;
+
+  @media (min-width: 500px) {
+    font-size: 20px;
+  }
 `
 
 const Map = styled.img`
