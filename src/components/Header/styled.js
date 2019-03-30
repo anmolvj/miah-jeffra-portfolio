@@ -55,7 +55,7 @@ export const Title = styled.span`
 
 export const HamburgerMenuContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   width: 100%;
 `
 
