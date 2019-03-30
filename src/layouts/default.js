@@ -13,8 +13,8 @@ const SiteContainer = styled.div`
   margin: 0;
   padding: 0;
   background-image: url(${CoverImage});
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
 `
@@ -24,13 +24,13 @@ const Body = styled.div`
   flex-direction: column;
   font-family: ${props => props.theme.font.family.secondary};
   min-height: 100vh;
-  width: 960px;
+  width: 100%;
   overflow: hidden;
   margin: 0 auto;
   color: #333333;
-  @media (max-width: 900px) {
+  /* @media (max-width: 900px) {
     width: 100%;
-  }
+  } */
 `
 
 const Content = styled.div`
@@ -54,6 +54,10 @@ const TemplateWrapper = ({ children }) => (
         <SiteContainer>
           <Helmet>
             <html lang="en" />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1"
+            />
             <title>{data.site.siteMetadata.title}</title>
             <meta
               name="description"
@@ -94,7 +98,7 @@ const TemplateWrapper = ({ children }) => (
               rel="stylesheet"
             />
             <link
-              href="https://fonts.googleapis.com/css?family=Josefin+Sans:300"
+              href="https://fonts.googleapis.com/css?family=Josefin+Sans"
               rel="stylesheet"
             />
           </Helmet>
