@@ -31,6 +31,14 @@ const Container = styled.div`
 const InterviewContainer = styled.div`
   text-align: center;
   width: 100%;
+
+  @media (min-width: 750px) {
+    max-width: 70%;
+  }
+
+  @media (min-width: 1650px) {
+    max-width: 925px;
+  }
 `
 
 const YoutubeContainer = styled.div`
