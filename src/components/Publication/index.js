@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 
 const Container = styled.div`
-  background-color: lightsalmon;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
