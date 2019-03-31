@@ -8,7 +8,7 @@ const Container = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
-  @media (min-width: 575px) {
+  @media (min-width: 375px) {
     justify-content: space-around;
   }
 `
