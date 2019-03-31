@@ -27,15 +27,16 @@ const styles = theme => ({
     margin: '20px',
   },
   cardHeader: {
- 
+    paddingBottom: 0
   },
   title: {
     color: '#333333',
+    fontWight: "bold",
     [theme.breakpoints.down('xs')]: {
       fontSize: 16,
     },
     [theme.breakpoints.up('sm')]: {
-      fontSize: 25,
+      fontSize: 20,
     },
   },
   subheader: {
@@ -43,8 +44,8 @@ const styles = theme => ({
       fontSize: 10,
     },
     [theme.breakpoints.up('sm')]: {
-      fontSize: 16,
-    },
+      fontSize: 12,
+    }
   },
   content: {
     color: '#333333',
@@ -56,8 +57,7 @@ const styles = theme => ({
     },
   },
   cardContent: {
-    backgroundColor: "lightsalmon",
-
+    color: '#333333',
   },
 })
 
