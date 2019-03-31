@@ -27,11 +27,11 @@ const styles = theme => ({
     margin: '20px',
   },
   cardHeader: {
-    paddingBottom: 0
+    paddingBottom: 0,
   },
   title: {
     color: '#333333',
-    fontWight: "bold",
+    fontWight: 'bold',
     [theme.breakpoints.down('xs')]: {
       fontSize: 16,
     },
@@ -45,7 +45,7 @@ const styles = theme => ({
     },
     [theme.breakpoints.up('sm')]: {
       fontSize: 12,
-    }
+    },
   },
   content: {
     color: '#333333',

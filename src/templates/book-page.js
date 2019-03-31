@@ -14,7 +14,6 @@ const BookContainer = styled.div``
 export const BookPageTemplate = ({ page }) => {
   return (
     <Container>
-      {console.log('PAGE DATA -> ', page)}
       <BookContainer>
         <Book {...page.frontmatter} hideDescription={true} />
       </BookContainer>
