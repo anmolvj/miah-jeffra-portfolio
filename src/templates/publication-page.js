@@ -49,7 +49,6 @@ export const PublicationPageTemplate = ({ page }) => {
       <PublicationContainer>
         {page.frontmatter.publicationList.map(
           ({ title, publicationImage, link }) => {
-            console.log(title)
             return (
               <Publication
                 title={title}

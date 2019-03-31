@@ -37,10 +37,14 @@ const YoutubeContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  @media (max-width: 1300px) {
-    flex-direction: row;
-    justify-content: center;
+  justify-content: center;
+
+  @media (min-width: 1100px) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1300px) {
+    width: 1024px;
   }
 `
 class MediaPageTemplate extends React.Component {
