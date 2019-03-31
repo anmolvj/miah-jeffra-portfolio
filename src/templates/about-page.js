@@ -15,7 +15,6 @@ const Container = styled.div`
 const AwardsContainer = styled.div`
   text-align: center;
   margin-top: 70px;
-  padding: 20px;
 `
 
 const MainImageContainer = styled.div`

@@ -6,9 +6,18 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 150px;
-  padding: 10px;
-  margin: 30px;
+
+  width: 100px;
+  margin: 10px;
+  position: relative;
+  @media (min-width: 520px) {
+    width: 150px;
+  }
+  @media (min-width: 600px) {
+    width: 150px;
+    padding: 10px;
+    margin: 30px;
+  }
 `
 
 const TitleContainer = styled.div`
