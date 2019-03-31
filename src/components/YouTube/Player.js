@@ -1,15 +1,11 @@
 import React from 'react'
-import styled from 'styled-components'
+import { withStyles } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
 import CardHeader from '@material-ui/core/CardHeader'
 import CardContent from '@material-ui/core/CardContent'
 import Typography from '@material-ui/core/Typography'
 import YouTube from 'react-youtube'
-
-const StyledCard = styled(Card)`
-  width: 400px;
-  margin: 20px;
-`
+import { green } from '@material-ui/core/colors'
 
 const videoOnReady = event => {
   event.target.stopVideo()
@@ -24,14 +20,65 @@ const opts = {
   },
 }
 
-const YoutubePlayer = ({ videoID, title, description, date }) => (
-  <StyledCard>
+const styles = theme => ({
+  card: {
+    width: '95%',
+    maxWidth: '400px',
+    margin: '20px',
+  },
+  cardHeader: {
+ 
+  },
+  title: {
+    color: '#333333',
+    [theme.breakpoints.down('xs')]: {
+      fontSize: 16,
+    },
+    [theme.breakpoints.up('sm')]: {
+      fontSize: 25,
+    },
+  },
+  subheader: {
+    [theme.breakpoints.down('xs')]: {
+      fontSize: 10,
+    },
+    [theme.breakpoints.up('sm')]: {
+      fontSize: 16,
+    },
+  },
+  content: {
+    color: '#333333',
+    [theme.breakpoints.down('xs')]: {
+      fontSize: 12,
+    },
+    [theme.breakpoints.up('sm')]: {
+      fontSize: 16,
+    },
+  },
+  cardContent: {
+    backgroundColor: "lightsalmon",
+
+  },
+})
+
+const YoutubePlayer = ({ videoID, title, description, date, classes }) => (
+  <Card className={classes.card}>
     <YouTube videoId={videoID} opts={opts} onReady={videoOnReady} />
-    <CardHeader title={title} subheader={date} />
-    <CardContent>
-      <Typography component="p">{description}</Typography>
+    <CardHeader
+      classes={{
+        root: classes.cardHeader,
+        title: classes.title,
+        subheader: classes.subheader,
+      }}
+      title={title}
+      subheader={date}
+    />
+    <CardContent className={classes.cardContent}>
+      <Typography className={classes.content} component="p">
+        {description}
+      </Typography>
     </CardContent>
-  </StyledCard>
+  </Card>
 )
 
-export default YoutubePlayer
+export default withStyles(styles)(YoutubePlayer)
