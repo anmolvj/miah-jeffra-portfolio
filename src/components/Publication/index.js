@@ -3,13 +3,21 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 
 const Container = styled.div`
+  background-color: lightsalmon;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 150px;
-  padding: 10px;
-  margin: 30px;
+  width: 100px;
+  margin: 10px;
   position: relative;
+  @media (min-width: 400px) {
+    margin: 5vw;
+  }
+  @media (min-width: 575px) {
+    width: 150px;
+    padding: 10px;
+    margin: 30px;
+  }
 `
 const ImageContainer = styled.div`
   width: 100px;
