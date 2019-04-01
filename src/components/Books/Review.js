@@ -12,6 +12,7 @@ const Review = styled.div`
   font-size: 10px;
   font-weight: bold;
   text-align: left;
+  font-style: italic;
 `
 
 const Reviewer = styled.div`
@@ -24,6 +25,6 @@ const Reviewer = styled.div`
 export default ({ reviewerName, message }) => (
   <Container>
     <Reviewer>{reviewerName}</Reviewer>
-    <Review>{message}</Review>
+    <Review>"{message}"</Review>
   </Container>
 )
