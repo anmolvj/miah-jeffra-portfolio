@@ -1,13 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import Paper from '@material-ui/core/Paper'
 import { graphql } from 'gatsby'
 import ReactMarkdown from 'react-markdown'
 import Layout from '../layouts/default'
 import { HTMLContent } from '../components/Content'
 import Awards from '../components/Awards'
 import Img from 'gatsby-image'
-import BodyContainer from '../components/BodyContainer'
+
+const BodyContainer = styled(Paper)`
+  display: ${props => (Boolean(props.hidden) ? 'hidden' : 'block')};
+  font-family: ${props => props.theme.font.family.secondary};
+  margin: auto;
+  font-size: 12px;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 700px;
+`
 
 const Container = styled.div`
   margin: 10px;
@@ -19,6 +30,7 @@ const AwardsContainer = styled.div`
 
 const MainImageContainer = styled.div`
   margin: auto;
+  max-width: 700px;
 `
 const Title = styled.div`
   display: inline-block;

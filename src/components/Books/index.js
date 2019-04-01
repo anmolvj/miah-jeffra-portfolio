@@ -1,12 +1,18 @@
 import React from 'react'
+import styled from 'styled-components'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import Book from './Book'
+
+const BookContainer = styled.div`
+  @media (max-width: 700px) {
+  }
+`
 
 const BookWithReview = props => {
   const { edges: posts } = props.data.allMarkdownRemark
 
   return (
-    <div className="columns is-multiline">
+    <BookContainer>
       {posts &&
         posts.map(({ node: post }) => (
           <Book
@@ -17,7 +23,7 @@ const BookWithReview = props => {
             hideLinksToBuy={props.hideLinksToBuy}
           />
         ))}
-    </div>
+    </BookContainer>
   )
 }
 

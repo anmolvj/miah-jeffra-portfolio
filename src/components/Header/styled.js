@@ -76,6 +76,7 @@ export const NavbarContainer = styled.div`
   @media (min-width: 750px) {
     display: block;
     margin: auto;
+    max-width: 620px;
   }
 
   @media (min-width: 1024px) {
