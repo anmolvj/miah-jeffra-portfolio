@@ -14,6 +14,8 @@ const PublicationContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
+  max-width: 900px;
+  margin: auto;
   @media (min-width: 575px) {
     justify-content: space-around;
   }
