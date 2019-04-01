@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-// import './styles-topnav.sass'
+import './styles-topnav.sass'
 
 const Container = styled.div`
   display: flex;
@@ -14,8 +14,8 @@ const Container = styled.div`
 
 const isActive = ({ isCurrent }) => {
   return isCurrent
-    ? { className: 'is-not-active' }
-    : { className: 'is-not-active' }
+    ? { className: 'is-active-topnav' }
+    : { className: 'is-not-active-topnav' }
 }
 
 export default () => {
