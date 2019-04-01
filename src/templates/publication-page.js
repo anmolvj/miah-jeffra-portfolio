@@ -21,18 +21,17 @@ const PublicationContainer = styled.div`
 
 const TitleContainer = styled.div`
   text-align: center;
-  padding: 30px;
+  padding: 10px;
 `
 const Title = styled.div`
   display: inline-block;
-  font-size: 24px;
+  font-size: 16px;
   text-transform: uppercase;
   color: ${props => props.theme.color.grey};
 `
 
 const BooksContainer = styled.div`
   margin: auto;
-  padding: 20px;
 `
 
 export const PublicationPageTemplate = ({ page }) => {

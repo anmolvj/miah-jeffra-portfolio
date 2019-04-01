@@ -7,34 +7,25 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 150px;
-  padding: 10px;
-  margin: 30px;
-  position: relative;
+  width: 100px;
 `
 
 const ImageContainer = styled.div`
-  width: 100px;
+  width: 50px;
+  height: 70px;
+
   margin: auto;
 `
 
 const LabelContainer = styled.div`
-  margin: 5px;
-  padding: 5px;
-  font-size: 14px;
   text-align: center;
-  font-weight: 400;
   text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+  color: ${props => props.theme.color.grey};
 `
 const ExternalLink = styled.a`
   text-decoration: none;
-  color: inherit;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 150px;
-  padding: 10px;
-  margin: 30px;
 `
 
 export default ({ label, linkImage, linkURL }) => (
