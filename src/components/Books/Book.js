@@ -7,12 +7,22 @@ import ReviewBox from './Review'
 import PurchaseLink from './PurchaseLink'
 import Cover from './Cover'
 
-const Container = styled.div``
+const Container = styled.div`
+  margin: auto;
+  max-width: 650px;
+  @media (min-width: 750px) {
+    width: 80%;
+  }
+`
 
 const CoverAndReviewContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media (min-width: 750px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `
 
 const ReviewContainer = styled.div`

@@ -10,6 +10,7 @@ const BodyContainer = styled(Paper)`
   font-size: 12px;
   padding: 10px;
   margin-bottom: 20px;
+  max-width: 650px;
 `
 
 export default ({ children, hidden }) => (
