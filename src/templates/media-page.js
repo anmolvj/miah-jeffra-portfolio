@@ -58,7 +58,7 @@ const YoutubeContainer = styled.div`
 class MediaPageTemplate extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { value: 'interview' }
+    this.state = { value: 'youtube' }
     this.handleTabClick = this.handleTabClick.bind(this)
   }
   handleTabClick = (event, value) => {
@@ -80,8 +80,8 @@ class MediaPageTemplate extends React.Component {
             indicator: classes.indicator,
           }}
         >
-          <Tab value="interview" label="Interviews / Reviews" />
           <Tab value="youtube" label="Videos" />
+          <Tab value="interview" label="Interviews / Reviews" />
         </Tabs>
         {this.state.value === 'interview' ? (
           <InterviewContainer>
