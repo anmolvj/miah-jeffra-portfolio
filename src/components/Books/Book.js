@@ -1,10 +1,8 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import styled from 'styled-components'
-import BodyContainer from '../BodyContainer'
-import ReviewBox from './Review'
 import PurchaseLink from './PurchaseLink'
 import Cover from './Cover'
+import ReviewBox from './Review/index'
 
 const Container = styled.div`
   margin: auto;
@@ -13,24 +11,24 @@ const Container = styled.div`
     width: 80%;
   }
 `
-
-const CoverAndReviewContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  @media (min-width: 750px) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+const BodyContainer = styled.div`
+  display: ${props => (Boolean(props.hidden) ? 'hidden' : 'block')};
+  font-family: ${props => props.theme.font.family.secondary};
+  margin: auto;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px;
 `
 
-const ReviewContainer = styled.div`
+const CoverAndBodyContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5px;
-  padding-left: 10px;
+  @media (min-width: 750px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `
 
 const DescriptionContainer = styled.div`
@@ -66,7 +64,7 @@ export default ({
   hideLinksToBuy = false,
 }) => (
   <Container>
-    <CoverAndReviewContainer>
+    <CoverAndBodyContainer>
       <CoverContainer>
         <Cover
           link={bookPageLink}
@@ -74,16 +72,12 @@ export default ({
           alt={coverImage.alt}
         />
       </CoverContainer>
-      <ReviewContainer>
-        {reviews.map(review => (
-          <ReviewBox {...review} />
-        ))}
-      </ReviewContainer>
-    </CoverAndReviewContainer>
+      <BodyContainer hidden={hideDescription}>
+        <p>{description}</p>
+      </BodyContainer>
+    </CoverAndBodyContainer>
 
-    <BodyContainer hidden={hideDescription}>
-      <p>{description}</p>
-    </BodyContainer>
+    <ReviewBox reviews={reviews} />
 
     {!Boolean(hideLinksToBuy) && (
       <BuyLinksContainer>
