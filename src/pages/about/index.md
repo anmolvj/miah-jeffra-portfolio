@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 mainImage:
-  alt: Miah Jeffra.
+  alt: 'Miah Jeffra. '
   image: /img/headshots/3.jpg
 awardsSection:
   awards:
