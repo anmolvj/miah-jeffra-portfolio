@@ -86,7 +86,7 @@ awardsSection:
         image: /img/awards/yemassee-fiction-prize.png
       awardTitle: 'Finalist, Yemassee Fiction Prize'
     - awardImage:
-        alt: 'http://pleiadespress.org/about/guidelines/prose-contest-guidelines/'
+        alt: prose-contest-guidelines
         image: /img/pleiades-press.jpg
       awardTitle: 'Finalist, Robert C Jones Book Award'
   sectionName: Awards
