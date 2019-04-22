@@ -176,7 +176,13 @@ collections:
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "publication-page" }
           - { label: "Books Section Title", name: "bookSectionTitle", widget: "string", default: "Books", required: false }
-          - { 
+          - {
+            label: "Publications Section",
+            name: "publicationsSection",
+            widget: "object",
+            fields: [
+              {label: "Section Name", name: "sectionName", widget: "string"},
+              { 
               label: "All Publications",
               name: "publicationList",
               widget: "list",
@@ -193,7 +199,9 @@ collections:
                   ]
                   }
               ]
-              }   
+              }
+            ]
+          }       
           
 
 

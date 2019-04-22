@@ -47,10 +47,10 @@ export const PublicationPageTemplate = ({ page }) => {
       </BooksContainer>
 
       <TitleContainer>
-        <Title>Publications</Title>
+        <Title>{page.frontmatter.publicationsSection.sectionName}</Title>
       </TitleContainer>
       <PublicationContainer>
-        {page.frontmatter.publicationList.map(
+        {page.frontmatter.publicationsSection.publicationList.map(
           ({ title, publicationImage, link }) => {
             return (
               <Publication
@@ -88,15 +88,18 @@ export const publicationPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        publicationList {
-          title
-          link
-          publicationImage {
-            alt
-            image {
-              childImageSharp {
-                fluid(maxWidth: 526, quality: 92) {
-                  ...GatsbyImageSharpFluid
+        publicationsSection {
+          sectionName
+          publicationList {
+            title
+            link
+            publicationImage {
+              alt
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 526, quality: 92) {
+                    ...GatsbyImageSharpFluid
+                  }
                 }
               }
             }
