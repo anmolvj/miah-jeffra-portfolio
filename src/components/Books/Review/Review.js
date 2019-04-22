@@ -4,8 +4,12 @@ import styled from 'styled-components'
 const Container = styled.div`
   margin-bottom: 20px;
   padding: 0px;
-  width: 90%;
   font-family: ${props => props.theme.font.family.secondary};
+  max-width: 50%;
+  @media (max-width: 500px) {
+    max-width: 90%;
+    margin: 5px auto;
+  }
 `
 
 const Review = styled.div`

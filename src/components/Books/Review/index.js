@@ -4,19 +4,22 @@ import Review from './Review'
 
 const ReviewContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 5px;
-  padding-left: 10px;
-  max-width: 650px;
+  flex-direction: row;
+  flex-wrap: wrap;
   @media (max-width: 750px) {
-    width: 90%;
+    width: 95%;
+    margin: auto;
+  }
+  @media (max-width: 500px) {
+    flex-direction: column;
   }
 `
 
 export default ({ reviews }) => (
   <ReviewContainer>
+    {reviews.map(review => (
+      <Review {...review} />
+    ))}
     {reviews.map(review => (
       <Review {...review} />
     ))}

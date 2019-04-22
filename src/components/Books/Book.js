@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import PurchaseLink from './PurchaseLink'
 import Cover from './Cover'
 import ReviewBox from './Review/index'
+import Body from './Body/index'
 
 const Container = styled.div`
   margin: auto;
@@ -11,36 +12,25 @@ const Container = styled.div`
     width: 80%;
   }
 `
-const BodyContainer = styled.div`
-  display: ${props => (Boolean(props.hidden) ? 'hidden' : 'block')};
-  font-family: ${props => props.theme.font.family.secondary};
-  margin: auto;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 10px;
-`
 
 const CoverAndBodyContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
   @media (min-width: 750px) {
     flex-direction: row;
     justify-content: space-between;
   }
 `
 
-const DescriptionContainer = styled.div`
-  font-weight: bold;
-  margin: 10px;
-  padding: 20px;
-`
-
 const CoverContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  background-color: red;
+  margin: auto;
 `
 
 const BuyLinksContainer = styled.div`
@@ -72,9 +62,8 @@ export default ({
           alt={coverImage.alt}
         />
       </CoverContainer>
-      <BodyContainer hidden={hideDescription}>
-        <p>{description}</p>
-      </BodyContainer>
+
+      <Body hidden={hideDescription} description={description} />
     </CoverAndBodyContainer>
 
     <ReviewBox reviews={reviews} />
