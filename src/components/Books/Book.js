@@ -1,10 +1,9 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import styled from 'styled-components'
-import BodyContainer from '../BodyContainer'
-import ReviewBox from './Review'
 import PurchaseLink from './PurchaseLink'
 import Cover from './Cover'
+import ReviewBox from './Review/index'
+import Body from './Body/index'
 
 const Container = styled.div`
   margin: auto;
@@ -14,35 +13,24 @@ const Container = styled.div`
   }
 `
 
-const CoverAndReviewContainer = styled.div`
+const CoverAndBodyContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
   @media (min-width: 750px) {
     flex-direction: row;
     justify-content: space-between;
   }
 `
 
-const ReviewContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 5px;
-  padding-left: 10px;
-`
-
-const DescriptionContainer = styled.div`
-  font-weight: bold;
-  margin: 10px;
-  padding: 20px;
-`
-
 const CoverContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  background-color: red;
+  margin: auto;
 `
 
 const BuyLinksContainer = styled.div`
@@ -66,7 +54,7 @@ export default ({
   hideLinksToBuy = false,
 }) => (
   <Container>
-    <CoverAndReviewContainer>
+    <CoverAndBodyContainer>
       <CoverContainer>
         <Cover
           link={bookPageLink}
@@ -74,16 +62,11 @@ export default ({
           alt={coverImage.alt}
         />
       </CoverContainer>
-      <ReviewContainer>
-        {reviews.map(review => (
-          <ReviewBox {...review} />
-        ))}
-      </ReviewContainer>
-    </CoverAndReviewContainer>
 
-    <BodyContainer hidden={hideDescription}>
-      <p>{description}</p>
-    </BodyContainer>
+      <Body hidden={hideDescription} description={description} />
+    </CoverAndBodyContainer>
+
+    <ReviewBox reviews={reviews} />
 
     {!Boolean(hideLinksToBuy) && (
       <BuyLinksContainer>
