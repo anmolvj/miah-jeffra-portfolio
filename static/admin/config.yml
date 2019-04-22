@@ -175,6 +175,7 @@ collections:
         name: "publication"
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "publication-page" }
+          - { label: "Books Section Title", name: "bookSectionTitle", widget: "string", default: "Books", required: false }
           - { 
               label: "All Publications",
               name: "publicationList",

@@ -40,7 +40,7 @@ export const PublicationPageTemplate = ({ page }) => {
   return (
     <Container>
       <TitleContainer>
-        <Title>Books</Title>
+        <Title>{page.frontmatter.bookSectionTitle}</Title>
       </TitleContainer>
       <BooksContainer>
         <Books hideDescription={true} hideLinksToBuy={true} />
