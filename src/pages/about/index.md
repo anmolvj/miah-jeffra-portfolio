@@ -85,27 +85,17 @@ awardsSection:
         alt: yemassee-fiction-prize
         image: /img/awards/yemassee-fiction-prize.png
       awardTitle: 'Finalist, Yemassee Fiction Prize'
+    - awardImage:
+        alt: 'http://pleiadespress.org/about/guidelines/prose-contest-guidelines/'
+        image: /img/pleiades-press.jpg
+      awardTitle: 'Finalist, Robert C Jones Book Award'
   sectionName: Awards
 ---
+Miah Jeffra is a writer, artist, curator and educator, currently living in San Francisco. A military brat, Jeffra moved throughout their childhood, but most identifies the South as home.
 
-Miah Jeffra is a writer, artist, curator and educator, currently living in San Francisco.
-A military brat, Jeffra moved throughout their childhood, but most identifies the South as
-home.
+They spent their high school years in Baltimore, and then moved to Atlanta, where they studied English, Music and Theatre at Oglethorpe University.
 
-They spent their high school years in Baltimore, and then moved to Atlanta, where they
-studied English, Music and Theatre at Oglethorpe University.
+Miah later studied in the Master’s Writing Program in Critical Studies at the California Institute of the Arts and later at San Francisco State University. Jeffra teaches Writing, Drama, Media and Cultural Studies at Santa Clara University and The San Francisco Art Institute, and is Founding Editor and Production Designer of queer literary collaborative,  Foglifter Press.
 
-Miah later studied in the Master’s Writing Program in  Critical Studies  at the California
-Institute of the Arts and later at San Francisco State University. Jeffra teaches Writing,
-Drama, Media and Cultural Studies at Santa Clara University and The San Francisco
-Art Institute and is Founding Editor of queer literary collaborative,  Foglifter Press.
-
-Jeffra finds interest in community-centered arts and discourse and chooses to maintain
-a multi-disciplinary studio practice for its collaborative possibilities. The subjects of their
-work range from psychogeography, urban studies and class to gender structures and
-whiteness as oppressive construct. Influences include Augusto Boal, Anna Deavere
-Smith, Richard Rodriguez, Peter Brook, Angela Davis, Richard Schechner, James
-Baldwin, Judith Butler, Michael Cunningham, Toni Morrison, Adrian Piper, Colum
-McCann, Olafur Eliasson, Guy Debord and the Situationists, Whoopi Goldberg, Joe
-Goode, West African dance forms, and other artists/writers who emphasize process in
-their work.
+Jeffra finds interest in community-centered arts and discourse and chooses to maintain a multi-disciplinary studio practice for its collaborative possibilities. The subjects of their work range from psychogeography, urban studies and class to gender structures and whiteness as oppressive construct. Influences include Augusto Boal, Anna Deavere Smith, Richard Rodriguez, Peter Brook, Angela Davis, Richard Schechner, James
+Baldwin, Judith Butler, Michael Cunningham, Toni Morrison, Adrian Piper, Colum McCann, Olafur Eliasson, Guy Debord and the Situationists, Whoopi Goldberg, Joe Goode, West African dance forms, and other artists/writers who emphasize process in their work.
