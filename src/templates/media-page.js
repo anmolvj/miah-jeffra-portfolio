@@ -67,7 +67,7 @@ class MediaPageTemplate extends React.Component {
 
   render() {
     const { classes, page } = this.props
-    const { interviews, youtubeVideos } = page.frontmatter
+    const { interviewsSection, youtubeSection } = page.frontmatter
 
     return (
       <Container>
@@ -80,23 +80,25 @@ class MediaPageTemplate extends React.Component {
             indicator: classes.indicator,
           }}
         >
-          <Tab value="youtube" label="Videos" />
-          <Tab value="interview" label="Interviews / Reviews" />
+          <Tab value="youtube" label={youtubeSection.sectionName} />
+          <Tab value="interview" label={interviewsSection.sectionName} />
         </Tabs>
         {this.state.value === 'interview' ? (
           <InterviewContainer>
-            {interviews.map(({ title, url, interviewer, date }) => (
-              <Interview
-                title={title}
-                url={url}
-                interviewer={interviewer}
-                date={date}
-              />
-            ))}
+            {interviewsSection.interviews.map(
+              ({ title, url, interviewer, date }) => (
+                <Interview
+                  title={title}
+                  url={url}
+                  interviewer={interviewer}
+                  date={date}
+                />
+              )
+            )}
           </InterviewContainer>
         ) : (
           <YoutubeContainer>
-            {youtubeVideos.map(({ title, description, url }) => (
+            {youtubeSection.youtubeVideos.map(({ title, description, url }) => (
               <YoutubePlayer
                 title={title}
                 description={description}
@@ -143,16 +145,22 @@ export const mediaPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        youtubeVideos {
-          title
-          description
-          url
+        youtubeSection {
+          sectionName
+          youtubeVideos {
+            title
+            description
+            url
+          }
         }
-        interviews {
-          title
-          url
-          interviewer
-          date
+        interviewsSection {
+          sectionName
+          interviews {
+            title
+            url
+            interviewer
+            date
+          }
         }
       }
     }

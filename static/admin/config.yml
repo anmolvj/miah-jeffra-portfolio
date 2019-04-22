@@ -149,7 +149,13 @@ collections:
         name: "media"
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "media-page" }
-          - { 
+          - {
+            label: "Youtube Section",
+            name: "youtubeSection",
+            widget: "object",
+            fields: [
+              {label: "Section Name", name: "sectionName", widget: "string"},
+              { 
               label: "Youtube Videos", 
               name: "youtubeVideos", 
               widget: "list",
@@ -159,7 +165,15 @@ collections:
                 {label: "Youtube URL", name: "url", widget: "string"}
                 ]
             }
-          - { 
+            ]
+          }
+          - {
+            label: "Interviews Section",
+            name: "interviewsSection",
+            widget: "object",
+            fields: [
+              {label: "Section Name", name: "sectionName", widget: "string"},
+              { 
               label: "Interviews", 
               name: "interviews", 
               widget: "list",
@@ -169,7 +183,9 @@ collections:
                 {label: "Interviewer", name: "interviewer", widget: "string"},
                 {label: "Interview Date", name: "string", widget: "string"}
                 ]
-            }  
+            } 
+            ]
+          } 
       - file: "src/pages/publication/index.md"
         label: "Publication"
         name: "publication"
