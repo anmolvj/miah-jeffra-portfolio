@@ -20,8 +20,5 @@ export default ({ reviews }) => (
     {reviews.map(review => (
       <Review {...review} />
     ))}
-    {reviews.map(review => (
-      <Review {...review} />
-    ))}
   </ReviewContainer>
 )
