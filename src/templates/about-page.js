@@ -56,8 +56,8 @@ export const AboutPageTemplate = ({ page }) => {
         )}
       </BodyContainer>
       <AwardsContainer>
-        <Title>Awards</Title>
-        <Awards awards={page.frontmatter.awards} />
+        <Title>{page.frontmatter.awardsSection.sectionName}</Title>
+        <Awards awards={page.frontmatter.awardsSection.awards} />
       </AwardsContainer>
     </Container>
   )
@@ -94,17 +94,20 @@ export const aboutPageQuery = graphql`
           }
           alt
         }
-        awards {
-          awardTitle
-          awardImage {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 526, quality: 92) {
-                  ...GatsbyImageSharpFluid
+        awardsSection {
+          sectionName
+          awards {
+            awardTitle
+            awardImage {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 526, quality: 92) {
+                    ...GatsbyImageSharpFluid
+                  }
                 }
               }
+              alt
             }
-            alt
           }
         }
       }

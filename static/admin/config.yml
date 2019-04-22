@@ -123,24 +123,7 @@ collections:
             widget: "object",
             fields: [
               {label: "Section Name", name: "sectionName", widget: "string"},
-              {label: "Awards", name: "awards", widget: "list", 
-              fields: [
-                  { label: "Award Title", name: "awardTitle", widget: "string" },
-                  {
-                    label: "Award Image",
-                    name: "awardImage",
-                    widget: "object",
-                    fields:
-                      [
-                        { label: "Image", name: "image", widget: "image" },
-                        { label: "Image Alt", name: "alt", widget: "string" }
-                      ]
-                  }
-                ]
-              }
-            ]
-          }
-          - {
+              {
               label: "Awards",
               name: "awards",
               widget: "list",
@@ -159,6 +142,8 @@ collections:
                   }
                 ]
             }
+            ]
+          }
       - file: "src/pages/media/index.md"
         label: "Media"
         name: "media"
