@@ -27,6 +27,12 @@ reviews:
       high-tech, low-empathy America. He takes the pulse of the now and quickens
       it with this sparkling debut.
     reviewerName: Janet Sarbanes
+  - message: >-
+      Both tough and tender, sometimes laugh-out-loud funny and other times
+      direly serious, Miah Jeffra flips the script in these essays on art,
+      danger, seduction and sexuality. Moving between critical, narrative,
+      lyrical modes Jeffra illuminates and entertains. I loved this book.
+    reviewerName: Kazim Ali
 linksToBuy:
   - label: Nomadic Press
     linkImage:
