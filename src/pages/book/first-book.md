@@ -12,7 +12,7 @@ description: >-
   identity, violence, love—in all their complexity, and in their relationship to
   one other. THE FIRST CHURCH OF WHAT'S HAPPENING is a love letter to humanity
   and its resilience, even as it wades through divisive politics, social media
-  and technological disassociation.
+  and technological dissociation.
 reviews:
   - message: >-
       Miah Jeffra does not use his imagination to protect himself or to protect
