@@ -89,6 +89,11 @@ awardsSection:
         alt: prose-contest-guidelines
         image: /img/pleiades-press.jpg
       awardTitle: 'Finalist, Robert C Jones Book Award'
+    - awardImage:
+        alt: >-
+          https://www.dzancbooks.org/blog/2018/11/9/dzanc-contest-longlists-announced
+        image: /img/dzanc-56a2e42c3df78cf7727afd18.gif
+      awardTitle: 'Longlist, 2018 Short Story Collection Prize, Dzanc Books'
   sectionName: Awards
 ---
 Miah Jeffra is a writer, artist, curator and educator, currently living in San Francisco. A military brat, Jeffra moved throughout their childhood, but most identifies the South as home.
