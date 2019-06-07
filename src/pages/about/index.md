@@ -16,7 +16,7 @@ awardsSection:
     - awardImage:
         alt: anime-residency
         image: /img/awards/arteles-residency.jpg
-      awardTitle: Arteles residency
+      awardTitle: Arteles Residency
     - awardImage:
         alt: atticus-review-creative-nonfiction-prize
         image: /img/awards/atticus-review-creative-nonfiction-prize.jpg
@@ -32,7 +32,7 @@ awardsSection:
     - awardImage:
         alt: lambda-literary-fellowship
         image: /img/awards/lambda-literary-fellowship.png
-      awardTitle: Lambda Literary Fellowship
+      awardTitle: 'Lambda Literary Fellowship, nonfiction'
     - awardImage:
         alt: leapfrog-press-novel-prize
         image: /img/awards/leapfrog-press-novel-prize.jpg
@@ -56,7 +56,7 @@ awardsSection:
     - awardImage:
         alt: oregon-writers-colony-nonfiction-prize.jpg
         image: /img/awards/oregon-writers-colony-nonfiction-prize.jpg
-      awardTitle: Oregon Writers Colong Nonfiction Prize
+      awardTitle: Oregon Writers Colony Nonfiction Prize
     - awardImage:
         alt: prairie-schooner-book-prize
         image: /img/awards/prairie-schooner-book-prize.png
@@ -64,7 +64,7 @@ awardsSection:
     - awardImage:
         alt: ragdale-residency
         image: /img/awards/ragdale-residency.jpg
-      awardTitle: Ragdale Residency
+      awardTitle: 'Ragdale Residency, nonfiction'
     - awardImage:
         alt: red-gate-residency
         image: /img/awards/red-gate-residency.jpg
