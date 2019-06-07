@@ -1,13 +1,12 @@
 ---
 templateKey: publication-page
 publicationsSection:
-  sectionName: Publications
   publicationList:
     - link: ' https://www.14hills.net/publications-fourteen-hills'
       publicationImage:
         alt: 14-hills-logo
         image: /img/publications/14-hills.jpg
-      title: 14 Hills
+      title: Fourteen Hills
     - link: ' http://www.acappellazoo.com'
       publicationImage:
         alt: a-capella-zoo-logo
@@ -98,5 +97,6 @@ publicationsSection:
         alt: the-north-american-review-logo
         image: /img/publications/the-north-american-review.jpg
       title: The North American Review
+  sectionName: Publications
 ---
 
