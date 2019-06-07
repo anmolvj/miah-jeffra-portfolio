@@ -28,7 +28,7 @@ awardsSection:
     - awardImage:
         alt: hub-city-writers-project-pesidency
         image: /img/awards/hub-city-writers-project-pesidency.png
-      awardTitle: Hub City Writers Project Presidency
+      awardTitle: Hub City Writers Project Residency
     - awardImage:
         alt: lambda-literary-fellowship
         image: /img/awards/lambda-literary-fellowship.png
