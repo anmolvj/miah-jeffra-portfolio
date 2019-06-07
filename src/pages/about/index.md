@@ -94,6 +94,10 @@ awardsSection:
           https://www.dzancbooks.org/blog/2018/11/9/dzanc-contest-longlists-announced
         image: /img/dzanc-56a2e42c3df78cf7727afd18.gif
       awardTitle: 'Longlist, 2018 Short Story Collection Prize, Dzanc Books'
+    - awardImage:
+        alt: 'https://www.newriverspress.com/product-category/many-voices-poject/'
+        image: /img/new-rivers-press.png
+      awardTitle: 'Finalist, Many Voices Project Prize, New Rivers Press'
   sectionName: Awards
 ---
 Miah Jeffra is a writer, artist, curator and educator, currently living in San Francisco. A military brat, Jeffra moved throughout their childhood, but most identifies the South as home.
@@ -102,5 +106,4 @@ They spent their high school years in Baltimore, and then moved to Atlanta, wher
 
 Miah later studied in the MFA Writing Program in Critical Studies at the California Institute of the Arts and the MA program in English at San Francisco State University. Jeffra teaches Writing, Drama, Media and Cultural Studies at Santa Clara University and The San Francisco Art Institute, and is Founding Editor and Production Designer of queer literary collaborative, Foglifter Press.
 
-Jeffra finds interest in community-centered arts and discourse and chooses to maintain a multi-disciplinary studio practice for its collaborative possibilities. The subjects of their work range from psycho-geography, urban studies and class to gender structures and whiteness as oppressive construct. Influences include Augusto Boal, Anna Deavere Smith, Richard Rodriguez, Peter Brook, Angela Davis, Richard Schechner, James
-Baldwin, Judith Butler, Michael Cunningham, Toni Morrison, Adrian Piper, Colum McCann, Olafur Eliasson, Guy Debord and the Situationists, Whoopi Goldberg, Joe Goode, West African dance forms, and other artists/writers who emphasize process in their work.
+Jeffra finds interest in community-centered arts and discourse and chooses to maintain a multi-disciplinary studio practice for its collaborative possibilities. The subjects of their work range from psycho-geography, urban studies and class to gender structures and whiteness as oppressive construct. Influences include Augusto Boal, Anna Deavere Smith, Richard Rodriguez, Peter Brook, Angela Davis, Richard Schechner, James Baldwin, Judith Butler, Michael Cunningham, Toni Morrison, Adrian Piper, Colum McCann, Olafur Eliasson, Guy Debord and the Situationists, Whoopi Goldberg, Joe Goode, West African dance forms, and other artists/writers who emphasize process in their work.
