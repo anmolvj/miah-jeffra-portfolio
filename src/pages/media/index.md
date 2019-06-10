@@ -3,10 +3,8 @@ templateKey: media-page
 youtubeSection:
   sectionName: Videos
   youtubeVideos:
-    - description: >-
-        Miah Jeffra reading for Quiet Lightning and Radar Productions at Eureka
-        Valley Rec Center on February 7th 2016
-      title: Miah Jeffra @ Quiet Lightning + Radar Productions
+    - description: Reading for Radar Productions at Eureka Valley Rec Center
+      title: '"Make Sure to See the Exit Door"'
       url: 'https://www.youtube.com/watch?v=KAoaPzUEMsI'
     - description: >-
         Miah Jeffra reading for Quiet Lightning at The Stud Bar on Monday,
