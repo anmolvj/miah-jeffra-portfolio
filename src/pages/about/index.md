@@ -98,7 +98,7 @@ awardsSection:
         alt: 'https://www.newriverspress.com/product-category/many-voices-poject/'
         image: /img/new-rivers-press.png
       awardTitle: 'Finalist, Many Voices Project Prize, New Rivers Press'
-  sectionName: Awards
+  sectionName: Accolades
 ---
 Miah Jeffra is a writer, artist, curator and educator, currently living in San Francisco. A military brat, Jeffra moved throughout their childhood, but most identifies the South as home.
 
