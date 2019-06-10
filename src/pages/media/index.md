@@ -15,6 +15,9 @@ youtubeSection:
     - description: Reading for Why There are Words
       title: '"Life on Mars"'
       url: 'https://www.youtube.com/watch?v=QmRFbev-vvc'
+    - description: Reading for Turk & Divis at The Bindery
+      title: '"Spring is the Most Violent Time of Year"'
+      url: 'https://www.youtube.com/watch?v=SFoBRzjhRYU'
 interviewsSection:
   interviews:
     - interviewer: Christina Tesoro
