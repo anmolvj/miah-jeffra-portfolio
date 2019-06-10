@@ -12,6 +12,9 @@ youtubeSection:
     - description: The Write Stuff Series on Litseen
       title: '"The Modern Prometheus, reprise"'
       url: 'https://www.youtube.com/watch?v=hi7BjxFZdrU'
+    - description: Reading for Why There are Words
+      title: '"Life on Mars"'
+      url: 'https://www.youtube.com/watch?v=QmRFbev-vvc'
 interviewsSection:
   interviews:
     - interviewer: Christina Tesoro
@@ -37,6 +40,6 @@ interviewsSection:
       title: Hub City Writers Project
       url: >-
         https://www.spartanburg.com/news/2017/06/five-questions-summer-2017-writer-residence-miah-jeffra/
-  sectionName: Interviews / Reviews
+  sectionName: Interviews / Reviews / Articles
 ---
 
