@@ -92,7 +92,7 @@ awardsSection:
     - awardImage:
         alt: >-
           https://www.dzancbooks.org/blog/2018/11/9/dzanc-contest-longlists-announced
-        image: /img/dzanc-56a2e42c3df78cf7727afd18.gif
+        image: /img/dzanc-books.jpg
       awardTitle: 'Longlist, 2018 Short Story Collection Prize, Dzanc Books'
     - awardImage:
         alt: 'https://www.newriverspress.com/product-category/many-voices-poject/'
