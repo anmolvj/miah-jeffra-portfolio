@@ -49,6 +49,11 @@ interviewsSection:
       title: Hub City Writers Project
       url: >-
         https://www.spartanburg.com/news/2017/06/five-questions-summer-2017-writer-residence-miah-jeffra/
+    - interviewer: Miah Jeffra
+      string: '2019'
+      title: The North American Review
+      url: >-
+        https://northamericanreview.org/open-space/unworkshop-towards-critical-expansiveness-writers-miah-jeffra-0
   sectionName: Interviews / Reviews / Articles
 ---
 
