@@ -56,7 +56,7 @@ awardsSection:
     - awardImage:
         alt: oregon-writers-colony-nonfiction-prize.jpg
         image: /img/awards/oregon-writers-colony-nonfiction-prize.jpg
-      awardTitle: Oregon Writers Colong Nonfiction Prize
+      awardTitle: Oregon Writers Colony Nonfiction Prize
     - awardImage:
         alt: prairie-schooner-book-prize
         image: /img/awards/prairie-schooner-book-prize.png
