@@ -27,30 +27,30 @@ youtubeSection:
 interviewsSection:
   interviews:
     - interviewer: Christina Tesoro
-      string: '2018'
+      date: '2018'
       title: Lambda Literary Review
       url: >-
         https://www.lambdaliterary.org/reviews/fiction/06/14/the-first-church-of-whats-happening-by-miah-jeffra/
     - interviewer: Rebecca Samuelson
-      string: '2017'
+      date: '2017'
       title: Litseen
       url: 'http://litseen.com/miah-jeffra/'
     - interviewer: Self Interview
-      string: '2017'
+      date: '2017'
       title: The Nervous Breakdown
       url: 'http://thenervousbreakdown.com/tag/miah-jeffra/'
     - interviewer: Nathan Falstreau
-      string: '2016'
+      date: '2016'
       title: Hoodline
       url: >-
         https://hoodline.com/2016/04/event-spotlight-sfai-s-write-of-way-literary-festival-features-students-small-press
     - interviewer: Hub City
-      string: '2017'
+      date: '2017'
       title: Hub City Writers Project
       url: >-
         https://www.spartanburg.com/news/2017/06/five-questions-summer-2017-writer-residence-miah-jeffra/
     - interviewer: Miah Jeffra
-      string: '2019'
+      date: '2019'
       title: The North American Review
       url: >-
         https://northamericanreview.org/open-space/unworkshop-towards-critical-expansiveness-writers-miah-jeffra-0
