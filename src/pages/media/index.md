@@ -18,9 +18,6 @@ youtubeSection:
     - description: Reading for Turk & Divis at The Bindery
       title: '"Spring is the Most Violent Time of Year"'
       url: 'https://www.youtube.com/watch?v=SFoBRzjhRYU'
-    - description: Reading for Words That Heal at Antioch University
-      title: '"Coffee Spilled"'
-      url: 'https://vimeo.com/104897180'
     - description: Reading for New Books Release at Alley Cat Books
       title: '"How to Seduce a Tech Bro in 13 Easy Steps"'
       url: 'https://www.youtube.com/watch?v=VY1FFNZx8dg'
