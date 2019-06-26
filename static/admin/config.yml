@@ -187,7 +187,7 @@ collections:
                 {label: "Title", name: "title", widget: "string"},
                 {label: "URL", name: "url", widget: "string"},
                 {label: "Interviewer", name: "interviewer", widget: "string"},
-                {label: "Interview Date", name: "string", widget: "string"}
+                {label: "Interview Date", name: "date", widget: "string"}
                 ]
             } 
             ]
