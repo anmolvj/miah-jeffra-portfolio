@@ -23,34 +23,34 @@ youtubeSection:
       url: 'https://www.youtube.com/watch?v=VY1FFNZx8dg'
 interviewsSection:
   interviews:
-    - interviewer: Christina Tesoro
-      date: '2018'
-      title: Lambda Literary Review
-      url: >-
-        https://www.lambdaliterary.org/reviews/fiction/06/14/the-first-church-of-whats-happening-by-miah-jeffra/
-    - interviewer: Rebecca Samuelson
-      date: '2017'
-      title: Litseen
-      url: 'http://litseen.com/miah-jeffra/'
-    - interviewer: Self Interview
-      date: '2017'
-      title: The Nervous Breakdown
-      url: 'http://thenervousbreakdown.com/tag/miah-jeffra/'
-    - interviewer: Nathan Falstreau
-      date: '2016'
-      title: Hoodline
-      url: >-
-        https://hoodline.com/2016/04/event-spotlight-sfai-s-write-of-way-literary-festival-features-students-small-press
-    - interviewer: Hub City
-      date: '2017'
-      title: Hub City Writers Project
-      url: >-
-        https://www.spartanburg.com/news/2017/06/five-questions-summer-2017-writer-residence-miah-jeffra/
-    - interviewer: Miah Jeffra
-      date: '2019'
+    - date: '2019'
+      interviewer: Miah Jeffra
       title: The North American Review
       url: >-
         https://northamericanreview.org/open-space/unworkshop-towards-critical-expansiveness-writers-miah-jeffra-0
-  sectionName: Interviews / Reviews / Articles
+    - date: '2018'
+      interviewer: Christina Tesoro
+      title: Lambda Literary Review
+      url: >-
+        https://www.lambdaliterary.org/reviews/fiction/06/14/the-first-church-of-whats-happening-by-miah-jeffra/
+    - date: '2017'
+      interviewer: Rebecca Samuelson
+      title: Litseen
+      url: 'http://litseen.com/miah-jeffra/'
+    - date: '2017'
+      interviewer: Hub City
+      title: Hub City Writers Project
+      url: >-
+        https://www.spartanburg.com/news/2017/06/five-questions-summer-2017-writer-residence-miah-jeffra/
+    - date: '2017'
+      interviewer: Self Interview
+      title: The Nervous Breakdown
+      url: 'http://thenervousbreakdown.com/tag/miah-jeffra/'
+    - date: '2016'
+      interviewer: Nathan Falstreau
+      title: Hoodline
+      url: >-
+        https://hoodline.com/2016/04/event-spotlight-sfai-s-write-of-way-literary-festival-features-students-small-press
+  sectionName: Select Interviews / Reviews / Articles
 ---
 
