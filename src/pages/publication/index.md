@@ -1,29 +1,53 @@
 ---
 templateKey: publication-page
 publicationsSection:
-  sectionName: Publications
   publicationList:
+    - link: 'https://northamericanreview.org/issues'
+      publicationImage:
+        alt: the-north-american-review-logo
+        image: /img/publications/the-north-american-review.jpg
+      title: The North American Review
     - link: ' https://www.14hills.net/publications-fourteen-hills'
       publicationImage:
         alt: 14-hills-logo
         image: /img/publications/14-hills.jpg
-      title: 14 Hills
-    - link: ' http://www.acappellazoo.com'
+      title: Fourteen Hills
+    - link: ' https://newmillenniumwritings.org/writing-contest-43-miah-jeffra-flash-fiction-winner/'
       publicationImage:
-        alt: a-capella-zoo-logo
-        image: /img/publications/a-cappella-zoo.jpg
-      title: A Cappella Zoo
+        alt: new-millennium-writings-logo
+        image: /img/publications/new-millennium-writings.png
+      title: New Millenium Writings
     - link: >-
         https://atticusreview.org/denotation-connotation-or-the-relativity-of-shit/
       publicationImage:
         alt: atticus-review-logo
         image: /img/publications/atticus-review.jpg
       title: Atticus Review
+    - link: ' http://www.acappellazoo.com'
+      publicationImage:
+        alt: a-capella-zoo-logo
+        image: /img/publications/a-cappella-zoo.jpg
+      title: A Cappella Zoo
+    - link: 'http://www.fifthwednesdayjournal.com'
+      publicationImage:
+        alt: fifth-wednesday-logo
+        image: /img/publications/fifth-wednesday.jpg
+      title: Fifth Wednesday
+    - link: ' http://thenervousbreakdown.com/tnbnonfiction/2017/11/excerpt-from-the-first-church-of-whats-happening-by-miah-jeffra/'
+      publicationImage:
+        alt: the-nervous-breakdown-logo
+        image: /img/publications/the-nervous-breakdown.png
+      title: The Nervous Breakdown
     - link: 'https://www.chelseastationmagazine.com/2015/11/leaving-a-mark.html'
       publicationImage:
         alt: chelsea-station-logo
         image: /img/publications/chelsea-station.jpg
       title: Chelsea Station
+    - link: 'https://www.amazon.com/Love-Drug-Other-Dark-Poems/dp/0999889508'
+      publicationImage:
+        alt: ove-is-the-drug-and-other-dark-poems-logo
+        image: /img/publications/love-is-the-drug-and-other-dark-poems.jpg
+      title: Love is the Drug & other dark poems
     - link: ' http://tahoewritersworks.com/EDGE-purchase.html'
       publicationImage:
         alt: edge-logo
@@ -39,11 +63,6 @@ publicationsSection:
         alt: ekphrasis-logo
         image: /img/publications/ekphrasis.jpg
       title: Ekphrasis
-    - link: 'http://www.fifthwednesdayjournal.com'
-      publicationImage:
-        alt: fifth-wednesday-logo
-        image: /img/publications/fifth-wednesday.jpg
-      title: Fifth Wednesday
     - link: ' https://www.lambdaliterary.org/gaslight-anthology/'
       publicationImage:
         alt: gaslight-logo
@@ -65,16 +84,6 @@ publicationsSection:
         alt: jonathan-logo
         image: /img/publications/jonathan.jpg
       title: Jonathan
-    - link: 'https://www.amazon.com/Love-Drug-Other-Dark-Poems/dp/0999889508'
-      publicationImage:
-        alt: ove-is-the-drug-and-other-dark-poems-logo
-        image: /img/publications/love-is-the-drug-and-other-dark-poems.jpg
-      title: Love is the Drug & other dark poems
-    - link: ' https://newmillenniumwritings.org/writing-contest-43-miah-jeffra-flash-fiction-winner/'
-      publicationImage:
-        alt: new-millennium-writings-logo
-        image: /img/publications/new-millennium-writings.png
-      title: New Millenium Writings
     - publicationImage:
         alt: red-light-lit-logo
         image: /img/publications/red-light-lit.png
@@ -88,15 +97,6 @@ publicationsSection:
         alt: the-east-bay-review-logo
         image: /img/publications/the-east-bay-review.jpg
       title: The East Bay Review
-    - link: ' http://thenervousbreakdown.com/tnbnonfiction/2017/11/excerpt-from-the-first-church-of-whats-happening-by-miah-jeffra/'
-      publicationImage:
-        alt: the-nervous-breakdown-logo
-        image: /img/publications/the-nervous-breakdown.png
-      title: The Nervous Breakdown
-    - link: 'https://northamericanreview.org/issues'
-      publicationImage:
-        alt: the-north-american-review-logo
-        image: /img/publications/the-north-american-review.jpg
-      title: The North American Review
+  sectionName: Publications
 ---
 
