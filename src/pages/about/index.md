@@ -54,13 +54,13 @@ awardsSection:
         image: /img/pleiades-press.jpg
       awardTitle: 'Finalist, Robert C Jones Book Award'
     - awardImage:
+        alt: 'https://www.awpwriter.org/contests/awp_award_series_overview'
+        image: /img/grace-paley-prize.png
+      awardTitle: 'Finalist, Grace Paley Fiction Prize'
+    - awardImage:
         alt: arcadia-press-chapbook-prize
         image: /img/awards/arcadia-press-chapbook-prize.png
       awardTitle: 'Finalist, Arcadia Press Chapbook Prize'
-    - awardImage:
-        alt: leapfrog-press-novel-prize
-        image: /img/awards/leapfrog-press-novel-prize.jpg
-      awardTitle: 'Honorable Mention, Leapfrog Press Novel Prize'
     - awardImage:
         alt: lit-camp
         image: /img/awards/lit-camp.jpg
@@ -73,6 +73,10 @@ awardsSection:
         alt: new-south-fiction-prize
         image: /img/awards/new-south-fiction-prize.png
       awardTitle: 'Finalist, New South Fiction Prize'
+    - awardImage:
+        alt: leapfrog-press-novel-prize
+        image: /img/awards/leapfrog-press-novel-prize.jpg
+      awardTitle: 'Honorable Mention, Leapfrog Press Novel Prize'
     - awardImage:
         alt: red-gate-residency
         image: /img/awards/red-gate-residency.jpg
@@ -102,6 +106,10 @@ awardsSection:
         alt: 'http://fourthgenre.msu.edu/'
         image: /img/fourth-genre.jpg
       awardTitle: 'Finalist, Steinberg Essay Prize'
+    - awardImage:
+        alt: 'https://bayoumagazine.org/fiction-contest-winners/'
+        image: /img/james-knudsen-prize.jpg
+      awardTitle: 'Semi-finalist, James Knudsen Fiction Prize'
   sectionName: Accolades
 ---
 Miah Jeffra is a writer, artist, curator and educator, currently living in San Francisco. A military brat, Jeffra moved throughout their childhood, but most identifies the South as home.
