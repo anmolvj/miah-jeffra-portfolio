@@ -7,6 +7,12 @@ publicationsSection:
         alt: the-north-american-review-logo
         image: /img/publications/the-north-american-review.jpg
       title: The North American Review
+    - link: >-
+        https://www.wasafiri.org/article/make-sure-to-see-the-exit-door-by-miah-jeffra/
+      publicationImage:
+        alt: Wasafiri
+        image: /img/wasafiri-magazine.jpg
+      title: Wasafiri
     - link: ' https://www.14hills.net/publications-fourteen-hills'
       publicationImage:
         alt: 14-hills-logo
