@@ -105,7 +105,7 @@ awardsSection:
     - awardImage:
         alt: 'https://bayoumagazine.org/fiction-contest-winners/'
         image: /img/james-knudsen-prize.jpg
-      awardTitle: 'Finalist, James Knudsen Fiction Prize'
+      awardTitle: 'Semi-finalist, James Knudsen Fiction Prize'
     - awardImage:
         alt: 'https://www.awpwriter.org/contests/awp_award_series_overview'
         image: /img/grace-paley-prize.png
