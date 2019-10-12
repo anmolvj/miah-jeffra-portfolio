@@ -102,6 +102,14 @@ awardsSection:
         alt: 'http://fourthgenre.msu.edu/'
         image: /img/fourth-genre.jpg
       awardTitle: 'Finalist, Steinberg Essay Prize'
+    - awardImage:
+        alt: 'https://bayoumagazine.org/fiction-contest-winners/'
+        image: /img/james-knudsen-prize.jpg
+      awardTitle: 'Finalist, James Knudsen Fiction Prize'
+    - awardImage:
+        alt: 'https://www.awpwriter.org/contests/awp_award_series_overview'
+        image: /img/grace-paley-prize.png
+      awardTitle: 'Finalist, Grace Paley Fiction Prize'
   sectionName: Accolades
 ---
 Miah Jeffra is a writer, artist, curator and educator, currently living in San Francisco. A military brat, Jeffra moved throughout their childhood, but most identifies the South as home.
