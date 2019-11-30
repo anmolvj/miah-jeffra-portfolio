@@ -78,7 +78,7 @@ publicationsSection:
       publicationImage:
         alt: gitterwolf-logo
         image: /img/publications/gitterwolf.jpg
-      title: Gitterwolf
+      title: Glitterwolf
     - link: >-
         https://www.amazon.com/Hashtag-Queer-Lgbtq-Creative-Anthology/dp/194695201X
       publicationImage:
