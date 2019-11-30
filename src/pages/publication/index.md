@@ -22,7 +22,7 @@ publicationsSection:
       publicationImage:
         alt: new-millennium-writings-logo
         image: /img/publications/new-millennium-writings.png
-      title: New Millenium Writings
+      title: New Millennium Writings
     - link: >-
         https://atticusreview.org/denotation-connotation-or-the-relativity-of-shit/
       publicationImage:
