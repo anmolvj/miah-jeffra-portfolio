@@ -28,12 +28,6 @@ reviews:
       it with this sparkling debut.
     reviewerName: Janet Sarbanes
   - message: >-
-      Both tough and tender, sometimes laugh-out-loud funny and other times
-      direly serious, Miah Jeffra flips the script in these essays on art,
-      danger, seduction and sexuality. Moving between critical, narrative,
-      lyrical modes Jeffra illuminates and entertains. I loved this book.
-    reviewerName: Kazim Ali
-  - message: >-
       Through these dexterously choreographed essays, Miah Jeffra perfects a
       grim exuberance that comes to suggest a new optimism. He writes: 'We made
       the Titanic, we made the Hindenburg, we made the Challenger Shuttle. We
@@ -45,14 +39,6 @@ reviews:
       believing that what Jeffra evangelizes is resilience as a necessity, not a
       virtue.
     reviewerName: Douglas Kearney
-  - message: >-
-      Miah Jeffra writes somewhere between a scream and a growl, in short
-      energetic essays that queer the language in exciting ways. In a letter to
-      the late Keith Haring, Jeffra writes 'I want to feel like a bandit, a
-      punk, a renegade.' And indeed he takes us on an outlaw's journey,
-      provocateur and picador; flaunt and flirt. Here is a writer who grabs the
-      reader by the balls in all the ways one hopes to be testicularly taken.
-    reviewerName: D.A. Powell
   - message: >-
       Vision is a tricky enterprise. So writes Miah Jeffra in his sparkling new
       collection. In these lyrical essays Jeffra’s quick eye catches what we
