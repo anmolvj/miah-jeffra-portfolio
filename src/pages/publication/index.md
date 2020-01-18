@@ -29,6 +29,11 @@ publicationsSection:
         alt: atticus-review-logo
         image: /img/publications/atticus-review.jpg
       title: Atticus Review
+    - link: 'https://www.cogzine.com/miah-jeffra-issue-16-7'
+      publicationImage:
+        alt: Logo
+        image: /img/cog.png
+      title: COG
     - link: 'https://www.thestardustreview.com/post/life-on-mars'
       publicationImage:
         alt: Logo
@@ -108,11 +113,6 @@ publicationsSection:
         alt: the-east-bay-review-logo
         image: /img/publications/the-east-bay-review.jpg
       title: The East Bay Review
-    - link: 'https://www.cogzine.com/miah-jeffra-issue-16-7'
-      publicationImage:
-        alt: Logo
-        image: /img/cog.png
-      title: COG
   sectionName: Publications
 ---
 
