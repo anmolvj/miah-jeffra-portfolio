@@ -29,6 +29,16 @@ publicationsSection:
         alt: atticus-review-logo
         image: /img/publications/atticus-review.jpg
       title: Atticus Review
+    - link: 'https://www.cogzine.com/miah-jeffra-issue-16-7'
+      publicationImage:
+        alt: Logo
+        image: /img/cog.png
+      title: COG
+    - link: 'https://www.thestardustreview.com/post/life-on-mars'
+      publicationImage:
+        alt: Logo
+        image: /img/stardust-review.jpg
+      title: The Stardust Review
     - link: ' http://www.acappellazoo.com'
       publicationImage:
         alt: a-capella-zoo-logo
