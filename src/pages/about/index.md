@@ -6,13 +6,13 @@ mainImage:
 awardsSection:
   awards:
     - awardImage:
+        alt: Logo
+        image: /img/lammy-literary-award.jpg
+      awardTitle: 'Finalist, Outstanding Literary Anthology, Lambda Literary Awards'
+    - awardImage:
         alt: new-millennium-writings-fiction-prize
         image: /img/awards/new-millennium-writings-fiction-prize.png
       awardTitle: New Millennium Writings Fiction Prize
-    - awardImage:
-        alt: lambda-literary-fellowship
-        image: /img/awards/lambda-literary-fellowship.png
-      awardTitle: Lambda Literary Fellowship
     - awardImage:
         alt: ragdale-residency
         image: /img/awards/ragdale-residency.jpg
@@ -26,9 +26,17 @@ awardsSection:
         image: /img/awards/hub-city-writers-project-pesidency.png
       awardTitle: Hub City Writers Project Residency
     - awardImage:
+        alt: lambda-literary-fellowship
+        image: /img/awards/lambda-literary-fellowship.png
+      awardTitle: Lambda Literary Fellowship
+    - awardImage:
         alt: oregon-writers-colony-nonfiction-prize.jpg
         image: /img/awards/oregon-writers-colony-nonfiction-prize.jpg
       awardTitle: Oregon Writers Colony Nonfiction Prize
+    - awardImage:
+        alt: Logo
+        image: /img/shuffle-arts-residency.png
+      awardTitle: Shuffle Literary Arts Residency
     - awardImage:
         alt: anima-residency
         image: /img/awards/anima-residency.jpg
@@ -57,6 +65,10 @@ awardsSection:
         alt: 'https://www.awpwriter.org/contests/awp_award_series_overview'
         image: /img/grace-paley-prize.png
       awardTitle: 'Finalist, Grace Paley Fiction Prize'
+    - awardImage:
+        alt: Logo
+        image: /img/santa-fe-writers-project.jpg
+      awardTitle: 'Finalist, Santa Fe Writers Project Prize'
     - awardImage:
         alt: arcadia-press-chapbook-prize
         image: /img/awards/arcadia-press-chapbook-prize.png
