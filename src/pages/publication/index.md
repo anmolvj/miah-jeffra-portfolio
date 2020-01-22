@@ -7,6 +7,11 @@ publicationsSection:
         alt: the-north-american-review-logo
         image: /img/publications/the-north-american-review.jpg
       title: The North American Review
+    - link: 'https://thelosangelespress.com/miah-jeffra/'
+      publicationImage:
+        alt: Logo
+        image: /img/los-angeles-press.jpg
+      title: The Los Angeles Press
     - link: >-
         https://www.wasafiri.org/article/make-sure-to-see-the-exit-door-by-miah-jeffra/
       publicationImage:
