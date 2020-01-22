@@ -2,7 +2,7 @@
 templateKey: publication-page
 publicationsSection:
   publicationList:
-    - link: 'https://northamericanreview.org/issues'
+    - link: 'https://northamericanreview.org/issue/3042-spring-issue-2019'
       publicationImage:
         alt: the-north-american-review-logo
         image: /img/publications/the-north-american-review.jpg
