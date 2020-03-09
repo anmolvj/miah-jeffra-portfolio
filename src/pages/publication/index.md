@@ -2,6 +2,11 @@
 templateKey: publication-page
 publicationsSection:
   publicationList:
+    - link: 'https://forgelitmag.com/2020/03/09/a-miracle-of-miracles/'
+      publicationImage:
+        alt: The Forge
+        image: /img/the-forge.jpg
+      title: The Forge
     - link: 'https://northamericanreview.org/issue/3042-spring-issue-2019'
       publicationImage:
         alt: the-north-american-review-logo
