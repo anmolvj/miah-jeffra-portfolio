@@ -2,6 +2,11 @@
 templateKey: publication-page
 publicationsSection:
   publicationList:
+    - link: 'https://forgelitmag.com/2020/03/09/a-miracle-of-miracles/'
+      publicationImage:
+        alt: The Forge
+        image: /img/the-forge.jpg
+      title: The Forge
     - link: 'https://northamericanreview.org/issue/3042-spring-issue-2019'
       publicationImage:
         alt: the-north-american-review-logo
@@ -118,11 +123,6 @@ publicationsSection:
         alt: the-east-bay-review-logo
         image: /img/publications/the-east-bay-review.jpg
       title: The East Bay Review
-    - link: 'https://forgelitmag.com/2020/03/09/a-miracle-of-miracles/'
-      publicationImage:
-        alt: The Forge
-        image: /img/the-forge.jpg
-      title: The Forge
   sectionName: Publications
 ---
 
