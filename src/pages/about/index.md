@@ -122,6 +122,14 @@ awardsSection:
         alt: 'https://bayoumagazine.org/fiction-contest-winners/'
         image: /img/james-knudsen-prize.jpg
       awardTitle: 'Semi-finalist, James Knudsen Fiction Prize'
+    - awardImage:
+        alt: 'https://www.sfwriters.org/2020-writing-contest-finalists/'
+        image: /img/san-francisco-writers-conference.jpg
+      awardTitle: 'Finalist, San Francisco Writers Conference'
+    - awardImage:
+        alt: 'http://www.pinchjournal.com/2020pageprize'
+        image: /img/pinch.jpg
+      awardTitle: 'Runner-Up, The Page Prize'
   sectionName: Accolades
 ---
 Miah Jeffra is a writer, artist, curator and educator, currently living in San Francisco. A military brat, Jeffra moved throughout their childhood, but most identifies the South as home.
