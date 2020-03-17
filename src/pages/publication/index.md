@@ -123,6 +123,12 @@ publicationsSection:
         alt: the-east-bay-review-logo
         image: /img/publications/the-east-bay-review.jpg
       title: The East Bay Review
+    - link: >-
+        https://www.litro.co.uk/2020/03/how-to-seduce-a-tech-bro-in-13-easy-steps/
+      publicationImage:
+        alt: Litro UK
+        image: /img/litro.jpg
+      title: Litro
   sectionName: Publications
 ---
 
