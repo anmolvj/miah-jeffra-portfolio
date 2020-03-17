@@ -12,6 +12,12 @@ publicationsSection:
         alt: the-north-american-review-logo
         image: /img/publications/the-north-american-review.jpg
       title: The North American Review
+    - link: >-
+        https://www.litro.co.uk/2020/03/how-to-seduce-a-tech-bro-in-13-easy-steps/
+      publicationImage:
+        alt: Litro UK
+        image: /img/litro.jpg
+      title: Litro
     - link: 'https://thelosangelespress.com/miah-jeffra/'
       publicationImage:
         alt: Logo
@@ -49,16 +55,16 @@ publicationsSection:
         alt: Logo
         image: /img/stardust-review.jpg
       title: The Stardust Review
-    - link: ' http://www.acappellazoo.com'
-      publicationImage:
-        alt: a-capella-zoo-logo
-        image: /img/publications/a-cappella-zoo.jpg
-      title: A Cappella Zoo
     - link: 'http://www.fifthwednesdayjournal.com'
       publicationImage:
         alt: fifth-wednesday-logo
         image: /img/publications/fifth-wednesday.jpg
       title: Fifth Wednesday
+    - link: ' http://www.acappellazoo.com'
+      publicationImage:
+        alt: a-capella-zoo-logo
+        image: /img/publications/a-cappella-zoo.jpg
+      title: A Cappella Zoo
     - link: ' http://thenervousbreakdown.com/tnbnonfiction/2017/11/excerpt-from-the-first-church-of-whats-happening-by-miah-jeffra/'
       publicationImage:
         alt: the-nervous-breakdown-logo
@@ -123,12 +129,6 @@ publicationsSection:
         alt: the-east-bay-review-logo
         image: /img/publications/the-east-bay-review.jpg
       title: The East Bay Review
-    - link: >-
-        https://www.litro.co.uk/2020/03/how-to-seduce-a-tech-bro-in-13-easy-steps/
-      publicationImage:
-        alt: Litro UK
-        image: /img/litro.jpg
-      title: Litro
   sectionName: Publications
 ---
 
