@@ -2,22 +2,11 @@
 templateKey: publication-page
 publicationsSection:
   publicationList:
-    - link: 'https://forgelitmag.com/2020/03/09/a-miracle-of-miracles/'
-      publicationImage:
-        alt: The Forge
-        image: /img/the-forge.jpg
-      title: The Forge
     - link: 'https://northamericanreview.org/issue/3042-spring-issue-2019'
       publicationImage:
         alt: the-north-american-review-logo
         image: /img/publications/the-north-american-review.jpg
       title: The North American Review
-    - link: >-
-        https://www.litro.co.uk/2020/03/how-to-seduce-a-tech-bro-in-13-easy-steps/
-      publicationImage:
-        alt: Litro UK
-        image: /img/litro.jpg
-      title: Litro
     - link: 'https://thelosangelespress.com/miah-jeffra/'
       publicationImage:
         alt: Logo
