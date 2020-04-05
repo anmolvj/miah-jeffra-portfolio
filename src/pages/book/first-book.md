@@ -1,6 +1,6 @@
 ---
 templateKey: book-page
-title: First Book
+title: The First Church of What's Happening
 date: 2016-12-17T15:04:10.000Z
 coverImage:
   alt: First Book
@@ -53,12 +53,12 @@ reviews:
       see.
     reviewerName: Toni Mirosevich
 linksToBuy:
-  - label: Nomadic Press
+  - label: Buy Here!
     linkImage:
       alt: nomaidc-press
       image: /img/nomadic-press-logo.jpg
     linkURL: 'https://www.nomadicpress.org/store/thefirstchurchofwhatshappening'
-  - label: Small Press Distribution
+  - label: Buy Here!
     linkImage:
       alt: small-press-distribution
       image: /img/small-press-distribution-logo.jpg
