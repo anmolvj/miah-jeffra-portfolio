@@ -46,7 +46,7 @@ reviews:
       this: go and read the book and see for yourself. You’ll be happy you did.
     reviewerName: Chanan Tigay
 linksToBuy:
-  - label: Sibling Rivalry Press
+  - label: Buy Here!
     linkImage:
       alt: Sibling Rivalry
       image: /img/download.png
