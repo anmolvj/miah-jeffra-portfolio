@@ -118,6 +118,11 @@ publicationsSection:
         alt: the-east-bay-review-logo
         image: /img/publications/the-east-bay-review.jpg
       title: The East Bay Review
+    - link: 'https://forgelitmag.com/2020/03/09/a-miracle-of-miracles/'
+      publicationImage:
+        alt: the-forge-logo
+        image: /img/the-forge.jpg
+      title: The Forge
   sectionName: Publications
 ---
 
