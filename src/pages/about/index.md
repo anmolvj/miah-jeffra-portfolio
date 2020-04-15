@@ -18,6 +18,10 @@ awardsSection:
         image: /img/awards/ragdale-residency.jpg
       awardTitle: Alice Judson Hayes Fellowship, Ragdale Residency
     - awardImage:
+        alt: lambda-literary-fellowship
+        image: /img/awards/lambda-literary-fellowship.png
+      awardTitle: Lambda Literary Fellowship
+    - awardImage:
         alt: atticus-review-creative-nonfiction-prize
         image: /img/awards/atticus-review-creative-nonfiction-prize.jpg
       awardTitle: Atticus Review Creative Nonfiction Prize
@@ -25,10 +29,10 @@ awardsSection:
         alt: hub-city-writers-project-pesidency
         image: /img/awards/hub-city-writers-project-pesidency.png
       awardTitle: Hub City Writers Project Residency
-    - awardImage:
-        alt: lambda-literary-fellowship
-        image: /img/awards/lambda-literary-fellowship.png
-      awardTitle: Lambda Literary Fellowship
+    - awardTitle: Runner-Up, The Page Prize
+      awardImage:
+        alt: http://www.pinchjournal.com/2020pageprizewinners
+        image: /img/pinch.jpg
     - awardImage:
         alt: oregon-writers-colony-nonfiction-prize.jpg
         image: /img/awards/oregon-writers-colony-nonfiction-prize.jpg
@@ -121,10 +125,6 @@ awardsSection:
         alt: https://bayoumagazine.org/fiction-contest-winners/
         image: /img/james-knudsen-prize.jpg
       awardTitle: Semi-finalist, James Knudsen Fiction Prize
-    - awardTitle: Runner-Up, The Page Prize
-      awardImage:
-        alt: http://www.pinchjournal.com/2020pageprizewinners
-        image: /img/pinch.jpg
   sectionName: Accolades
 ---
 Miah Jeffra is a writer, artist, curator and educator, currently living in San Francisco. A military brat, Jeffra moved throughout their childhood, but most identifies the South as home.
