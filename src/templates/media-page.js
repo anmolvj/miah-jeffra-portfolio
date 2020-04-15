@@ -142,6 +142,7 @@ MediaPage.propTypes = {
 };
 
 export default withStyles(styles)(MediaPage);
+
 export const mediaPageQuery = graphql`
   query MediaPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
