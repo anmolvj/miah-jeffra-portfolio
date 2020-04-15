@@ -1,14 +1,14 @@
 ---
 templateKey: about-page
 mainImage:
-  alt: 'Miah Jeffra. '
+  alt: "Miah Jeffra. "
   image: /img/headshots/3.jpg
 awardsSection:
   awards:
     - awardImage:
         alt: Logo
         image: /img/lammy-literary-award.jpg
-      awardTitle: 'Finalist, Outstanding Literary Anthology, Lambda Literary Awards'
+      awardTitle: Finalist, Outstanding Literary Anthology, Lambda Literary Awards
     - awardImage:
         alt: new-millennium-writings-fiction-prize
         image: /img/awards/new-millennium-writings-fiction-prize.png
@@ -16,7 +16,7 @@ awardsSection:
     - awardImage:
         alt: ragdale-residency
         image: /img/awards/ragdale-residency.jpg
-      awardTitle: 'Alice Judson Hayes Fellowship, Ragdale Residency'
+      awardTitle: Alice Judson Hayes Fellowship, Ragdale Residency
     - awardImage:
         alt: atticus-review-creative-nonfiction-prize
         image: /img/awards/atticus-review-creative-nonfiction-prize.jpg
@@ -52,27 +52,27 @@ awardsSection:
     - awardImage:
         alt: prairie-schooner-book-prize
         image: /img/awards/prairie-schooner-book-prize.png
-      awardTitle: 'Finalist, Prairie Schooner Book Prize'
+      awardTitle: Finalist, Prairie Schooner Book Prize
     - awardImage:
         alt: st-lawrence-book-award.png
         image: /img/awards/st-lawrence-book-award.png
-      awardTitle: 'Finalist, St. Lawrence Book Award'
+      awardTitle: Finalist, St. Lawrence Book Award
     - awardImage:
         alt: prose-contest-guidelines
         image: /img/pleiades-press.jpg
-      awardTitle: 'Finalist, Robert C Jones Book Award'
+      awardTitle: Finalist, Robert C Jones Book Award
     - awardImage:
-        alt: 'https://www.awpwriter.org/contests/awp_award_series_overview'
+        alt: https://www.awpwriter.org/contests/awp_award_series_overview
         image: /img/grace-paley-prize.png
-      awardTitle: 'Finalist, Grace Paley Fiction Prize'
+      awardTitle: Finalist, Grace Paley Fiction Prize
     - awardImage:
         alt: Logo
         image: /img/santa-fe-writers-project.jpg
-      awardTitle: 'Finalist, Santa Fe Writers Project Prize'
+      awardTitle: Finalist, Santa Fe Writers Project Prize
     - awardImage:
         alt: arcadia-press-chapbook-prize
         image: /img/awards/arcadia-press-chapbook-prize.png
-      awardTitle: 'Finalist, Arcadia Press Chapbook Prize'
+      awardTitle: Finalist, Arcadia Press Chapbook Prize
     - awardImage:
         alt: lit-camp
         image: /img/awards/lit-camp.jpg
@@ -80,15 +80,15 @@ awardsSection:
     - awardImage:
         alt: new-letters-fiction-prize
         image: /img/awards/new-letters-fiction-prize.png
-      awardTitle: 'Finalist, New Letters Fiction Prize'
+      awardTitle: Finalist, New Letters Fiction Prize
     - awardImage:
         alt: new-south-fiction-prize
         image: /img/awards/new-south-fiction-prize.png
-      awardTitle: 'Finalist, New South Fiction Prize'
+      awardTitle: Finalist, New South Fiction Prize
     - awardImage:
         alt: leapfrog-press-novel-prize
         image: /img/awards/leapfrog-press-novel-prize.jpg
-      awardTitle: 'Honorable Mention, Leapfrog Press Novel Prize'
+      awardTitle: Honorable Mention, Leapfrog Press Novel Prize
     - awardImage:
         alt: red-gate-residency
         image: /img/awards/red-gate-residency.jpg
@@ -96,32 +96,35 @@ awardsSection:
     - awardImage:
         alt: saints-and-sinners-prize
         image: /img/awards/saints-and-sinners-prize.jpg
-      awardTitle: 'Finalist, Saints and Sinners Prize'
+      awardTitle: Finalist, Saints and Sinners Prize
     - awardImage:
         alt: wasafiri-life-writing-prize.png
         image: /img/awards/wasafiri-life-writing-prize.png
-      awardTitle: 'Finalist, Wasafiri Life Writing Prize'
+      awardTitle: Finalist, Wasafiri Life Writing Prize
     - awardImage:
         alt: yemassee-fiction-prize
         image: /img/awards/yemassee-fiction-prize.png
-      awardTitle: 'Finalist, Yemassee Fiction Prize'
+      awardTitle: Finalist, Yemassee Fiction Prize
     - awardImage:
-        alt: >-
-          https://www.dzancbooks.org/blog/2018/11/9/dzanc-contest-longlists-announced
+        alt: https://www.dzancbooks.org/blog/2018/11/9/dzanc-contest-longlists-announced
         image: /img/dzanc-books.jpg
-      awardTitle: 'Longlist, 2018 Short Story Collection Prize, Dzanc Books'
+      awardTitle: Longlist, 2018 Short Story Collection Prize, Dzanc Books
     - awardImage:
-        alt: 'https://www.newriverspress.com/product-category/many-voices-poject/'
+        alt: https://www.newriverspress.com/product-category/many-voices-poject/
         image: /img/new-rivers-press.png
-      awardTitle: 'Finalist, Many Voices Project Prize, New Rivers Press'
+      awardTitle: Finalist, Many Voices Project Prize, New Rivers Press
     - awardImage:
-        alt: 'http://fourthgenre.msu.edu/'
+        alt: http://fourthgenre.msu.edu/
         image: /img/fourth-genre.jpg
-      awardTitle: 'Finalist, Steinberg Essay Prize'
+      awardTitle: Finalist, Steinberg Essay Prize
     - awardImage:
-        alt: 'https://bayoumagazine.org/fiction-contest-winners/'
+        alt: https://bayoumagazine.org/fiction-contest-winners/
         image: /img/james-knudsen-prize.jpg
-      awardTitle: 'Semi-finalist, James Knudsen Fiction Prize'
+      awardTitle: Semi-finalist, James Knudsen Fiction Prize
+    - awardTitle: Runner-Up, The Page Prize
+      awardImage:
+        alt: http://www.pinchjournal.com/2020pageprizewinners
+        image: /img/pinch.jpg
   sectionName: Accolades
 ---
 Miah Jeffra is a writer, artist, curator and educator, currently living in San Francisco. A military brat, Jeffra moved throughout their childhood, but most identifies the South as home.
