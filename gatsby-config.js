@@ -13,6 +13,7 @@ module.exports = {
         // Add any options here
       },
     },
+    `gatsby-theme-material-ui`,
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
@@ -87,4 +88,4 @@ module.exports = {
       },
     }, // make sure to keep it last in the array
   ],
-}
+};
