@@ -46,5 +46,15 @@ linksToBuy:
       alt: Sibling Rivalry
       image: /img/download.png
     linkURL: https://siblingrivalrypress.bigcartel.com/product/the-fabulous-ekphrastic-fantastic
+  - label: Buy Here!
+    linkImage:
+      image: /img/indiebound.jpg
+      alt: Indiebound.org
+    linkURL: https://www.indiebound.org/search/book?keys=the+fabulous+ekphrastic+fantastic
+  - label: Buy Here!
+    linkImage:
+      image: /img/bookshop.jpg
+      alt: Bookshop.org
+    linkURL: https://bookshop.org/books/the-fabulous-ekphrastic-fantastic-essays/9781943977734
 ---
 LOVE RULES
