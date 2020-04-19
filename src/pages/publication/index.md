@@ -2,6 +2,11 @@
 templateKey: publication-page
 publicationsSection:
   publicationList:
+    - publicationImage:
+        image: /img/interim.jpg
+        alt: Interim
+      title: Interim
+      link: https://www.interimpoetics.org/37-1/miah-jeffra
     - link: https://forgelitmag.com/2020/03/09/a-miracle-of-miracles/
       publicationImage:
         alt: the-forge-logo
