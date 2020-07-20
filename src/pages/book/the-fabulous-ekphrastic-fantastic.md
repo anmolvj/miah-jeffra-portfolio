@@ -40,6 +40,18 @@ reviews:
       eclectic way Jeffra straddles and subverts genres. Instead, I’ll suggest
       this: go and read the book and see for yourself. You’ll be happy you did."
     reviewerName: Chanan Tigay
+  - reviewerName: "Empty Mirror "
+    message: I read The Fabulous Fantastic Ekphrastic! with multiple browser tabs
+      open at all times—perhaps the perfect response to modern life that a book
+      has ever evoked in me.
+  - reviewerName: Out in Print
+    message: It’s honesty [is what] makes The Fabulous Ekphrastic Fantastic! a great
+      read.
+  - reviewerName: San Francisco Book Review
+    message: Reminiscent of Michelle Tea in subject and humor, and of T.
+      Fleischmann’s poeticism in style, this collection continues the work of
+      modern queer essayists. The memories it contains, whether false or true,
+      rose-colored or traumatic, are all written with stunning honesty.
 linksToBuy:
   - label: Buy Here!
     linkImage:
