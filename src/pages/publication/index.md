@@ -2,6 +2,11 @@
 templateKey: publication-page
 publicationsSection:
   publicationList:
+    - title: The Boiler
+      link: https://theboilerjournal.com/2020/07/18/miah-jeffra/
+      publicationImage:
+        image: /img/the-boiler.png
+        alt: boiler logo
     - publicationImage:
         image: /img/interim.jpg
         alt: Interim
