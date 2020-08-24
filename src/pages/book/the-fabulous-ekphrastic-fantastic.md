@@ -23,6 +23,14 @@ reviews:
       provocateur and picador; flaunt and flirt. Here is a writer who grabs the
       reader by the balls in all the ways one hopes to be testicularly taken.
     reviewerName: D.A. Powell
+  - reviewerName: Entropy
+    message: At the heart of [The Fabulous Ekphrastic Fantastic!] is the knowledge
+      that an artist/writer can imagine a whole person into being simply because
+      they were needed, but that person won’t necessarily stay, anymore than
+      Frankenstein’s monster, or the monsters we create of and for one another.
+      It reminds us that art/ make-believe can reach us and lift us and save us
+      and make us less alone, but not always, not in the ways we’d like, and not
+      permanently. And yet they live on.
   - reviewerName: San Francisco Book Review
     message: Reminiscent of Michelle Tea in subject and humor, and of T.
       Fleischmann’s poeticism in style, this collection continues the work of
