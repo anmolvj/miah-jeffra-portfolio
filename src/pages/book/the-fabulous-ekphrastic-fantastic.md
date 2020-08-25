@@ -16,13 +16,12 @@ description: “A river’s edge, if approached too close, can sweep a body beyo
   forgiveness, family, and the truths we find in “the lightness of a door,” “the
   probability of a radio,” the long line between one story and another.
 reviews:
-  - message: Miah Jeffra writes somewhere between a scream and a growl, in short
-      energetic essays that queer the language in exciting ways. In a letter to
-      the late Keith Haring, Jeffra writes ‘I want to feel like a bandit, a
-      punk, a renegade.’ And indeed he takes us on an outlaw's journey,
-      provocateur and picador; flaunt and flirt. Here is a writer who grabs the
-      reader by the balls in all the ways one hopes to be testicularly taken.
-    reviewerName: D.A. Powell
+  - reviewerName: Lambda Literary
+    message: Is Miah Jeffra a philosopher? Is he, perhaps, a prophet? Is Miah
+      Jeffra, author of The Fabulous Ekphrastic Fantastic, a loud, queer pop lit
+      voice for the new dawning? The author’s collection of essays proves that
+      he is all these things and more. With cadenced writing, Jeffra offers a
+      fortified feast of memories, personal theories, and lessons.
   - reviewerName: Entropy
     message: At the heart of [The Fabulous Ekphrastic Fantastic!] is the knowledge
       that an artist/writer can imagine a whole person into being simply because
@@ -36,6 +35,16 @@ reviews:
       Fleischmann’s poeticism in style, this collection continues the work of
       modern queer essayists. The memories it contains, whether false or true,
       rose-colored or traumatic, are all written with stunning honesty.
+  - reviewerName: Out in Print
+    message: It’s honesty [is what] makes The Fabulous Ekphrastic Fantastic! a great
+      read.
+  - message: Miah Jeffra writes somewhere between a scream and a growl, in short
+      energetic essays that queer the language in exciting ways. In a letter to
+      the late Keith Haring, Jeffra writes ‘I want to feel like a bandit, a
+      punk, a renegade.’ And indeed he takes us on an outlaw's journey,
+      provocateur and picador; flaunt and flirt. Here is a writer who grabs the
+      reader by the balls in all the ways one hopes to be testicularly taken.
+    reviewerName: D.A. Powell
   - message: Miah Jeffra is that rare writer who’s as committed to the individual
       sentence as much as he is to developing a bold, animated vision. These
       short pieces are nothing less than an ongoing art of survival, and they’re
@@ -46,9 +55,6 @@ reviews:
       danger, seduction and sexuality. Moving between critical, narrative,
       lyrical modes Jeffra illuminates and entertains. I loved this book.
     reviewerName: Kazim Ali
-  - reviewerName: Out in Print
-    message: It’s honesty [is what] makes The Fabulous Ekphrastic Fantastic! a great
-      read.
   - message: "Miah Jeffra is one of the most interesting writers working today and
       his new book, The Fabulous Ekphrastic Fantastic!, is among the most unique
       you’re likely to pick up this—or any—year. I could describe the book as
