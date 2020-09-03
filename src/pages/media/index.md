@@ -23,6 +23,14 @@ youtubeSection:
       url: https://www.youtube.com/watch?v=VY1FFNZx8dg
 interviewsSection:
   interviews:
+    - title: Lambda Literary Review
+      url: https://www.lambdaliterary.org/2020/08/miah-jeffra/
+      interviewer: Michael Graves
+      date: "2020"
+    - title: Entropy
+      url: https://entropymag.org/fabulous-ekphrastic-fantastic-miah-jeffra/
+      interviewer: Carson Beker
+      date: "2020"
     - title: The Rumpus
       url: https://therumpus.net/2020/07/the-rumpus-interview-with-miah-jeffra/
       interviewer: Celeste Chan
