@@ -73,6 +73,10 @@ awardsSection:
         alt: Logo
         image: /img/santa-fe-writers-project.jpg
       awardTitle: Finalist, Santa Fe Writers Project Prize
+    - awardTitle: Finalist, Curt Johnson Prose Award
+      awardImage:
+        image: /img/december.png
+        alt: https://decembermag.org/2020-curt-johnson-prose-awards/
     - awardImage:
         alt: arcadia-press-chapbook-prize
         image: /img/awards/arcadia-press-chapbook-prize.png
