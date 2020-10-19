@@ -31,6 +31,14 @@ interviewsSection:
       url: https://entropymag.org/fabulous-ekphrastic-fantastic-miah-jeffra/
       interviewer: Carson Beker
       date: "2020"
+    - title: San Francisco Review of Books
+      url: https://sanfranciscobookreview.com/product/the-fabulous-exphrastic-fantastic-essays/
+      interviewer: Elizabeth Wegner
+      date: "2020"
+    - title: Out in Print
+      url: https://outinprintblog.wordpress.com/2020/06/29/the-fabulous-ekphrastic-fantastic-miah-jeffra-sibling-rivalry-press/
+      interviewer: Jerry Wheeler
+      date: "2020"
     - title: The Rumpus
       url: https://therumpus.net/2020/07/the-rumpus-interview-with-miah-jeffra/
       interviewer: Celeste Chan
