@@ -2,6 +2,11 @@
 templateKey: publication-page
 publicationsSection:
   publicationList:
+    - publicationImage:
+        image: /img/the-pinch.png
+        alt: The Pinch
+      title: The Pinch
+      link: http://www.pinchjournal.com/
     - title: The Boiler
       link: https://theboilerjournal.com/2020/07/18/miah-jeffra/
       publicationImage:
