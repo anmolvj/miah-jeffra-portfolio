@@ -31,6 +31,10 @@ interviewsSection:
       url: https://entropymag.org/fabulous-ekphrastic-fantastic-miah-jeffra/
       interviewer: Carson Beker
       date: "2020"
+    - title: The North American Review
+      url: https://northamericanreview.org/open-space/containing-multitudes
+      interviewer: Natasha Dennerstein
+      date: "2020"
     - title: San Francisco Review of Books
       url: https://sanfranciscobookreview.com/product/the-fabulous-exphrastic-fantastic-essays/
       interviewer: Elizabeth Wegner
