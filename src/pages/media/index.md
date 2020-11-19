@@ -21,6 +21,9 @@ youtubeSection:
     - description: Reading for New Books Release at Alley Cat Books
       title: '"How to Seduce a Tech Bro in 13 Easy Steps"'
       url: https://www.youtube.com/watch?v=VY1FFNZx8dg
+    - title: San Jose State University Creative Craft Series
+      url: https://www.youtube.com/watch?v=nQZSk1O8FX4
+      description: In Conversation with Maria Judnick
 interviewsSection:
   interviews:
     - title: Lambda Literary Review
