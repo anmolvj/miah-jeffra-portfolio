@@ -24,6 +24,9 @@ youtubeSection:
     - title: San Jose State University Creative Craft Series
       url: https://www.youtube.com/watch?v=nQZSk1O8FX4
       description: In Conversation with Maria Judnick
+    - title: '"Denotation/Connotation"'
+      description: Saints and Sinners Festival
+      url: https://www.youtube.com/watch?v=Jvb6rY5RTHQ&t=12s
 interviewsSection:
   interviews:
     - title: Lambda Literary Review
