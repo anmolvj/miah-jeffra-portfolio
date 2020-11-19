@@ -35,6 +35,10 @@ reviews:
       Fleischmann’s poeticism in style, this collection continues the work of
       modern queer essayists. The memories it contains, whether false or true,
       rose-colored or traumatic, are all written with stunning honesty.
+  - reviewerName: The North American Review
+    message: "Good poetry and essayistic writing works on two or three levels: The
+      Fabulous Ekphrastic Fantastic! works on seven. This collection of
+      twenty-seven hybrid-genre pieces contain within them multitudes."
   - reviewerName: Out in Print
     message: It’s honesty [is what] makes The Fabulous Ekphrastic Fantastic! a great
       read.
