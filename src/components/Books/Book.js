@@ -1,9 +1,9 @@
-import React from 'react'
-import styled from 'styled-components'
-import PurchaseLink from './PurchaseLink'
-import Cover from './Cover'
-import ReviewBox from './Review/index'
-import Body from './Body/index'
+import React from 'react';
+import styled from 'styled-components';
+import PurchaseLink from './PurchaseLink';
+import Cover from './Cover';
+import ReviewBox from './Review/index';
+import Body from './Body/index';
 
 const Container = styled.div`
   margin: auto;
@@ -11,7 +11,7 @@ const Container = styled.div`
   @media (min-width: 750px) {
     width: 80%;
   }
-`
+`;
 
 const CoverAndBodyContainer = styled.div`
   display: flex;
@@ -23,7 +23,7 @@ const CoverAndBodyContainer = styled.div`
     flex-direction: row;
     justify-content: space-between;
   }
-`
+`;
 
 const CoverContainer = styled.div`
   display: flex;
@@ -31,7 +31,7 @@ const CoverContainer = styled.div`
   margin-bottom: 20px;
   background-color: red;
   margin: auto;
-`
+`;
 
 const BuyLinksContainer = styled.div`
   display: flex;
@@ -39,7 +39,7 @@ const BuyLinksContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 20px;
-`
+`;
 
 export default ({
   id,
@@ -52,6 +52,7 @@ export default ({
   linksToBuy,
   hideDescription = false,
   hideLinksToBuy = false,
+  hideReviews = false,
 }) => (
   <Container>
     <CoverAndBodyContainer>
@@ -63,11 +64,13 @@ export default ({
         />
       </CoverContainer>
 
-      <Body hidden={hideDescription} description={description} />
+      <Body
+        link={bookPageLink}
+        hidden={hideDescription}
+        description={description}
+      />
     </CoverAndBodyContainer>
-
-    <ReviewBox reviews={reviews} />
-
+    {!Boolean(hideReviews) && <ReviewBox reviews={reviews} />}
     {!Boolean(hideLinksToBuy) && (
       <BuyLinksContainer>
         {linksToBuy.map((link) => (
@@ -76,4 +79,4 @@ export default ({
       </BuyLinksContainer>
     )}
   </Container>
-)
+);

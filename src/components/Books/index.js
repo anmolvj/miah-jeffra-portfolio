@@ -21,6 +21,7 @@ const BookWithReview = (props) => {
             {...post.frontmatter}
             hideDescription={props.hideDescription}
             hideLinksToBuy={props.hideLinksToBuy}
+            hideReviews={props.hideReviews}
           />
         ))}
     </BookContainer>
