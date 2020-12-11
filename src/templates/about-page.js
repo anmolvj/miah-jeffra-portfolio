@@ -9,8 +9,8 @@ import Awards from '../components/Awards'
 import Img from 'gatsby-image'
 
 const BodyContainer = styled.div`
-  display: ${props => (Boolean(props.hidden) ? 'hidden' : 'block')};
-  font-family: ${props => props.theme.font.family.secondary};
+  display: ${(props) => (Boolean(props.hidden) ? 'hidden' : 'block')};
+  font-family: ${(props) => props.theme.font.family.secondary};
   margin: auto;
   font-size: 14px;
   font-weight: bold;
@@ -36,7 +36,7 @@ const Title = styled.div`
   display: inline-block;
   font-size: 24px;
   text-transform: uppercase;
-  color: ${props => props.theme.color.grey};
+  color: ${(props) => props.theme.color.grey};
 `
 
 export const AboutPageTemplate = ({ page }) => {

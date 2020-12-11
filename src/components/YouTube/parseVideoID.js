@@ -1,4 +1,4 @@
-import getVideoId from 'get-video-id';
+import getVideoId from 'get-video-id'
 
 export default (url) => {
   // let videoID = url.split('v=')[1]
@@ -6,5 +6,5 @@ export default (url) => {
   // if (ampersandPosition !== -1) {
   //   videoID = videoID.substring(0, ampersandPosition)
   // }
-  return getVideoId(url).id;
-};
+  return getVideoId(url).id
+}

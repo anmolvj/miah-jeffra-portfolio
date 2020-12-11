@@ -8,7 +8,7 @@ const BookContainer = styled.div`
   }
 `
 
-const BookWithReview = props => {
+const BookWithReview = (props) => {
   const { edges: posts } = props.data.allMarkdownRemark
 
   return (
@@ -27,7 +27,7 @@ const BookWithReview = props => {
   )
 }
 
-export default props => (
+export default (props) => (
   <StaticQuery
     query={graphql`
       query BookQuery {
@@ -80,6 +80,6 @@ export default props => (
         }
       }
     `}
-    render={data => <BookWithReview data={data} {...props} />}
+    render={(data) => <BookWithReview data={data} {...props} />}
   />
 )

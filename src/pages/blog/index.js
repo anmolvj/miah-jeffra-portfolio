@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-import Layout from '../../layouts/default';
-import BlogRoll from '../../components/BlogRoll';
+import Layout from '../../layouts/default'
+import BlogRoll from '../../components/BlogRoll'
 
 const BlogIndexPage = () => {
   return (
@@ -32,7 +32,7 @@ const BlogIndexPage = () => {
         </div>
       </section>
     </Layout>
-  );
-};
+  )
+}
 
-export default BlogIndexPage;
+export default BlogIndexPage

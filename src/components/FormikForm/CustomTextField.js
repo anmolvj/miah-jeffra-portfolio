@@ -2,7 +2,7 @@ import React from 'react' //Yup has some bug due to which we need to import it l
 import { TextField } from 'formik-material-ui'
 import { withStyles } from '@material-ui/core/styles'
 
-const styles = theme => ({
+const styles = (theme) => ({
   cssLabel: {
     '&$cssFocused': {
       color: '#0291b1',

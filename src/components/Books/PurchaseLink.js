@@ -21,7 +21,7 @@ const LabelContainer = styled.div`
   text-transform: uppercase;
   font-size: 10px;
   font-weight: bold;
-  color: ${props => props.theme.color.grey};
+  color: ${(props) => props.theme.color.grey};
 `
 const ExternalLink = styled.a`
   text-decoration: none;

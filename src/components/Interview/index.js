@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   width: 95%;
-  font-family: ${props => props.theme.font.family.secondary};
+  font-family: ${(props) => props.theme.font.family.secondary};
   padding: 10px;
   margin: 0 auto;
   text-align: left;
@@ -21,7 +21,7 @@ const Link = styled.a`
 `
 
 const Title = styled.div`
-  color: ${props => props.theme.color.grey};
+  color: ${(props) => props.theme.color.grey};
   font-size: 16px;
   font-weight: bold;
   @media (min-width: 430px) {
@@ -31,7 +31,7 @@ const Title = styled.div`
 
 const InterviewerAndDateContainer = styled.div`
   margin-left: 7px;
-  color: ${props => props.theme.color.grey};
+  color: ${(props) => props.theme.color.grey};
   @media (min-width: 430px) {
     margin-left: 10px;
   }

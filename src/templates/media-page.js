@@ -1,13 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
-import styled from 'styled-components';
-import { withStyles } from '@material-ui/core/styles';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Layout from '../layouts/default';
-import YoutubePlayer from '../components/YouTube';
-import Interview from '../components/Interview';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
+import styled from 'styled-components'
+import { withStyles } from '@material-ui/core/styles'
+import Tabs from '@material-ui/core/Tabs'
+import Tab from '@material-ui/core/Tab'
+import Layout from '../layouts/default'
+import YoutubePlayer from '../components/YouTube'
+import Interview from '../components/Interview'
 
 const styles = {
   root: {
@@ -19,14 +19,14 @@ const styles = {
   indicator: {
     background: '#0291b1',
   },
-};
+}
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-`;
+`
 
 const InterviewContainer = styled.div`
   text-align: center;
@@ -39,7 +39,7 @@ const InterviewContainer = styled.div`
   @media (min-width: 1650px) {
     max-width: 925px;
   }
-`;
+`
 
 const YoutubeContainer = styled.div`
   display: flex;
@@ -54,20 +54,20 @@ const YoutubeContainer = styled.div`
   @media (min-width: 1300px) {
     width: 1024px;
   }
-`;
+`
 class MediaPageTemplate extends React.Component {
   constructor(props) {
-    super(props);
-    this.state = { value: 'youtube' };
-    this.handleTabClick = this.handleTabClick.bind(this);
+    super(props)
+    this.state = { value: 'youtube' }
+    this.handleTabClick = this.handleTabClick.bind(this)
   }
   handleTabClick = (event, value) => {
-    this.setState({ value });
-  };
+    this.setState({ value })
+  }
 
   render() {
-    const { classes, page } = this.props;
-    const { interviewsSection, youtubeSection } = page.frontmatter;
+    const { classes, page } = this.props
+    const { interviewsSection, youtubeSection } = page.frontmatter
 
     return (
       <Container>
@@ -108,11 +108,11 @@ class MediaPageTemplate extends React.Component {
           </YoutubeContainer>
         )}
       </Container>
-    );
+    )
   }
 }
 
-export { MediaPageTemplate };
+export { MediaPageTemplate }
 
 // export const MediaPageTemplate = ({ page }) => (
 //   <Container className="section section--gradient">
@@ -125,7 +125,7 @@ export { MediaPageTemplate };
 // )
 
 const MediaPage = ({ data, classes }) => {
-  const { markdownRemark: page } = data;
+  const { markdownRemark: page } = data
 
   return (
     <Layout>
@@ -134,14 +134,14 @@ const MediaPage = ({ data, classes }) => {
         classes={classes}
       />
     </Layout>
-  );
-};
+  )
+}
 
 MediaPage.propTypes = {
   data: PropTypes.object.isRequired,
-};
+}
 
-export default withStyles(styles)(MediaPage);
+export default withStyles(styles)(MediaPage)
 
 export const mediaPageQuery = graphql`
   query MediaPage($id: String!) {
@@ -168,4 +168,4 @@ export const mediaPageQuery = graphql`
       }
     }
   }
-`;
+`

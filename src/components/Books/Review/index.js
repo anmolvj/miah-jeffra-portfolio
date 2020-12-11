@@ -17,7 +17,7 @@ const ReviewContainer = styled.div`
 
 export default ({ reviews }) => (
   <ReviewContainer>
-    {reviews.map(review => (
+    {reviews.map((review) => (
       <Review {...review} />
     ))}
   </ReviewContainer>

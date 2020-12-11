@@ -1,23 +1,23 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import { Link, graphql } from 'gatsby';
-import Layout from '../layouts/default';
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import { Link, graphql } from 'gatsby'
+import Layout from '../layouts/default'
 
 const TagRoute = (props) => {
-  const posts = props.data.allMarkdownRemark.edges;
+  const posts = props.data.allMarkdownRemark.edges
   const postLinks = posts.map((post) => (
     <li key={post.node.fields.slug}>
       <Link to={post.node.fields.slug}>
         <h2 className="is-size-2">{post.node.frontmatter.title}</h2>
       </Link>
     </li>
-  ));
-  const tag = props.pageContext.tag;
-  const title = props.data.site.siteMetadata.title;
-  const totalCount = props.data.allMarkdownRemark.totalCount;
+  ))
+  const tag = props.pageContext.tag
+  const title = props.data.site.siteMetadata.title
+  const totalCount = props.data.allMarkdownRemark.totalCount
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? '' : 's'
-  } tagged with “${tag}”`;
+  } tagged with “${tag}”`
 
   return (
     <Layout>
@@ -39,10 +39,10 @@ const TagRoute = (props) => {
         </div>
       </section>
     </Layout>
-  );
-};
+  )
+}
 
-export default TagRoute;
+export default TagRoute
 
 export const tagPageQuery = graphql`
   query TagPage($tag: String) {
@@ -69,4 +69,4 @@ export const tagPageQuery = graphql`
       }
     }
   }
-`;
+`

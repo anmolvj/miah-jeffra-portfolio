@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 const BodyContainer = styled.div`
-  display: ${props => (Boolean(props.hidden) ? 'hidden' : 'block')};
-  font-family: ${props => props.theme.font.family.secondary};
+  display: ${(props) => (Boolean(props.hidden) ? 'hidden' : 'block')};
+  font-family: ${(props) => props.theme.font.family.secondary};
   margin: auto;
   font-size: 12px;
   font-weight: bold;

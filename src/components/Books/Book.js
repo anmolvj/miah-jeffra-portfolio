@@ -70,7 +70,7 @@ export default ({
 
     {!Boolean(hideLinksToBuy) && (
       <BuyLinksContainer>
-        {linksToBuy.map(link => (
+        {linksToBuy.map((link) => (
           <PurchaseLink {...link} />
         ))}
       </BuyLinksContainer>

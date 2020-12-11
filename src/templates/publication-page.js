@@ -29,7 +29,7 @@ const Title = styled.div`
   display: inline-block;
   font-size: 16px;
   text-transform: uppercase;
-  color: ${props => props.theme.color.grey};
+  color: ${(props) => props.theme.color.grey};
 `
 
 const BooksContainer = styled.div`

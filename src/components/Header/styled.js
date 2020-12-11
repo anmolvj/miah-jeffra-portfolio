@@ -40,8 +40,8 @@ export const TitleContainer = styled.div`
 `
 
 export const Title = styled.span`
-  color: ${props => props.theme.color.orange};
-  font-family: ${props => props.theme.font.family.primary};
+  color: ${(props) => props.theme.color.orange};
+  font-family: ${(props) => props.theme.font.family.primary};
   font-weight: 500;
   font-size: 26px;
 
@@ -89,5 +89,5 @@ export const NavbarContainer = styled.div`
 `
 
 export const TopNavbarContainer = styled.div`
-  display: ${props => (props.show ? 'block' : 'none')};
+  display: ${(props) => (props.show ? 'block' : 'none')};
 `

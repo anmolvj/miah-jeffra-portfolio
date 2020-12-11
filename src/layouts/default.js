@@ -1,13 +1,13 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import { StaticQuery, graphql } from 'gatsby';
-import styled from 'styled-components';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import CoverImage from '../img/cover.jpg';
-import GlobalTheme from './GlobalTheme';
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import { StaticQuery, graphql } from 'gatsby'
+import styled from 'styled-components'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
+import CoverImage from '../img/cover.jpg'
+import GlobalTheme from './GlobalTheme'
 
-import './layout.sass';
+import './layout.sass'
 
 const SiteContainer = styled.div`
   margin: 0;
@@ -17,7 +17,7 @@ const SiteContainer = styled.div`
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-`;
+`
 
 const Body = styled.div`
   display: flex;
@@ -31,11 +31,11 @@ const Body = styled.div`
   /* @media (max-width: 900px) {
     width: 100%;
   } */
-`;
+`
 
 const Content = styled.div`
   flex: 1 0 auto;
-`;
+`
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
@@ -84,6 +84,6 @@ const TemplateWrapper = ({ children }) => (
       </GlobalTheme>
     )}
   />
-);
+)
 
-export default TemplateWrapper;
+export default TemplateWrapper

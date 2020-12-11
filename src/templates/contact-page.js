@@ -26,7 +26,7 @@ const FormContainer = styled.div`
 const Tiltle = styled.div`
   text-align: center;
   padding: 10px;
-  font-family: ${props => props.theme.font.family.secondary};
+  font-family: ${(props) => props.theme.font.family.secondary};
   font-weight: bold;
   font-size: 16px;
 

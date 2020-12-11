@@ -18,9 +18,9 @@ const FieldContainer = styled.div`
 
 const StyledNameField = styled(TextField)``
 
-const encode = data => {
+const encode = (data) => {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
     .join('&')
 }
 
@@ -107,22 +107,18 @@ const FormikApp = withFormik({
       .trim()
       .max(50)
       .required('You need to specify your last name'),
-    email: Yup.string()
-      .email('Email not valid')
-      .required('Email is required'),
+    email: Yup.string().email('Email not valid').required('Email is required'),
     purpose: Yup.string()
       .trim()
       .required('You need to specify the purpose of enquiry'),
-    message: Yup.string()
-      .trim()
-      .required('Please your message to Miah Jeffra'),
+    message: Yup.string().trim().required('Please your message to Miah Jeffra'),
   }),
   handleSubmit(values, { resetForm, setErrors, setSubmitting }) {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contactForm', ...values }),
-    }).catch(error => alert(error))
+    }).catch((error) => alert(error))
 
     setTimeout(() => {
       resetForm()

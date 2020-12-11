@@ -87,4 +87,4 @@ module.exports = {
       },
     }, // make sure to keep it last in the array
   ],
-};
+}

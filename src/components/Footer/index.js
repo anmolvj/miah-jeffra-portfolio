@@ -17,7 +17,7 @@ const Divider = styled.hr`
   margin: auto 10;
   height: 1px;
   border: 0;
-  border-top: 1px solid ${props => props.theme.color.teal};
+  border-top: 1px solid ${(props) => props.theme.color.teal};
   padding: 0;
 `
 const Content = styled.div`
@@ -28,7 +28,7 @@ const Content = styled.div`
 
 const LinkedInLink = styled.a`
   text-decoration: none;
-  color: ${props => props.theme.color.grey};
+  color: ${(props) => props.theme.color.grey};
   padding: 10px;
   text-align: center;
 `

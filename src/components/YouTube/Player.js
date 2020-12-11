@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography'
 import YouTube from 'react-youtube'
 import { green } from '@material-ui/core/colors'
 
-const videoOnReady = event => {
+const videoOnReady = (event) => {
   event.target.stopVideo()
 }
 
@@ -20,7 +20,7 @@ const opts = {
   },
 }
 
-const styles = theme => ({
+const styles = (theme) => ({
   card: {
     width: '95%',
     maxWidth: '400px',
