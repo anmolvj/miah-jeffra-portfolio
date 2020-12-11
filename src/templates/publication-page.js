@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
+import { withStyles } from '@material-ui/core/styles'
+import Tabs from '@material-ui/core/Tabs'
+import Tab from '@material-ui/core/Tab'
 import Layout from '../layouts/default'
 import Books from '../components/Books'
 import Publication from '../components/Publication'
 
-const Container = styled.div``
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+`
 
 const PublicationContainer = styled.div`
   display: flex;
@@ -36,43 +44,81 @@ const BooksContainer = styled.div`
   margin: auto;
 `
 
-export const PublicationPageTemplate = ({ page }) => {
+const styles = {
+  root: {
+    padding: 0,
+  },
+  flexContainer: {
+    color: '#333333',
+  },
+  indicator: {
+    background: '#0291b1',
+  },
+}
+
+export const PublicationPageTemplate = ({ page, classes }) => {
+  const [tab, setTab] = useState('books')
   return (
     <Container>
-      <TitleContainer>
-        <Title>{page.frontmatter.bookSectionTitle}</Title>
-      </TitleContainer>
-      <BooksContainer>
-        <Books hideDescription={true} hideLinksToBuy={true} />
-      </BooksContainer>
+      <Tabs
+        value={tab}
+        onChange={(event, value) => setTab(value)}
+        classes={{
+          root: classes.root,
+          flexContainer: classes.flexContainer,
+          indicator: classes.indicator,
+        }}
+      >
+        <Tab value="books" label={'Books'} />
+        <Tab
+          value="publications"
+          label={page.frontmatter.publicationsSection.sectionName}
+        />
+      </Tabs>
 
-      <TitleContainer>
-        <Title>{page.frontmatter.publicationsSection.sectionName}</Title>
-      </TitleContainer>
-      <PublicationContainer>
-        {page.frontmatter.publicationsSection.publicationList.map(
-          ({ title, publicationImage, link }) => {
-            return (
-              <Publication
-                title={title}
-                link={link}
-                imageFluid={publicationImage.image.childImageSharp.fluid}
-                alt={publicationImage.alt}
-              />
-            )
-          }
-        )}
-      </PublicationContainer>
+      {tab === 'books' ? (
+        <>
+          <TitleContainer>
+            <Title>{page.frontmatter.bookSectionTitle}</Title>
+          </TitleContainer>
+          <BooksContainer>
+            <Books hideDescription={true} hideLinksToBuy={true} />
+          </BooksContainer>
+        </>
+      ) : (
+        <>
+          <TitleContainer>
+            <Title>{page.frontmatter.publicationsSection.sectionName}</Title>
+          </TitleContainer>
+          <PublicationContainer>
+            {page.frontmatter.publicationsSection.publicationList.map(
+              ({ title, publicationImage, link }) => {
+                return (
+                  <Publication
+                    title={title}
+                    link={link}
+                    imageFluid={publicationImage.image.childImageSharp.fluid}
+                    alt={publicationImage.alt}
+                  />
+                )
+              }
+            )}
+          </PublicationContainer>
+        </>
+      )}
     </Container>
   )
 }
 
-const PublicationPage = ({ data }) => {
+const PublicationPage = ({ data, classes }) => {
   const { markdownRemark: page } = data
 
   return (
     <Layout>
-      <PublicationPageTemplate page={{ ...page, bodyIsMarkdown: false }} />
+      <PublicationPageTemplate
+        page={{ ...page, bodyIsMarkdown: false }}
+        classes={classes}
+      />
     </Layout>
   )
 }
@@ -81,7 +127,7 @@ PublicationPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default PublicationPage
+export default withStyles(styles)(PublicationPage)
 
 export const publicationPageQuery = graphql`
   query PublicationPage($id: String!) {

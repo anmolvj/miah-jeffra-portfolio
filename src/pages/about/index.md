@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 mainImage:
-  alt: "Miah Jeffra. "
+  alt: 'Miah Jeffra. '
   image: /img/headshots/3.jpg
 awardsSection:
   awards:
@@ -31,7 +31,7 @@ awardsSection:
       awardTitle: Hub City Writers Project Residency
     - awardTitle: Runner-Up, The Page Prize
       awardImage:
-        alt: http://www.pinchjournal.com/2020pageprizewinners
+        alt: pinchjournal.com/2020pageprizewinners
         image: /img/pinch.jpg
     - awardImage:
         alt: oregon-writers-colony-nonfiction-prize.jpg
@@ -122,7 +122,7 @@ awardsSection:
         image: /img/new-rivers-press.png
       awardTitle: Finalist, Many Voices Project Prize, New Rivers Press
     - awardImage:
-        alt: http://fourthgenre.msu.edu/
+        alt: fourthgenre.msu.edu/
         image: /img/fourth-genre.jpg
       awardTitle: Finalist, Steinberg Essay Prize
     - awardImage:
@@ -131,6 +131,7 @@ awardsSection:
       awardTitle: Semi-finalist, James Knudsen Fiction Prize
   sectionName: Accolades
 ---
+
 Miah Jeffra is a writer, artist, curator and educator, currently living in San Francisco. A military brat, Jeffra moved throughout their childhood, but most identifies the South as home.
 
 They spent their high school years in Baltimore, and then moved to Atlanta, where they studied English, Music and Theatre at Oglethorpe University.
