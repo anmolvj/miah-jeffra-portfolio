@@ -64,9 +64,13 @@ export default ({
         />
       </CoverContainer>
 
-      <Body hidden={hideDescription} description={description} />
+      <Body
+        link={bookPageLink}
+        hidden={hideDescription}
+        description={description}
+      />
     </CoverAndBodyContainer>
-    {!Boolean(hideReviews) && <ReviewBox reviews={reviews} />}s
+    {!Boolean(hideReviews) && <ReviewBox reviews={reviews} />}
     {!Boolean(hideLinksToBuy) && (
       <BuyLinksContainer>
         {linksToBuy.map((link) => (
