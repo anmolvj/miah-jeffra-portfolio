@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 mainImage:
-  alt: 'Miah Jeffra. '
+  alt: "Miah Jeffra. "
   image: /img/headshots/3.jpg
 awardsSection:
   awards:
@@ -77,6 +77,10 @@ awardsSection:
       awardImage:
         image: /img/december.png
         alt: https://decembermag.org/2020-curt-johnson-prose-awards/
+    - awardTitle: Finalist, Meyerson Fiction Prize
+      awardImage:
+        image: /img/southwest-review.png
+        alt: Southwest Review
     - awardImage:
         alt: arcadia-press-chapbook-prize
         image: /img/awards/arcadia-press-chapbook-prize.png
