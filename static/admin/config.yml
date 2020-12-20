@@ -8,222 +8,365 @@ public_folder: /img
 publish_mode: editorial_workflow
 
 collections:
-  - name: "book"
-    label: "Book"
-    folder: "src/pages/book"
+  - name: 'book'
+    label: 'Book'
+    folder: 'src/pages/book'
     create: true
-    slug: "{{slug}}"
+    slug: '{{slug}}'
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "book-page"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
       - {
-          label: "Cover Image", 
-          name: "coverImage", 
-          widget: "object", 
-          fields: 
-          [
-            {label: Image, name: image, widget: image}, 
-            {label: Alt, name: alt, widget: string}
-            ]
-            }
-      - {label: "Description", name: "description", widget: "text"}
+          label: 'Template Key',
+          name: 'templateKey',
+          widget: 'hidden',
+          default: 'book-page',
+        }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - {
-          label: "Reviews", 
-          name: "reviews", 
+          label: 'Cover Image',
+          name: 'coverImage',
+          widget: 'object',
+          fields:
+            [
+              { label: Image, name: image, widget: image },
+              { label: Alt, name: alt, widget: string },
+            ],
+        }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - {
+          label: 'Reviews',
+          name: 'reviews',
           widget: list,
-          fields: [
-            {label: "Reviewer Name", name: "reviewerName", widget: "string"},
-            {label: "Message", name: "message", widget: "string"}
-          ]
-          }
-      - {label: "Body", name: "body", widget: "markdown"}
-      - { 
-          label: "Links To Buy", 
-          name: "linksToBuy", 
-          widget: "list",
-          fields: [
-            {label: "Label", name: "label", widget: "string"},
-            {
-                label: "Link Image", 
-                name: "linkImage", 
-                widget: "object", 
-                fields: 
-                [
-                  {label: Image, name: image, widget: image}, 
-                  {label: Alt, name: alt, widget: string}
-                  ]
-              },
-              {label: "LinkURL", name: "linkURL", widget: "string"}
-            ]
-          }
-
-  - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
-
-  - name: "pages"
-    label: "Pages"
-    files:
-      - file: "src/pages/contact/index.md"
-        label: "Contact"
-        name: "contact"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
-          - {label: "Call To Action Message", name: callToActionMessage, widget: string}
-      - file: "src/pages/index.md"
-        label: "Landing"
-        name: "Index Page"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, name: subheading, widget: string}
-          - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
-          - {label: Description, name: description, widget: string}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
-      - file: "src/pages/products/index.md"
-        label: "Products"
-        name: "products"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Description, name: description, widget: string}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
-          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
-          - {label: Full_image, name: full_image, widget: image}
-          - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
-        fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page" }
-          - {
-              label: "Main Image",
-              name: "mainImage",
-              widget: "object",
-              fields:
-                [
-                  { label: "Image", name: "image", widget: "image" },
-                  { label: "Image Alt", name: "alt", widget: "string" }
-                ]
-            }
-          - { label: "Body", name: "body", widget: "markdown" }
-          - {
-            label: "Awards Section",
-            name: "awardsSection",
-            widget: "object",
-            fields: [
-              {label: "Section Name", name: "sectionName", widget: "string"},
+          fields:
+            [
               {
-              label: "Awards",
-              name: "awards",
-              widget: "list",
+                label: 'Reviewer Name',
+                name: 'reviewerName',
+                widget: 'string',
+              },
+              { label: 'Message', name: 'message', widget: 'string' },
+            ],
+        }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - {
+          label: 'Links To Buy',
+          name: 'linksToBuy',
+          widget: 'list',
+          fields:
+            [
+              { label: 'Label', name: 'label', widget: 'string' },
+              {
+                label: 'Link Image',
+                name: 'linkImage',
+                widget: 'object',
+                fields:
+                  [
+                    { label: Image, name: image, widget: image },
+                    { label: Alt, name: alt, widget: string },
+                  ],
+              },
+              { label: 'LinkURL', name: 'linkURL', widget: 'string' },
+            ],
+        }
+  - name: 'pages'
+    label: 'Pages'
+    files:
+      - file: 'src/pages/contact/index.md'
+        label: 'Contact'
+        name: 'contact'
+        fields:
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'contact-page',
+            }
+          - {
+              label: 'Call To Action Message',
+              name: callToActionMessage,
+              widget: string,
+            }
+      - file: 'src/pages/index.md'
+        label: 'Landing'
+        name: 'Index Page'
+        fields:
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'index-page',
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: Image, name: image, widget: image }
+          - { label: Heading, name: heading, widget: string }
+          - { label: Subheading, name: subheading, widget: string }
+          - {
+              label: Mainpitch,
+              name: mainpitch,
+              widget: object,
               fields:
                 [
-                  { label: "Award Title", name: "awardTitle", widget: "string" },
+                  { label: Title, name: title, widget: string },
+                  { label: Description, name: description, widget: text },
+                ],
+            }
+          - { label: Description, name: description, widget: string }
+          - {
+              label: Intro,
+              name: intro,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Description, name: description, widget: text },
                   {
-                    label: "Award Image",
-                    name: "awardImage",
-                    widget: "object",
+                    label: Blurbs,
+                    name: blurbs,
+                    widget: list,
                     fields:
                       [
-                        { label: "Image", name: "image", widget: "image" },
-                        { label: "Image Alt", name: "alt", widget: "string" }
-                      ]
-                  }
-                ]
+                        { label: Image, name: image, widget: image },
+                        { label: Text, name: text, widget: text },
+                      ],
+                  },
+                ],
             }
-            ]
-          }
-      - file: "src/pages/media/index.md"
-        label: "Media"
-        name: "media"
-        fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "media-page" }
           - {
-            label: "Youtube Section",
-            name: "youtubeSection",
-            widget: "object",
-            fields: [
-              {label: "Section Name", name: "sectionName", widget: "string"},
-              { 
-              label: "Youtube Videos", 
-              name: "youtubeVideos", 
-              widget: "list",
-              fields: [
-                {label: "Title", name: "title", widget: "string"},
-                {label: "Description", name: "description", widget: "string"},
-                {label: "Youtube URL", name: "url", widget: "string"}
-                ]
+              label: Main,
+              name: main,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Description, name: description, widget: text },
+                  {
+                    label: Image1,
+                    name: image1,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Alt, name: alt, widget: string },
+                      ],
+                  },
+                  {
+                    label: Image2,
+                    name: image2,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Alt, name: alt, widget: string },
+                      ],
+                  },
+                  {
+                    label: Image3,
+                    name: image3,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Alt, name: alt, widget: string },
+                      ],
+                  },
+                ],
             }
-            ]
-          }
-          - {
-            label: "Interviews Section",
-            name: "interviewsSection",
-            widget: "object",
-            fields: [
-              {label: "Section Name", name: "sectionName", widget: "string"},
-              { 
-              label: "Interviews", 
-              name: "interviews", 
-              widget: "list",
-              fields: [
-                {label: "Title", name: "title", widget: "string"},
-                {label: "URL", name: "url", widget: "string"},
-                {label: "Interviewer", name: "interviewer", widget: "string"},
-                {label: "Interview Date", name: "date", widget: "string"}
-                ]
-            } 
-            ]
-          } 
-      - file: "src/pages/publication/index.md"
-        label: "Publication"
-        name: "publication"
+      - file: 'src/pages/about/index.md'
+        label: 'About'
+        name: 'about'
         fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "publication-page" }
-          - { label: "Books Section Title", name: "bookSectionTitle", widget: "string", default: "Books", required: false }
           - {
-            label: "Publications Section",
-            name: "publicationsSection",
-            widget: "object",
-            fields: [
-              {label: "Section Name", name: "sectionName", widget: "string"},
-              { 
-              label: "All Publications",
-              name: "publicationList",
-              widget: "list",
-              fields: [
-                {label: "Title", name: "title", widget: "string"},
-                {label: "Link", name: "link", widget: "string", required: false},
-                {
-                  label: "Publication Image", 
-                  name: "publicationImage", 
-                  widget: "object",
-                  fields: [
-                    {label: "Image", name: "image", widget: "image"},
-                    {label: "Description", name: "alt", widget: "string"}
-                  ]
-                  }
-              ]
-              }
-            ]
-          }       
-          
-
-
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'about-page',
+            }
+          - {
+              label: 'Main Image',
+              name: 'mainImage',
+              widget: 'object',
+              fields:
+                [
+                  { label: 'Image', name: 'image', widget: 'image' },
+                  { label: 'Image Alt', name: 'alt', widget: 'string' },
+                ],
+            }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - {
+              label: 'Awards Section',
+              name: 'awardsSection',
+              widget: 'object',
+              fields:
+                [
+                  {
+                    label: 'Section Name',
+                    name: 'sectionName',
+                    widget: 'string',
+                  },
+                  {
+                    label: 'Awards',
+                    name: 'awards',
+                    widget: 'list',
+                    fields:
+                      [
+                        {
+                          label: 'Award Title',
+                          name: 'awardTitle',
+                          widget: 'string',
+                        },
+                        {
+                          label: 'Award Image',
+                          name: 'awardImage',
+                          widget: 'object',
+                          fields:
+                            [
+                              {
+                                label: 'Image',
+                                name: 'image',
+                                widget: 'image',
+                              },
+                              {
+                                label: 'Image Alt',
+                                name: 'alt',
+                                widget: 'string',
+                              },
+                            ],
+                        },
+                      ],
+                  },
+                ],
+            }
+      - file: 'src/pages/media/index.md'
+        label: 'Media'
+        name: 'media'
+        fields:
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'media-page',
+            }
+          - {
+              label: 'Youtube Section',
+              name: 'youtubeSection',
+              widget: 'object',
+              fields:
+                [
+                  {
+                    label: 'Section Name',
+                    name: 'sectionName',
+                    widget: 'string',
+                  },
+                  {
+                    label: 'Youtube Videos',
+                    name: 'youtubeVideos',
+                    widget: 'list',
+                    fields:
+                      [
+                        { label: 'Title', name: 'title', widget: 'string' },
+                        {
+                          label: 'Description',
+                          name: 'description',
+                          widget: 'string',
+                        },
+                        { label: 'Youtube URL', name: 'url', widget: 'string' },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: 'Interviews Section',
+              name: 'interviewsSection',
+              widget: 'object',
+              fields:
+                [
+                  {
+                    label: 'Section Name',
+                    name: 'sectionName',
+                    widget: 'string',
+                  },
+                  {
+                    label: 'Interviews',
+                    name: 'interviews',
+                    widget: 'list',
+                    fields:
+                      [
+                        { label: 'Title', name: 'title', widget: 'string' },
+                        { label: 'URL', name: 'url', widget: 'string' },
+                        {
+                          label: 'Interviewer',
+                          name: 'interviewer',
+                          widget: 'string',
+                        },
+                        {
+                          label: 'Interview Date',
+                          name: 'date',
+                          widget: 'string',
+                        },
+                      ],
+                  },
+                ],
+            }
+      - file: 'src/pages/publication/index.md'
+        label: 'Publication'
+        name: 'publication'
+        fields:
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'publication-page',
+            }
+          - {
+              label: 'Books Section Title',
+              name: 'bookSectionTitle',
+              widget: 'string',
+              default: 'Books',
+              required: false,
+            }
+          - {
+              label: 'Publications Section',
+              name: 'publicationsSection',
+              widget: 'object',
+              fields:
+                [
+                  {
+                    label: 'Section Name',
+                    name: 'sectionName',
+                    widget: 'string',
+                  },
+                  {
+                    label: 'All Publications',
+                    name: 'publicationList',
+                    widget: 'list',
+                    fields:
+                      [
+                        { label: 'Title', name: 'title', widget: 'string' },
+                        {
+                          label: 'Link',
+                          name: 'link',
+                          widget: 'string',
+                          required: false,
+                        },
+                        {
+                          label: 'Publication Image',
+                          name: 'publicationImage',
+                          widget: 'object',
+                          fields:
+                            [
+                              {
+                                label: 'Image',
+                                name: 'image',
+                                widget: 'image',
+                              },
+                              {
+                                label: 'Description',
+                                name: 'alt',
+                                widget: 'string',
+                              },
+                            ],
+                        },
+                      ],
+                  },
+                ],
+            }
