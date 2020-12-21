@@ -82,7 +82,7 @@ export const PublicationPageTemplate = ({ page, classes }) => {
             <Title>{page.frontmatter.bookSectionTitle}</Title>
           </TitleContainer>
           <BooksContainer>
-            <Books hideLinksToBuy hideReviews/>
+            <Books hideLinksToBuy hideReviews />
           </BooksContainer>
         </>
       ) : (

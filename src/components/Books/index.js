@@ -1,22 +1,22 @@
-import React from 'react';
-import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
-import Book from './Book';
-import Landing from './Landing';
+import React from 'react'
+import styled from 'styled-components'
+import { StaticQuery, graphql } from 'gatsby'
+import Book from './Book'
+import Landing from './Landing'
 
 const BookContainer = styled.div`
   @media (max-width: 700px) {
   }
-`;
+`
 
 const BookWithReview = (props) => {
-  const { edges: posts } = props.data.allMarkdownRemark;
+  const { edges: posts } = props.data.allMarkdownRemark
   if (props.landing) {
     return (
       <BookContainer>
         {posts && posts[0] && <Landing post={posts[0].node} />}
       </BookContainer>
-    );
+    )
   }
   return (
     <BookContainer>
@@ -32,8 +32,8 @@ const BookWithReview = (props) => {
           />
         ))}
     </BookContainer>
-  );
-};
+  )
+}
 
 export default (props) => (
   <StaticQuery
@@ -90,4 +90,4 @@ export default (props) => (
     `}
     render={(data) => <BookWithReview data={data} {...props} />}
   />
-);
+)

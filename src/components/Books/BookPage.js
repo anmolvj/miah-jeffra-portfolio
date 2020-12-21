@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import Img from 'gatsby-image';
+import React from 'react'
+import styled from 'styled-components'
+import Img from 'gatsby-image'
 
-import PurchaseLink from './PurchaseLink';
-import ReviewBox from './Review/index';
+import PurchaseLink from './PurchaseLink'
+import ReviewBox from './Review/index'
 
 const Container = styled.div`
   margin: auto;
@@ -11,18 +11,18 @@ const Container = styled.div`
   @media (min-width: 750px) {
     width: 80%;
   }
-`;
+`
 
 const InnerCoverContainer = styled.div`
   width: 300px;
-`;
+`
 
 const CoverContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
   margin: auto;
-`;
+`
 
 const BuyLinksContainer = styled.div`
   display: flex;
@@ -30,10 +30,10 @@ const BuyLinksContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 20px;
-`;
+`
 
 export default ({ post }) => {
-  const { linksToBuy, description, coverImage, reviews } = post.frontmatter;
+  const { linksToBuy, description, coverImage, reviews } = post.frontmatter
 
   return (
     <Container>
@@ -53,5 +53,5 @@ export default ({ post }) => {
         ))}
       </BuyLinksContainer>
     </Container>
-  );
-};
+  )
+}

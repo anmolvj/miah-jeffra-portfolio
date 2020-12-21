@@ -1,25 +1,25 @@
-import React from 'react';
-import { withFormik, Form, Field } from 'formik';
-import * as Yup from 'yup'; //Yup has some bug due to which we need to import it like this
-import Button from '@material-ui/core/Button';
-import styled from 'styled-components';
-import CustomTextField from './CustomTextField';
+import React from 'react'
+import { withFormik, Form, Field } from 'formik'
+import * as Yup from 'yup' //Yup has some bug due to which we need to import it like this
+import Button from '@material-ui/core/Button'
+import styled from 'styled-components'
+import CustomTextField from './CustomTextField'
 
 const Container = styled.div`
   width: 100%;
-`;
+`
 
 const FieldContainer = styled.div`
   margin: 10px;
   padding: 10px;
   text-align: center;
-`;
+`
 
 const encode = (data) => {
   return Object.keys(data)
     .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&');
-};
+    .join('&')
+}
 
 const App = ({ isSubmitting }) => (
   <Container>
@@ -83,7 +83,7 @@ const App = ({ isSubmitting }) => (
       </FieldContainer>
     </Form>
   </Container>
-);
+)
 
 const FormikApp = withFormik({
   mapPropsToValues({ fname, lname, email, purpose, message }) {
@@ -93,7 +93,7 @@ const FormikApp = withFormik({
       email: email || '',
       purpose: purpose || '',
       message: message || '',
-    };
+    }
   },
   validationSchema: Yup.object().shape({
     fname: Yup.string()
@@ -115,13 +115,13 @@ const FormikApp = withFormik({
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contactForm', ...values }),
-    }).catch((error) => alert(error));
+    }).catch((error) => alert(error))
 
     setTimeout(() => {
-      resetForm();
-      setSubmitting(false);
-    }, 1000);
+      resetForm()
+      setSubmitting(false)
+    }, 1000)
   },
-})(App);
+})(App)
 
-export default FormikApp;
+export default FormikApp

@@ -1,17 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { graphql } from 'gatsby';
-import Books from '../components/Books';
-import Layout from '../layouts/default';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import { graphql } from 'gatsby'
+import Books from '../components/Books'
+import Layout from '../layouts/default'
 
-const Container = styled.div``;
+const Container = styled.div``
 
 export const IndexPageTemplate = () => (
   <Container>
     <Books landing />
   </Container>
-);
+)
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -23,10 +23,10 @@ IndexPageTemplate.propTypes = {
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
-};
+}
 
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
+  const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
@@ -40,8 +40,8 @@ const IndexPage = ({ data }) => {
         intro={frontmatter.intro}
       />
     </Layout>
-  );
-};
+  )
+}
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
@@ -49,9 +49,9 @@ IndexPage.propTypes = {
       frontmatter: PropTypes.object,
     }),
   }),
-};
+}
 
-export default IndexPage;
+export default IndexPage
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
@@ -89,4 +89,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
