@@ -1,15 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import styled from 'styled-components'
-import Layout from '../layouts/default'
-import FormikForm from '../components/FormikForm'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import styled from 'styled-components';
+import Layout from '../layouts/default';
+import FormikForm from '../components/FormikForm';
 
 const Container = styled.div`
   border-radius: 3px;
   overflow: hidden;
   margin: auto;
-`
+`;
 
 const FormContainer = styled.div`
   display: flex;
@@ -21,7 +21,7 @@ const FormContainer = styled.div`
   @media (min-width: 1200px) {
     width: 70%;
   }
-`
+`;
 
 const Tiltle = styled.div`
   text-align: center;
@@ -33,15 +33,7 @@ const Tiltle = styled.div`
   @media (min-width: 500px) {
     font-size: 20px;
   }
-`
-
-const Map = styled.img`
-  width: 70%;
-  margin: auto;
-  @media (max-width: 700px) {
-    width: 100%;
-  }
-`
+`;
 
 export const ContactPageTemplate = ({ page }) => {
   return (
@@ -53,24 +45,24 @@ export const ContactPageTemplate = ({ page }) => {
         </FormContainer>
       </Container>
     </Container>
-  )
-}
+  );
+};
 
 const ContactPage = ({ data }) => {
-  const { markdownRemark: page } = data
+  const { markdownRemark: page } = data;
 
   return (
     <Layout>
       <ContactPageTemplate page={{ ...page, bodyIsMarkdown: false }} />
     </Layout>
-  )
-}
+  );
+};
 
 ContactPage.propTypes = {
   data: PropTypes.object.isRequired,
-}
+};
 
-export default ContactPage
+export default ContactPage;
 
 export const contactPageQuery = graphql`
   query ContactPage($id: String!) {
@@ -81,4 +73,4 @@ export const contactPageQuery = graphql`
       }
     }
   }
-`
+`;
