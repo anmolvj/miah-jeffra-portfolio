@@ -9,7 +9,7 @@ const Container = styled.div``;
 
 export const IndexPageTemplate = () => (
   <Container>
-    <Books />
+    <Books landing />
   </Container>
 );
 
