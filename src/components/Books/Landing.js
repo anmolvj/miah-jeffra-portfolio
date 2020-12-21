@@ -44,7 +44,7 @@ export default ({ post }) => {
     <Container>
       <CoverContainer>
         <InnerCoverContainer>
-          <Link to={bookPageLink}>
+          <Link to={post.fields.slug}>
             <Img
               fluid={coverImage.image.childImageSharp.fluid}
               alt={coverImage.alt}
@@ -52,9 +52,7 @@ export default ({ post }) => {
           </Link>
         </InnerCoverContainer>
       </CoverContainer>
-
-      <Body link={bookPageLink} description={description} />
-
+      <Body link={post.fields.slug} description={description} />
       <BuyLinksContainer>
         {linksToBuy.map((link) => (
           <PurchaseLink {...link} />
