@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import PurchaseLink from './PurchaseLink';
-import Body from './Body/index';
-import { Link } from 'gatsby';
 import Img from 'gatsby-image';
+
+import PurchaseLink from './PurchaseLink';
+import ReviewBox from './Review/index';
 
 const Container = styled.div`
   margin: auto;
@@ -33,21 +33,20 @@ const BuyLinksContainer = styled.div`
 `;
 
 export default ({ post }) => {
-  const { linksToBuy, description, coverImage } = post.frontmatter;
+  const { linksToBuy, description, coverImage, reviews } = post.frontmatter;
 
   return (
     <Container>
       <CoverContainer>
         <InnerCoverContainer>
-          <Link to={post.fields.slug}>
-            <Img
-              fluid={coverImage.image.childImageSharp.fluid}
-              alt={coverImage.alt}
-            />
-          </Link>
+          <Img
+            fluid={coverImage.image.childImageSharp.fluid}
+            alt={coverImage.alt}
+          />
         </InnerCoverContainer>
       </CoverContainer>
-      <Body link={post.fields.slug} description={description} />
+      <p>{description}</p>
+      <ReviewBox reviews={reviews} />
       <BuyLinksContainer>
         {linksToBuy.map((link) => (
           <PurchaseLink {...link} />

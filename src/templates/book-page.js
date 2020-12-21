@@ -1,21 +1,21 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import { graphql } from 'gatsby'
-import ReactMarkdown from 'react-markdown'
-import Layout from '../layouts/default'
-import { HTMLContent } from '../components/Content'
-import Book from '../components/Books'
-import BodyContainer from '../components/BodyContainer'
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { graphql } from 'gatsby';
+import ReactMarkdown from 'react-markdown';
+import Layout from '../layouts/default';
+import { HTMLContent } from '../components/Content';
+import BookPageContent from '../components/Books/BookPage';
+import BodyContainer from '../components/BodyContainer';
 
-const Container = styled.div``
-const BookContainer = styled.div``
+const Container = styled.div``;
+const BookContainer = styled.div``;
 
 export const BookPageTemplate = ({ page }) => {
   return (
     <Container>
       <BookContainer>
-        <Book {...page.frontmatter} hideDescription={true} />
+        <BookPageContent post={page} />
       </BookContainer>
       <BodyContainer>
         {page.bodyIsMarkdown ? (
@@ -25,24 +25,24 @@ export const BookPageTemplate = ({ page }) => {
         )}
       </BodyContainer>
     </Container>
-  )
-}
+  );
+};
 
 const BookPage = ({ data }) => {
-  const { markdownRemark: page } = data
+  const { markdownRemark: page } = data;
 
   return (
     <Layout>
       <BookPageTemplate page={{ ...page, bodyIsMarkdown: false }} />
     </Layout>
-  )
-}
+  );
+};
 
 BookPage.propTypes = {
   data: PropTypes.object.isRequired,
-}
+};
 
-export default BookPage
+export default BookPage;
 
 export const bookPageQuery = graphql`
   query BookPageByID($id: String!) {
@@ -83,4 +83,4 @@ export const bookPageQuery = graphql`
       }
     }
   }
-`
+`;
