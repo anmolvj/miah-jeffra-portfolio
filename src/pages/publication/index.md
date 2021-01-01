@@ -12,6 +12,11 @@ publicationsSection:
       publicationImage:
         image: /img/the-boiler.png
         alt: boiler logo
+    - title: Wildness
+      link: https://readwildness.com/24/jeffra-unlikely
+      publicationImage:
+        image: /img/wildness.jpg
+        alt: Wildness logo
     - publicationImage:
         image: /img/interim.jpg
         alt: Interim
