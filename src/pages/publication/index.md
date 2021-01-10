@@ -2,6 +2,11 @@
 templateKey: publication-page
 publicationsSection:
   publicationList:
+    - title: DIAGRAM
+      link: http://thediagram.com/20_6/jeffra.html
+      publicationImage:
+        image: /img/diagram.jpg
+        alt: DIAGRAM
     - publicationImage:
         image: /img/the-pinch.png
         alt: The Pinch
