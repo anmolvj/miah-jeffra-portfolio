@@ -7,6 +7,11 @@ publicationsSection:
       publicationImage:
         image: /img/diagram.jpg
         alt: DIAGRAM
+    - title: Barrelhouse
+      link: https://www.barrelhousemag.com/shopone/issue-21
+      publicationImage:
+        alt: Barrelhouse
+        image: /img/barrelhouse.png
     - publicationImage:
         image: /img/the-pinch.png
         alt: The Pinch
