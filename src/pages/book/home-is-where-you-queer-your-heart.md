@@ -4,7 +4,7 @@ title: Home is Where You Queer Your Heart
 date: 2021-03-15T21:05:15.603Z
 coverImage:
   image: /img/home-anthology-cover-front-1-.jpg
-  alt: SPD
+  alt: Home is Where You Queer Your Heart
 description: HOME IS WHERE YOU QUEER YOUR HEART anthologizes contemporary queer
   writers and artists creatively thinking through the complex and fluid
   realities in the U.S. and abroad. Curated during the 2020 U.S. presidential
