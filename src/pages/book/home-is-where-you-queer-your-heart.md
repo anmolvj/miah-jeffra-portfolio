@@ -25,4 +25,4 @@ linksToBuy:
       alt: Foglifter
     linkURL: https://foglifterjournal.com/2021/01/01/home-is-where-you-queer-your-heart-a-new-anthology-from-foglifter-press/
 ---
-Small Press Distribution
+Home is Where You Queer Your Heart
