@@ -135,11 +135,10 @@ awardsSection:
       awardTitle: Semi-finalist, James Knudsen Fiction Prize
   sectionName: Accolades
 ---
-
 Miah Jeffra is a writer, artist, curator and educator, currently living in San Francisco. A military brat, Jeffra moved throughout their childhood, but most identifies the South as home.
 
 They spent their high school years in Baltimore, and then moved to Atlanta, where they studied English, Music and Theatre at Oglethorpe University.
 
-Miah later studied in the MFA Writing Program in Critical Studies at the California Institute of the Arts and the MA program in English at San Francisco State University. Jeffra teaches Writing, Drama, Anti-Racist and Cultural Studies at Santa Clara University, and is Founding Editor and Production Designer for queer literary collaborative, Foglifter Press.
+Miah later studied in the Critical Studies MFA program at the California Institute of the Arts and the MA program in English at San Francisco State University. Jeffra teaches Writing, Drama, Anti-Racist and Cultural Studies at Santa Clara University, and is Founding Editor and Production Designer for queer literary collaborative, Foglifter Press.
 
 Jeffra finds interest in community-centered arts and discourse and chooses to maintain a multi-disciplinary studio practice for its collaborative possibilities. The subjects of their work range from psycho-geography, urban studies and class to gender structures and whiteness as oppressive construct. Influences include Augusto Boal, Anna Deavere Smith, Richard Rodriguez, Peter Brook, Angela Davis, Richard Schechner, James Baldwin, Judith Butler, Michael Cunningham, Toni Morrison, Adrian Piper, Colum McCann, Olafur Eliasson, Guy Debord and the Situationists, Whoopi Goldberg, Joe Goode, West African dance forms, and other artists/writers who emphasize process in their work.
