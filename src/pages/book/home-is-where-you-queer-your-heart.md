@@ -1,7 +1,7 @@
 ---
 templateKey: book-page
 title: Home is Where You Queer Your Heart
-date: 2021-03-15T21:05:00.000Z
+date: 2021-02-10T18:53:57.916Z
 coverImage:
   image: /img/home-anthology-cover-front-1-.jpg
   alt: Home is Where You Queer Your Heart
