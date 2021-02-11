@@ -1,7 +1,7 @@
 ---
 templateKey: book-page
 title: The Violence Almanac
-date: 2020-12-16T20:28:16.592Z
+date: 2021-02-11T00:05:16.846Z
 coverImage:
   image: /img/violence-almanac-cover.jpg
   alt: The Violence Almanac
