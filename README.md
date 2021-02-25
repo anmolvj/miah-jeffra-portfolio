@@ -11,7 +11,7 @@
 
 > Portfolio website to Showcase author Miah Jeffra's work
 
-### 🏠 [Homepage](https://www.miahjeffra.com/)
+### ✨ [Demo](https://www.miahjeffra.com/)
 
 ## Install
 
