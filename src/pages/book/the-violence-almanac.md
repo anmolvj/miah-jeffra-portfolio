@@ -24,6 +24,12 @@ reviews:
       and humanity is evident in this book, yet he demands us to face the
       ugliness of our society, even in the most likeable of characters. I am
       deeply impressed by this collection and this writer. "
+  - reviewerName: Publisher's Weekly
+    message: Throughout these portraits of the exhausted and murderous, the
+      carelessly angry, and the heartbroken and vengeful, Jeffra compassionately
+      and unflinchingly depicts an array of desperate characters as they try to
+      attain the lives they’ve always dreamed of. While the stories can be
+      emotionally challenging, they resonate deeply.
   - reviewerName: Dan Chaon
     message: The Violence Almanac is a jewel of a collection–formally inventive,
       transgressive, darkly funny at times, deeply moving at others. The stories
