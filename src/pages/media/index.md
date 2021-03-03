@@ -29,6 +29,14 @@ youtubeSection:
       url: https://www.youtube.com/watch?v=Jvb6rY5RTHQ&t=12s
 interviewsSection:
   interviews:
+    - title: Queer Words Podcast
+      url: https://podcasts.apple.com/us/podcast/miah-jeffra/id1438804209?i=1000511279181
+      interviewer: Wayne Goodman
+      date: March 2020
+    - title: "Anti-racist Teaching Collective: Interview with Miah Jeffra"
+      url: https://www.arteachingcollective.com/pedagogy.html
+      interviewer: Allia Griffin
+      date: March 2020
     - title: Lambda Literary Review
       url: https://www.lambdaliterary.org/2020/08/miah-jeffra/
       interviewer: Michael Graves
