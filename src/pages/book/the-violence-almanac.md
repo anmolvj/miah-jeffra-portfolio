@@ -30,6 +30,9 @@ reviews:
       and unflinchingly depicts an array of desperate characters as they try to
       attain the lives they’ve always dreamed of. While the stories can be
       emotionally challenging, they resonate deeply.
+  - reviewerName: Out in Print
+    message: The Violence Almanac glitters like a dark diamond. Wholly engaging and
+      as tough as it is compulsive to read, this is storytelling at its finest.
   - reviewerName: Dan Chaon
     message: The Violence Almanac is a jewel of a collection–formally inventive,
       transgressive, darkly funny at times, deeply moving at others. The stories
