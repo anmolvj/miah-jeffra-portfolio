@@ -168,5 +168,10 @@ publicationsSection:
         alt: the-east-bay-review-logo
         image: /img/publications/the-east-bay-review.jpg
       title: The East Bay Review
+    - title: StoryQuarterly
+      link: http://www.storyquarterly.org/
+      publicationImage:
+        alt: StoryQuarterly
+        image: /img/storyquarterly.png
   sectionName: Other Publications
 ---
