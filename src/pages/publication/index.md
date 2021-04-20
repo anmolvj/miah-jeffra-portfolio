@@ -2,6 +2,11 @@
 templateKey: publication-page
 publicationsSection:
   publicationList:
+    - title: StoryQuarterly
+      link: http://www.storyquarterly.org/
+      publicationImage:
+        alt: StoryQuarterly
+        image: /img/storyquarterly.png
     - title: DIAGRAM
       link: http://thediagram.com/20_6/jeffra.html
       publicationImage:
