@@ -2,6 +2,11 @@
 templateKey: publication-page
 publicationsSection:
   publicationList:
+    - title: StoryQuarterly
+      link: http://www.storyquarterly.org/
+      publicationImage:
+        alt: StoryQuarterly
+        image: /img/storyquarterly.png
     - title: DIAGRAM
       link: http://thediagram.com/20_6/jeffra.html
       publicationImage:
@@ -168,10 +173,5 @@ publicationsSection:
         alt: the-east-bay-review-logo
         image: /img/publications/the-east-bay-review.jpg
       title: The East Bay Review
-    - title: StoryQuarterly
-      link: http://www.storyquarterly.org/
-      publicationImage:
-        alt: StoryQuarterly
-        image: /img/storyquarterly.png
   sectionName: Other Publications
 ---
