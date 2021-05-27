@@ -2,6 +2,11 @@
 templateKey: publication-page
 publicationsSection:
   publicationList:
+    - title: The Greensboro Review
+      link: http://greensbororeview.org/issue/spring-2021-issue-109/
+      publicationImage:
+        image: /img/greensboro-review.png
+        alt: Greensboro Review
     - title: StoryQuarterly
       link: http://www.storyquarterly.org/
       publicationImage:
