@@ -53,6 +53,10 @@ reviews:
       imperfect is not overlooked; it is cause for investigation and
       appreciation of the tangled truths of experience. Jeffra is a
       hyperrealist, and the stories vibrate with pain and love."
+  - reviewerName: Free State Review
+    message: The Violence Almanac is both a deeply unsettling and insightful book.
+      The prose ranges from lyrical to matter of fact, intimately psychological
+      to cooly distant, Miah Jeffra flourishing a chameleon’s grasp of style.
 linksToBuy:
   - linkURL: https://blacklawrencepress.com/books/the-violence-almanac/
     linkImage:
