@@ -57,6 +57,9 @@ reviews:
     message: The Violence Almanac is both a deeply unsettling and insightful book.
       The prose ranges from lyrical to matter of fact, intimately psychological
       to cooly distant, Miah Jeffra flourishing a chameleon’s grasp of style.
+  - reviewerName: San Francisco Chronicle
+    message: Jeffra is a master of writing that stands out in how unflinchingly it
+      inhabits and experiments with abstract ideas.
 linksToBuy:
   - linkURL: https://blacklawrencepress.com/books/the-violence-almanac/
     linkImage:
