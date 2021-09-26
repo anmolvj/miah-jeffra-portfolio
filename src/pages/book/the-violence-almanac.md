@@ -58,6 +58,6 @@ linksToBuy:
     linkImage:
       image: /img/black-lawrence-press.jpg
       alt: Black Lawrence Press
-    label: Preorder Here!
+    label: Order Here!
 ---
 The Violence Almanac
