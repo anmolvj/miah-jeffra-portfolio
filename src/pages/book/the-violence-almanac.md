@@ -60,6 +60,10 @@ reviews:
   - reviewerName: San Francisco Chronicle
     message: Jeffra is a master of writing that stands out in how unflinchingly it
       inhabits and experiments with abstract ideas.
+  - reviewerName: Fantastic Fiction
+    message: "The Violence Almanac provides a complicated and nuanced portrait of
+      contemporary American violence as much as it does the multiplicity of
+      California itself. "
 linksToBuy:
   - linkURL: https://blacklawrencepress.com/books/the-violence-almanac/
     linkImage:
