@@ -15,6 +15,19 @@ description: >-
 
   Familiar and real, ripped from headlines yet a fiction all its own, The Violence Almanac vacillates between visceral horror and heartbreaking humanity. With a broad array of voices, these stories paint a portrait of the vastly diverse, complicated, hyper-mediated state of California and the state of ourselves, and blurs the line between safety and danger, love and obsession, victim and agent of violence.
 reviews:
+  - reviewerName: San Francisco Chronicle
+    message: Jeffra is a master of writing that stands out in how unflinchingly it
+      inhabits and experiments with abstract ideas.
+  - reviewerName: Publisher's Weekly
+    message: Throughout these portraits of the exhausted and murderous, the
+      carelessly angry, and the heartbroken and vengeful, Jeffra compassionately
+      and unflinchingly depicts an array of desperate characters as they try to
+      attain the lives they’ve always dreamed of. While the stories can be
+      emotionally challenging, they resonate deeply.
+  - reviewerName: Free State Review
+    message: The Violence Almanac is both a deeply unsettling and insightful book.
+      The prose ranges from lyrical to matter of fact, intimately psychological
+      to cooly distant, Miah Jeffra flourishing a chameleon’s grasp of style.
   - reviewerName: Andrew Sean Greer
     message: Brilliant and daring, full of horror and tenderness, The Violence
       Almanac gives us the American stories we need to be reading.
@@ -24,12 +37,6 @@ reviews:
       and humanity is evident in this book, yet he demands us to face the
       ugliness of our society, even in the most likeable of characters. I am
       deeply impressed by this collection and this writer. "
-  - reviewerName: Publisher's Weekly
-    message: Throughout these portraits of the exhausted and murderous, the
-      carelessly angry, and the heartbroken and vengeful, Jeffra compassionately
-      and unflinchingly depicts an array of desperate characters as they try to
-      attain the lives they’ve always dreamed of. While the stories can be
-      emotionally challenging, they resonate deeply.
   - reviewerName: Out in Print
     message: The Violence Almanac glitters like a dark diamond. Wholly engaging and
       as tough as it is compulsive to read, this is storytelling at its finest.
@@ -53,13 +60,6 @@ reviews:
       imperfect is not overlooked; it is cause for investigation and
       appreciation of the tangled truths of experience. Jeffra is a
       hyperrealist, and the stories vibrate with pain and love."
-  - reviewerName: Free State Review
-    message: The Violence Almanac is both a deeply unsettling and insightful book.
-      The prose ranges from lyrical to matter of fact, intimately psychological
-      to cooly distant, Miah Jeffra flourishing a chameleon’s grasp of style.
-  - reviewerName: San Francisco Chronicle
-    message: Jeffra is a master of writing that stands out in how unflinchingly it
-      inhabits and experiments with abstract ideas.
   - reviewerName: Fantastic Fiction
     message: "The Violence Almanac provides a complicated and nuanced portrait of
       contemporary American violence as much as it does the multiplicity of
