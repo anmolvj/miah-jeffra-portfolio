@@ -2,11 +2,6 @@
 templateKey: publication-page
 publicationsSection:
   publicationList:
-    - title: jubilat
-      link: http://www.jubilat.org/jubilat/archive/issue39/?mode=unlinked
-      publicationImage:
-        image: /img/jubilat.gif
-        alt: jubilat logo
     - title: The Greensboro Review
       link: http://greensbororeview.org/issue/spring-2021-issue-109/
       publicationImage:
