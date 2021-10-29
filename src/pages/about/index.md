@@ -135,9 +135,9 @@ awardsSection:
       awardTitle: Semi-finalist, James Knudsen Fiction Prize
   sectionName: Accolades
 ---
-Publicity BIO: Miah Jeffra is author of four books of prose, most recently *The Violence Almanac* and the forthcoming novel *American Gospel*. Work can be seen in *StoryQuarterly, Prairie Schooner, The North American Review, Barrelhouse, DIAGRAM, The Pinch* and many others. Miah is co-founder of Whiting Award-winning queer and trans literary collaborative, Foglifter Press, and teaches writing and antiracist studies at Santa Clara University.
+Publicity BIO: Miah Jeffra is author of four books of prose, most recently *The Violence Almanac* and the forthcoming novel *American Gospel*. Work can be seen in *StoryQuarterly, Prairie Schooner, The North American Review, Barrelhouse, DIAGRAM, jubilat* and many others. Miah is co-founder of Whiting Award-winning queer and trans literary collaborative, Foglifter Press, and teaches writing and antiracist studies at Santa Clara University.
 
-
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 More About Miah: Miah Jeffra is a writer, artist, curator and educator, currently living in San Francisco. A military brat, Jeffra moved throughout their childhood, but most identifies the South as home.
 
