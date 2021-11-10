@@ -2,16 +2,21 @@
 templateKey: publication-page
 publicationsSection:
   publicationList:
-    - title: The Greensboro Review
-      link: http://greensbororeview.org/issue/spring-2021-issue-109/
+    - title: jubilat
+      link: http://www.jubilat.org/jubilat/archive/issue39/?mode=unlinked
       publicationImage:
-        image: /img/greensboro-review.png
-        alt: Greensboro Review
+        image: /img/jubilat.gif
+        alt: jubilat
     - title: StoryQuarterly
       link: http://www.storyquarterly.org/
       publicationImage:
         alt: StoryQuarterly
         image: /img/storyquarterly.png
+    - title: The Greensboro Review
+      link: http://greensbororeview.org/issue/spring-2021-issue-109/
+      publicationImage:
+        image: /img/greensboro-review.png
+        alt: Greensboro Review
     - title: DIAGRAM
       link: http://thediagram.com/20_6/jeffra.html
       publicationImage:
