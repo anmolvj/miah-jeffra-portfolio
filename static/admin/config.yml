@@ -358,6 +358,7 @@ collections:
                                 label: 'Image',
                                 name: 'image',
                                 widget: 'image',
+                                pattern: ['([^\\s]+(\\.(?i)(jpe?g|png|svg))$)', 'Only JPG, JPEG, PNG & SVG image extensions are allowed.']
                               },
                               {
                                 label: 'Description',

@@ -5,7 +5,7 @@ publicationsSection:
     - title: jubilat
       link: http://www.jubilat.org/jubilat/archive/issue39/?mode=unlinked
       publicationImage:
-        image: /img/jubilat.gif
+        image: /img/storyquarterly.png
         alt: jubilat
     - title: StoryQuarterly
       link: http://www.storyquarterly.org/
