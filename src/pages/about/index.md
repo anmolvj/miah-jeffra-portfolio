@@ -135,7 +135,7 @@ awardsSection:
       awardTitle: Semi-finalist, James Knudsen Fiction Prize
   sectionName: Accolades
 ---
-Publicity BIO: Miah Jeffra is author of four books of prose, most recently *The Violence Almanac* and the forthcoming novel *American Gospel*. Work can be seen in *StoryQuarterly, Prairie Schooner, The North American Review, Barrelhouse, DIAGRAM, jubilat* and many others. Miah is co-founder of Whiting Award-winning queer and trans literary collaborative, Foglifter Press, and teaches writing and antiracist studies at Santa Clara University.
+Publicity BIO: Miah Jeffra is author of four books of prose, most recently *The Violence Almanac* and the forthcoming novel *American Gospel*. Work can be seen in *StoryQuarterly, Prairie Schooner, The North American Review, Barrelhouse, DIAGRAM, jubilat* and many others. Miah is co-founder of Whiting Award-winning queer and trans literary collaborative, Foglifter Press, and teaches writing and decolonial studies at Santa Clara University and Central Washington University.
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
@@ -143,6 +143,6 @@ More About Miah: Miah Jeffra is a writer, artist, curator and educator, currentl
 
 They spent their high school years in Baltimore, and then moved to Atlanta, where they studied English, Music and Theatre at Oglethorpe University.
 
-Miah later studied in the MFA Critical Studies program at the California Institute of the Arts and the MA program in English at San Francisco State University. Jeffra teaches Writing, Drama, Antiracist and Cultural Studies at Santa Clara University, and is Founding Editor and Production Designer for queer literary collaborative, Foglifter Press.
+Miah later studied in the MFA Critical Studies program at the California Institute of the Arts and the MA program in English at San Francisco State University. Jeffra teaches Writing, Drama, Decolonial and Cultural Studies at Santa Clara University and Central Washington University, and is Founding Editor and Production Designer for queer literary collaborative, Foglifter Press.
 
 Jeffra finds interest in community-centered arts and discourse and chooses to maintain a multi-disciplinary studio practice for its collaborative possibilities. The subjects of their work range from psycho-geography, urban studies and class to gender structures and whiteness as oppressive construct. Influences include Augusto Boal, bell hooks, Anna Deavere Smith, Richard Rodriguez, Mieke Bal, Peter Brook, Felix Gonzalez-Torres, Angela Davis, Richard Schechner, James Baldwin, David Wojnarowicz, Shigenori Nagatomo, Judith Butler, Michael Cunningham, Toni Morrison, Adrian Piper, Colum McCann, Olafur Eliasson, Yuasa Yasuo, Guy Debord and the Situationists, Whoopi Goldberg, Joe Goode, several West African dance forms, and other artists/writers who emphasize process in their work.
