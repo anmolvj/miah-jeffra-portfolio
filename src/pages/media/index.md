@@ -3,6 +3,9 @@ templateKey: media-page
 youtubeSection:
   sectionName: Videos
   youtubeVideos:
+    - title: "Lion Rock Reading Series: Miah Jeffra"
+      description: Central Washington University
+      url: https://www.kaltura.com/index.php/extwidget/preview/partner_id/2540751/uiconf_id/44232322/entry_id/1_zscb9o7o/embed/dynamic?
     - description: Reading for Radar Productions at Eureka Valley Rec Center
       title: '"Make Sure to See the Exit Door"'
       url: https://www.youtube.com/watch?v=KAoaPzUEMsI
