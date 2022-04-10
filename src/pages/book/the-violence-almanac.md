@@ -64,6 +64,10 @@ reviews:
     message: "The Violence Almanac provides a complicated and nuanced portrait of
       contemporary American violence as much as it does the multiplicity of
       California itself. "
+  - reviewerName: The Rupture
+    message: The Violence Almanac is not a flawless work. But it is moving,
+      thought-provoking, honest, and strong enough that even its faults have
+      merits and are worth experiencing.
 linksToBuy:
   - linkURL: https://blacklawrencepress.com/books/the-violence-almanac/
     linkImage:
