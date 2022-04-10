@@ -92,5 +92,9 @@ interviewsSection:
       interviewer: Nathan Falstreau
       title: Hoodline
       url: https://hoodline.com/2016/04/event-spotlight-sfai-s-write-of-way-literary-festival-features-students-small-press
+    - url: https://www.therupturemag.com/rupture/violence-almanac-jeffra
+      interviewer: Will Borger
+      date: "2022"
+      title: The Rupture
   sectionName: Select Interviews / Reviews / Articles
 ---
