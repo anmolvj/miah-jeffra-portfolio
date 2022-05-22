@@ -2,6 +2,11 @@
 templateKey: publication-page
 publicationsSection:
   publicationList:
+    - title: Prairie Schooner
+      link: https://prairieschooner.unl.edu/print-journal
+      publicationImage:
+        image: /img/submit-header.jpg
+        alt: prairie schooner logo
     - title: jubilat
       link: http://www.jubilat.org/jubilat/archive/issue39/?mode=unlinked
       publicationImage:
