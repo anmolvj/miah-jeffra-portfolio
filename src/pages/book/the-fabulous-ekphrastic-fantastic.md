@@ -70,6 +70,10 @@ reviews:
     message: I read The Fabulous Fantastic Ekphrastic! with multiple browser tabs
       open at all times—perhaps the perfect response to modern life that a book
       has ever evoked in me.
+  - reviewerName: Ruminate Magazine
+    message: Miah Jeffra’s book of essays provides a journey as split—and
+      splitting—as the human experience. The person snaps off the page. And
+      there is unbelievable freedom in that.
 linksToBuy:
   - label: Buy Here!
     linkImage:
