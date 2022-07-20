@@ -13,6 +13,10 @@ awardsSection:
         alt: new-millennium-writings-fiction-prize
         image: /img/awards/new-millennium-writings-fiction-prize.png
       awardTitle: New Millennium Writings Fiction Prize
+    - awardTitle: Crosstown Arts Residency
+      awardImage:
+        image: /img/crosstownarts3.png
+        alt: crosstown arts
     - awardImage:
         alt: ragdale-residency
         image: /img/awards/ragdale-residency.jpg
