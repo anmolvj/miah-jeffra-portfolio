@@ -1,7 +1,7 @@
 ---
 templateKey: book-page
 title: American Gospel
-date: 2022-11-11T17:46:19.939Z
+date: 2022-11-11T21:36:27.940Z
 coverImage:
   image: /img/american-gospel-v2.jpeg
   alt: American Gospel
