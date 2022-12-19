@@ -32,5 +32,32 @@ reviews:
       oblivion. Yet somehow grief and yearning are harnessed for power and
       light, for hope, and Jeffra’s novel becomes nothing less than a survival
       guide for this terrible troubling American moment."
+  - reviewerName: Jim Grimsley
+    message: With three rich characters as his threads, Miah Jeffra weaves a
+      flawless tapestry of a community about to be obliterated, capturing the
+      lives of three people who are caught up in the sweep of change. They are a
+      desperate mother, a bitter son, a doubtful priest, and the portraits
+      Jeffra draws are wonderfully composed. His writing is sharp and powerful.
+      His vision of the world is exact. Here is a novel worthy of everyone’s
+      notice. A treasure.
+  - reviewerName: Junse Kim
+    message: American Gospel is a stunningly rich and complex experience of Place.
+      Behind the urban development plan of Baltimore’s Highlandtown
+      neighborhood, the novel vividly immerses readers into the everyday lives
+      of its affected residents.  For each character, Jeffra’s dazzling prose
+      evokes a longing for connection, peace, and belonging, culminating in a
+      deep meditation on the meaning of home.
+  - reviewerName: Zak Salih
+    message: Equal parts tender and fierce, Miah Jeffra’s American Gospel is an
+      uncompromising portrait of Baltimore and the people who call it home—a
+      portrait framed by three finely wrought characters whose voices converge
+      into a vibrant polyphony that reminds us of the inherent beauty in our
+      brokenness.
+linksToBuy:
+  - label: Pre-order Here!
+    linkURL: https://blacklawrencepress.com/books/american-gospel/
+    linkImage:
+      image: /img/black-lawrence-press.jpg
+      alt: Pre-order Here!
 ---
 A﻿merican Gospel
