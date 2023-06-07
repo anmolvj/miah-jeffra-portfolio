@@ -2,6 +2,16 @@
 templateKey: publication-page
 publicationsSection:
   publicationList:
+    - title: storySouth
+      link: http://storysouth.com/stories/islands-in-the-stream/
+      publicationImage:
+        image: /img/storysouth.jpg
+        alt: storySouth
+    - title: Subnivean
+      link: https://www.subnivean.org/post/miah-jeffra
+      publicationImage:
+        image: /img/subnivean.png
+        alt: Subnivean
     - title: Prairie Schooner
       link: https://prairieschooner.unl.edu/print-journal
       publicationImage:
