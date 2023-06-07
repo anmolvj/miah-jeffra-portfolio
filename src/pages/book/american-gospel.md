@@ -53,6 +53,26 @@ reviews:
       portrait framed by three finely wrought characters whose voices converge
       into a vibrant polyphony that reminds us of the inherent beauty in our
       brokenness.
+  - reviewerName: Blue Mesa Review
+    message: '"Jeffra’s American Gospel addresses issues of critical race theory,
+      faith, gender and sexuality, extinction versus gentrification versus
+      progress, in a manner so complex yet so well-defined that it could be
+      taught in classrooms."'
+  - reviewerName: Lambda Literary Review
+    message: '"Buoyed by Jeffra’s gritty and lyrical prose, American Gospel looks
+      America in the eyes and finds it wanting, the American Dream available
+      only to the wealthy and corrupt, short-shifting ordinary folks who just
+      want their slice of apple pie."'
+  - reviewerName: Foreword
+    message: '"American Gospel is a serious literary novel set in a contemporary
+      American city that’s troubled by its intersections of politics, race, and
+      class."'
+  - reviewerName: Out in Print
+    message: '"Miah Jeffra’s American Gospel is a cautionary tale, an unflinching
+      portrayal of greed overcoming common sense. The story is an old one, but
+      Jeffra’s excellent writing and impeccable choices show off its evergreen
+      relevance. I can’t think of a better book to begin your summer reading
+      season."'
 linksToBuy:
   - label: Pre-order Here!
     linkURL: https://blacklawrencepress.com/books/american-gospel/
