@@ -2,6 +2,11 @@
 templateKey: publication-page
 publicationsSection:
   publicationList:
+    - link: https://anmly.org/ap38/
+      title: Anamoly
+      publicationImage:
+        image: /img/anmly_logo_quilted_blackletters.png
+        alt: anmly logo
     - title: storySouth
       link: http://storysouth.com/stories/islands-in-the-stream/
       publicationImage:
@@ -198,10 +203,5 @@ publicationsSection:
         alt: the-east-bay-review-logo
         image: /img/publications/the-east-bay-review.jpg
       title: The East Bay Review
-    - link: https://anmly.org/ap38/
-      title: Anamoly
-      publicationImage:
-        image: /img/anmly_logo_quilted_blackletters.png
-        alt: anmly logo
   sectionName: Other Publications
 ---
