@@ -139,7 +139,7 @@ awardsSection:
       awardTitle: Semi-finalist, James Knudsen Fiction Prize
   sectionName: Accolades
 ---
-Publicity BIO: Miah Jeffra is author of four books, most recently *The Violence Almanac* (finalist for several awards, including the Grace Paley and St. Lawrence Book Prizes) and the novel *American Gospel,* winner of the Clark-Gross Award, and is co-editor of the anthology *Home is Where You Queer Your Heart*. Work can be seen in *StoryQuarterly, Prairie Schooner, The North American Review, Barrelhouse, DIAGRAM, storySouth* and many others. Miah is co-founder of Whiting Award-winning queer and trans literary collaborative, Foglifter Press, and teaches writing and decolonial studies at Sonoma State University.
+Publicity BIO: Miah Jeffra is author of four books—most recently *The Violence Almanac* (finalist for several awards, including the Grace Paley and Robert C Jones Book Prizes) and the novel *American Gospel,* finalist for the PEN/Hemingway Award—and is co-editor of the anthology *Home is Where You Queer Your Heart*. Work can be seen in *StoryQuarterly, Prairie Schooner, The North American Review, Barrelhouse, DIAGRAM, storySouth* and many others. Miah is co-founder of Whiting Award-winning queer and trans literary collaborative, Foglifter Press, and teaches writing and decolonial studies at Sonoma State University.
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
