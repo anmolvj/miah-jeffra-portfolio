@@ -3,7 +3,7 @@ templateKey: publication-page
 publicationsSection:
   publicationList:
     - link: https://anmly.org/ap38/
-      title: Anamoly
+      title: Anomaly
       publicationImage:
         image: /img/anmly_logo_quilted_blackletters.png
         alt: anmly logo
