@@ -2,6 +2,11 @@
 templateKey: publication-page
 publicationsSection:
   publicationList:
+    - title: Epiphany
+      link: https://epiphanyzine.com/issue-34-spring-summer-2025
+      publicationImage:
+        image: /img/epiphany.png
+        alt: Epiphany
     - link: https://anmly.org/ap38/
       title: Anomaly
       publicationImage:
